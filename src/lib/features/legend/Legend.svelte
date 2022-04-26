@@ -1,0 +1,34 @@
+<script>
+    export let config;
+    export let entries;
+
+    const rings = config.rings;
+    const sections = config.sections;
+
+
+    let segmented = Array(sections.length)
+        .fill()
+        .map(() => Array(rings.length).fill().map(() => Array(0)));
+
+    entries.forEach((entry )=>{
+        segmented[entry.slice][entry.ring].push(entry);
+    });
+</script>
+
+<div class="masonry" style="--masonry-width: 200px;--masonry-gap: 2px;--masonry-columns: 2;">
+    {#each sections as section , i}
+        <div class="box">
+        <h3 style="color: {section.color}">{section.label}</h3>
+            <div class="masonry" style="--masonry-width: 20px;--masonry-gap: 2px;--masonry-columns: 2;">
+            {#each rings as ring, j}
+                <div class="box">
+                    <h4>{ring.label}</h4>
+                    {#each segmented[i][j] as entry}
+                        <p>{entry.id}. {entry.name}</p>
+                    {/each }
+                </div>
+            {/each}
+            </div>
+        </div>
+    {/each}
+</div>
