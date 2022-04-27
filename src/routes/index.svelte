@@ -1,44 +1,8 @@
 <script>
     import Radar from "$lib/features/radar/Radar.svelte";
     import Legend from "$lib/features/legend/Legend.svelte";
+    import input_data from "$lib/data/techRadarEntries.json";
 
-    const input_data = [
-        {
-            name : "Tet",
-            section: "LANGUAGES",
-            status : "ADOPT"
-        },
-        {
-            name : "Test2",
-            section: "FRAMEWORKS",
-            status : "TRAIL"
-        },
-        {
-            name : "Test3",
-            section: "INFRASTRUCTURE",
-            status : "ASSESS"
-        },
-        {
-            name : "Test3",
-            section: "TOOLS",
-            status : "HOLD"
-        },
-        {
-            name : "Test3",
-            section: "METHODS",
-            status : "ASSESS"
-        },
-        {
-            name : "Test4",
-            section: "METHODS",
-            status : "ASSESS"
-        },
-        {
-            name : "Test3",
-            section: "TOOLS",
-            status : "ASSESS"
-        }
-    ];
     const config = {
         sections: [
             {
@@ -103,7 +67,6 @@
     };
 
     // pre-process input_data
-
     const entries = input_data.map((data, index) => {
         const slice = config.sections.find(sec => sec.name === data.section).index;
         const ring = config.rings.find(ring => ring.name === data.status).index;
@@ -120,7 +83,7 @@
     <title>Finaps Technology Radar</title>
 </svelte:head>
 
-<h1>Finaps Tech Radar 0.9</h1>
+<h1>Finaps Tech Radar 0.1</h1>
 
 <section class="sidebar">
     <Radar {entries} {config} />

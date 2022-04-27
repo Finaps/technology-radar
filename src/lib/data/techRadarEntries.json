@@ -1,0 +1,72 @@
+[
+  {
+    "name" : "C#",
+    "section": "LANGUAGES",
+    "status" : "ADOPT"
+  },
+  {
+    "name" : ".NET",
+    "section": "FRAMEWORKS",
+    "status" : "ADOPT"
+  },
+  {
+    "name" : "Terraform",
+    "section": "INFRASTRUCTURE",
+    "status" : "TRAIL"
+  },
+  {
+    "name" : "yarn",
+    "section": "TOOLS",
+    "status" : "ADOPT"
+  },
+  {
+    "name" : "Test3",
+    "section": "METHODS",
+    "status" : "ASSESS"
+  },
+  {
+    "name" : "Test4",
+    "section": "METHODS",
+    "status" : "ASSESS"
+  },
+  {
+    "name" : "Rider",
+    "section": "TOOLS",
+    "status" : "ADOPT"
+  },
+  {
+    "name" : "Java",
+    "section": "LANGUAGES",
+    "status" : "TRAIL"
+  },
+  {
+    "name" : "Spring Boot",
+    "section": "FRAMEWORKS",
+    "status" : "TRAIL"
+  },
+  {
+    "name" : "Azure",
+    "section": "INFRASTRUCTURE",
+    "status" : "ADOPT"
+  },
+  {
+    "name" : "AWS",
+    "section": "INFRASTRUCTURE",
+    "status" : "ASSESS"
+  },
+  {
+    "name" : "Test3",
+    "section": "METHODS",
+    "status" : "ASSESS"
+  },
+  {
+    "name" : "Test4",
+    "section": "METHODS",
+    "status" : "ASSESS"
+  },
+  {
+    "name" : "Test3",
+    "section": "TOOLS",
+    "status" : "ASSESS"
+  }
+]
