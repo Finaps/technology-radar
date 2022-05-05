@@ -1,72 +1,192 @@
 [
   {
-    "name" : "C#",
-    "section": "LANGUAGES",
-    "status" : "ADOPT"
+    "name": "C#",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
   },
   {
-    "name" : ".NET",
-    "section": "FRAMEWORKS",
-    "status" : "ADOPT"
+    "name": "Javascript",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
   },
   {
-    "name" : "Terraform",
+    "name": "Java",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Python",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "SQL",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Typescript",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Svelte",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "ReactJS",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "React Native",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "AngularJS",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": ".NET",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Xamarin",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Spring Boot",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Terraform",
     "section": "INFRASTRUCTURE",
-    "status" : "TRAIL"
+    "status": "ADOPT"
   },
   {
-    "name" : "yarn",
-    "section": "TOOLS",
-    "status" : "ADOPT"
-  },
-  {
-    "name" : "Test3",
-    "section": "METHODS",
-    "status" : "ASSESS"
-  },
-  {
-    "name" : "Test4",
-    "section": "METHODS",
-    "status" : "ASSESS"
-  },
-  {
-    "name" : "Rider",
-    "section": "TOOLS",
-    "status" : "ADOPT"
-  },
-  {
-    "name" : "Java",
-    "section": "LANGUAGES",
-    "status" : "TRAIL"
-  },
-  {
-    "name" : "Spring Boot",
-    "section": "FRAMEWORKS",
-    "status" : "TRAIL"
-  },
-  {
-    "name" : "Azure",
+    "name": "Kubernetes",
     "section": "INFRASTRUCTURE",
-    "status" : "ADOPT"
+    "status": "ADOPT"
   },
   {
-    "name" : "AWS",
+    "name": "Docker",
     "section": "INFRASTRUCTURE",
-    "status" : "ASSESS"
+    "status": "ADOPT"
   },
   {
-    "name" : "Test3",
-    "section": "METHODS",
-    "status" : "ASSESS"
+    "name": "Nginx",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
   },
   {
-    "name" : "Test4",
-    "section": "METHODS",
-    "status" : "ASSESS"
+    "name": "Open Tracing",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
   },
   {
-    "name" : "Test3",
+    "name": "Rider",
     "section": "TOOLS",
-    "status" : "ASSESS"
+    "status": "ADOPT"
+  },
+  {
+    "name": "IntelIJ",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "WebStorm",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Cloud Carbon Footprint",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Nx",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "yarn",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Postman",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Mendix",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Thinkwise",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Azure DevOps",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Azure Pipelines",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Github Repositories",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Github Actions",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "SAS Viya",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "PostgreSQL",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "ElasticSearch",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "MongoDB",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Kafka",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "RabbitMQ",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Azure CosmosDB",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
   }
 ]
