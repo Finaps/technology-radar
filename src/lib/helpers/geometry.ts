@@ -18,8 +18,10 @@ export function cartesian(polar: PolarCoordinates) {
 export function polar(cartesian : CartesianCoordinates) {
     const x = cartesian.x;
     const y = cartesian.y;
+    const tau = Math.atan2(y,x)
+
     return {
-        t: Math.atan2(y,x),
+        t: ( (tau >= 0 ) ? tau : (Math.PI + (Math.PI - Math.abs(tau)))),
         r: Math.sqrt(x * x + y * y)
     }
 }
