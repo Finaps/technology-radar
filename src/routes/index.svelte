@@ -1,6 +1,6 @@
 <script>
     import Radar from "$lib/features/radar/Radar.svelte";
-    import Legend from "$lib/features/legend/Legend.svelte";
+    import Legend from "$lib/features/radar/Legend.svelte";
     import input_data from "$lib/data/techRadarEntries.json";
 
     let date = new Date();
@@ -111,8 +111,14 @@
 
 <h1 class="p-0">Finaps Tech Radar {date.getFullYear()}</h1>
 
-<section class="sidebar p-0">
-    <Radar {entries} {config} />
-</section>
+<div class="flex-grow sidebar-l sidebar-w-2 gap-0" style="--sidebar-width: 750px; --sidebar-content: 20%">
+    <section class="sidebar p-0">
+        <Radar {entries} {config} />
+    </section>
+    <Legend {entries} {config} />
+</div>
 
-<Legend {entries} {config} />
+
+
+
+
