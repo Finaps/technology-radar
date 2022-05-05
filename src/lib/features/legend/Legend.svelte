@@ -15,13 +15,13 @@
     });
 </script>
 
-<div class="masonry" style="--masonry-width: 200px;--masonry-gap: 2px;--masonry-columns: 2;">
+<div class="masonry p-0" style="--masonry-width: 200px;--masonry-gap: 2px;--masonry-columns: 2;">
     {#each sections as section , i}
-        <div class="box">
+        <div class="box mb-0">
         <h3 style="color: {section.color}">{section.label}</h3>
             <div class="masonry" style="--masonry-width: 20px;--masonry-gap: 2px;--masonry-columns: 2;">
             {#each rings as ring, j}
-                <div class="box">
+                <div class="box mr-0">
                     <h4>{ring.label}</h4>
                     {#each segmented[i][j] as entry}
                         <p>{entry.id}. {entry.name}</p>
