@@ -15,8 +15,6 @@
 
 
 
-    const width_1 = select(vis).node().getBoundingClientRect().width ;
-    const height_1 = select(vis).node().getBoundingClientRect().height;
 
     // ViewBox dimensions
     const width = 700;
@@ -44,16 +42,12 @@
     // console.log(arcs)
     onMount(() => {
         draw();
+        // window.addEventListener('resize', draw);
     })
 
     function draw(): void {
 
         select(vis).html(null);
-
-        const width_1 = select(vis).node().getBoundingClientRect().width ;
-        const height_1 = select(vis).node().getBoundingClientRect().height;
-
-
 
         function translate(x, y) {
             return "translate(" + x + "," + y + ")";
