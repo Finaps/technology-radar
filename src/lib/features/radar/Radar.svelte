@@ -5,6 +5,7 @@
     import {bounded_ring, random_between, normal_between} from "../../helpers/bounding";
     import {sort, map} from "d3-array";
     import {cartesian, polar} from "../../helpers/geometry";
+    import {forceSimulation, forceCollide} from 'd3-force';
 
     let vis; // binding with div for visualization
 
@@ -12,9 +13,14 @@
 
     export let config;
 
+
+
+    const width_1 = select(vis).node().getBoundingClientRect().width ;
+    const height_1 = select(vis).node().getBoundingClientRect().height;
+
     // ViewBox dimensions
-    const width = 800;
-    const height = 800;
+    const width = 700;
+    const height = 700;
     const margin = {
         top: 20,
         right: 20,
@@ -29,7 +35,11 @@
 
     // Radar sections and rings
     const arcs = pie().padAngle(0).value( _ => 1)(sort(sections, section => section.index));
-    const shape = arc().innerRadius(0).outerRadius(400);
+    const shape = arc()
+        .innerRadius(0)
+        .outerRadius(350)
+        .startAngle(function (d) {return d.startAngle + Math.PI/2})
+        .endAngle(function(d) {return d.endAngle + Math.PI/2});
 
     // console.log(arcs)
     onMount(() => {
@@ -38,6 +48,13 @@
 
     function draw(): void {
 
+        select(vis).html(null);
+
+        const width_1 = select(vis).node().getBoundingClientRect().width ;
+        const height_1 = select(vis).node().getBoundingClientRect().height;
+
+
+
         function translate(x, y) {
             return "translate(" + x + "," + y + ")";
         }
@@ -45,21 +62,23 @@
         function segment(section, ring) {
 
             const polar_min = {
-                t: (arcs[section].startAngle -( 0.5* Math.PI ) )  ,
-                r: ring === 0 ? 15 : (rings[ring-1].radius + 15)
+                t: (arcs[section].startAngle )  ,
+                r: ring === 0 ? 30 : (rings[ring-1].radius + 15)
             };
             const polar_max = {
-                t: (arcs[section].endAngle - (0.5* Math.PI) ) ,
+                t: (arcs[section].endAngle) ,
                 r: rings[ring].radius - 15
             };
             return {
                 clipx: function(d) {
-                    const p = bounded_ring(polar(d), polar_min, polar_max);
+                    const polar_coor = polar(d);
+                    const p = bounded_ring(polar_coor, polar_min, polar_max);
                     d.x = cartesian(p).x;
                     return d.x;
                 },
                 clipy: function(d) {
-                    const p = bounded_ring(polar(d), polar_min, polar_max);
+                    const polar_coor = polar(d);
+                    const p = bounded_ring(polar_coor, polar_min, polar_max)
                     d.y = cartesian(p).y;
                     return d.y;
                 },
@@ -76,7 +95,8 @@
 
         // Prepare Entries for processing
         const blips = map(entries, entry => {
-            const point = segment(entry.slice, entry.ring).random();
+            entry.segment = segment(entry.slice, entry.ring)
+            const point = entry.segment.random();
 
             entry.x = point.x;
             entry.y = point.y;
@@ -89,13 +109,14 @@
         const svg = select(vis)
             .append('svg')
             .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom);
-            // .attr("viewBox", [-width / 2, -height / 2, width, height]);
+            .attr('height', height + margin.top + margin.bottom)
+            .attr("viewBox", [-width / 2, -height / 2, width, height]);
 
 
         // create Radar
         const radar = svg.append("g")
-            .attr("transform",  translate(width / 2, height / 2) )
+            .attr("class","")
+            // .attr("transform",  translate(width / 2, height / 2) )
 
         // Draw grid
         const grid = radar.append("g")
@@ -144,17 +165,31 @@
         blip_elements.each( function (d) {
             const blip = select(this);
             blip.append("circle")
-                .attr("r", 7)
+                .attr("r", 9)
                 .attr("fill", d.color)
             blip.append("text")
                 .text(d.id)
                 .attr("y", 4)
                 .attr("fill", "#fff")
                 .attr("text-anchor", "middle")
-                .style("font-size", "12px")
+                .style("font-size", "10px")
 
         });
+
+        // make sure that blips stay inside their segment
+        function ticked() {
+            blip_elements.attr("transform", function(d) {
+                return translate(d.segment.clipx(d), d.segment.clipy(d));
+            })
+        }
+
+        // distribute blips, while avoiding collisions
+        forceSimulation()
+            .nodes(blips)
+            .velocityDecay(0.19) // magic number (found by experimentation)
+            .force("collision", forceCollide().radius(10).strength(0.85).iterations(3))
+            .on("tick", ticked);
     }
 </script>
 
-<div bind:this={vis} class="p-0"></div>
+<div bind:this={vis} ></div>
