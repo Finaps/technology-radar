@@ -1,0 +1,816 @@
+{
+  "entries": [
+  {
+    "name": "Tokelau",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Vietnam",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Cameroon",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Faroe Islands",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "United States Virgin Islands",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Andorra",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "French Polynesia",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Tokelau",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Swaziland",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "South Africa",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Nigeria",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Vanuatu",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Lebanon",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Spain",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Burundi",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Belarus",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Saint Barthelemy",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "New Caledonia",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Bulgaria",
+    "section": "INFRASTRUCTURE",
+    "status": "HOLD"
+  },
+  {
+    "name": "France",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Lebanon",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Mauritius",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Albania",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Rwanda",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Nigeria",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Nigeria",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Bolivia",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Bhutan",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Christmas Island",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Saudi Arabia",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Malaysia",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Gambia",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Barbados",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Angola",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Ireland",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Iceland",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Pitcairn Islands",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Argentina",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Niger",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Gibraltar",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Malawi",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Colombia",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Cyprus",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Denmark",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Austria",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Tajikistan",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Palestinian Territory",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Micronesia",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Chad",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Myanmar",
+    "section": "INFRASTRUCTURE",
+    "status": "HOLD"
+  },
+  {
+    "name": "Latvia",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Italy",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Cape Verde",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Montenegro",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Sweden",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Yemen",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Chad",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Cuba",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Madagascar",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Myanmar",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Rwanda",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Jamaica",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Namibia",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Martinique",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Tanzania",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Bahrain",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Tuvalu",
+    "section": "INFRASTRUCTURE",
+    "status": "HOLD"
+  },
+  {
+    "name": "Maldives",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Costa Rica",
+    "section": "INFRASTRUCTURE",
+    "status": "HOLD"
+  },
+  {
+    "name": "Cameroon",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Germany",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Saudi Arabia",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Bhutan",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Libyan Arab Jamahiriya",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Colombia",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Chile",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Monaco",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Slovenia",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "United Kingdom",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Palestinian Territory",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Poland",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Portugal",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Chad",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "India",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Monaco",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Yemen",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Sweden",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Portugal",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Western Sahara",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Bermuda",
+    "section": "PLATFORMS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Vanuatu",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Faroe Islands",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Nauru",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Lesotho",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "British Virgin Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Turkey",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Belarus",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Japan",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Malaysia",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Nicaragua",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Bahamas",
+    "section": "INFRASTRUCTURE",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Paraguay",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "French Polynesia",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Aruba",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Turkmenistan",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Svalbard & Jan Mayen Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Nepal",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Ghana",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Montenegro",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "India",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Iraq",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Nicaragua",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Kyrgyz Republic",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Portugal",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Uruguay",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Christmas Island",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "section": "TOOLS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Papua New Guinea",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Sudan",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Samoa",
+    "section": "INFRASTRUCTURE",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Jordan",
+    "section": "INFRASTRUCTURE",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Andorra",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Argentina",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Andorra",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Jordan",
+    "section": "PLATFORMS",
+    "status": "TRAIL"
+  },
+  {
+    "name": "Ecuador",
+    "section": "INFRASTRUCTURE",
+    "status": "HOLD"
+  },
+  {
+    "name": "United States Virgin Islands",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "United States of America",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Belgium",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "United States of America",
+    "section": "TOOLS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Tajikistan",
+    "section": "PLATFORMS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "Palau",
+    "section": "TOOLS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "section": "TOOLS",
+    "status": "ASSESS"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Cyprus",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Bahamas",
+    "section": "DATASTORES_DATAMANAGEMENT",
+    "status": "ADOPT"
+  },
+  {
+    "name": "Saint Barthelemy",
+    "section": "PLATFORMS",
+    "status": "HOLD"
+  },
+  {
+    "name": "Liberia",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  },
+  {
+    "name": "New Caledonia",
+    "section": "LANGUAGES_AND_FRAMEWORKS",
+    "status": "HOLD"
+  }
+],
+  "config" : {
+    "sections": [
+      {
+        "name": "LANGUAGES_AND_FRAMEWORKS",
+        "label": "Languages & Frameworks",
+        "index": 0,
+        "color": "#fea000"
+
+      },
+      {
+        "name": "PLATFORMS",
+        "label": "Platforms",
+        "index": 1,
+        "color": "#191970"
+      },
+      {
+        "name": "INFRASTRUCTURE",
+        "label": "Infrastructure",
+        "index": 2,
+        "color": "#A98FEF"
+      },
+      {
+        "name": "TOOLS",
+        "label": "Tools",
+        "index": 3,
+        "color": "#000"
+
+      },
+      {
+        "name": "DATASTORES_DATAMANAGEMENT",
+        "label": "Datastore & Data Management",
+        "index": 4,
+        "color": "#01bfad"
+      }
+    ],
+    "rings": [
+      {
+        "index": 0,
+        "name": "ADOPT",
+        "label": "Adopt",
+        "radius": 100
+      },
+      {
+        "index": 1,
+        "name": "TRAIL",
+        "label": "Trail",
+        "radius": 190
+      },
+      {
+        "index": 2,
+        "name": "ASSESS",
+        "label": "Assess",
+        "radius": 280
+      },
+      {
+        "index": 3,
+        "name": "HOLD",
+        "label": "Hold",
+        "radius": 350
+      }
+    ]
+  }
+}
