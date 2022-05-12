@@ -18,11 +18,15 @@
 
 </script>
 
-<div class="masonry p-0" style="--masonry-width: 250px;--masonry-gap: 2px;--masonry-columns: 2;">
+<div class="masonry p-0"
+     style="
+      --masonry-width: 250px;
+      --masonry-gap: 2px;
+      --masonry-columns: 1;">
     {#each sections as section , i}
         <div class="box mb-00">
         <h3 style="color: {section.color}">{section.label}</h3>
-            <div class="masonry" style="--masonry-width: 25px;--masonry-gap: 2px;--masonry-columns: 2;">
+            <div class="masonry" style="--masonry-width: 25px;--masonry-gap: 2px;--masonry-columns: 1;">
             {#each rings as ring, j}
                 <div class="box mr-0">
                     <h4 class="px-none">{ring.label}</h4>
