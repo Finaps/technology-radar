@@ -4,10 +4,12 @@
 
     export let entries;
     export let config;
+
+    let date = new Date();
 </script>
 
-<div class="flex-grow sidebar-r sidebar-w-2 gap-0"
-     style="--sidebar-width: 750px; --sidebar-content: 30%">
+<div class="flex-grow sidebar-l sidebar-w-2 gap-0"
+     style="--sidebar-width: 450px; --sidebar-content: 30%">
     <section class="sidebar p-0">
         <RadarLegend {entries} {config} />
     </section>

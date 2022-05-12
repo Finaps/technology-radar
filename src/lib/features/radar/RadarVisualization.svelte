@@ -124,12 +124,13 @@
             .append('svg')
             .attr('width', width + margin.left + margin.right)
             .attr('height', height + margin.top + margin.bottom)
-            .attr("viewBox", [-width / 2, -height / 2, width, height]);
+            .attr("viewBox", [-width / 2, -height / 2, width, height])
+            .attr("style","position: sticky; top: 56px;");
 
 
         // create Radar
         const radar = svg.append("g")
-            .attr("class","")
+            // .attr("class","")
             // .attr("transform",  translate(width / 2, height / 2) )
 
         // Draw grid
@@ -214,3 +215,10 @@
 </script>
 
 <div class="p-0" bind:this={vis} ></div>
+
+<style>
+    radar-visualisation{
+        position: sticky;
+        top: 56px;
+    }
+</style>
