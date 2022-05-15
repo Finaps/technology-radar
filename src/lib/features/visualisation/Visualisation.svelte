@@ -4,9 +4,10 @@
     import {pie, arc} from 'd3-shape';
     import {bounded_ring, random_between, normal_between} from "../../helpers/bounding";
     import {sort, map} from "d3-array";
-    import {cartesian, polar} from "../../helpers/geometry";
+    import {cartesian, polar} from "$lib/helpers/geometry";
     import {forceSimulation, forceCollide} from 'd3-force';
-    import {highlightStore} from "./radar.store"
+    import {highlightStore,highlightEntry, unHighlightEntry,selectEntry} from "$lib/features/radar/radar.store";
+    import {blipActionStore} from "./visualisation.store";
 
     let vis; // binding with div for visualization
 
@@ -27,28 +28,29 @@
     // Radar rings and sections
     const rings = config.rings;
     const sections = config.sections;
-    $: $highlightStore, toggle();
+    $: $blipActionStore, blipAction();
 
-    function toggle (){
-        const id = $highlightStore.entry;
-        const color = $highlightStore.highlightColor;
+    function blipAction(){
+        if ($blipActionStore.entryIndex > -1){
+            const entry = entries[$blipActionStore.entryIndex];
+            const color = entry.color;
 
-        const blip = select(vis).select("#blip-" + id);
-        const circle = blip.select("circle");
-        const text = blip.select("text");
+            const blip = select(vis).select("#blip-" + entry.id);
+            const circle = blip.select("circle");
+            const text = blip.select("text");
 
-        if($highlightStore.highlighted){
-            circle.attr("stroke", color)
-            circle.attr("fill","#fff")
+            if($blipActionStore.entryHighlight){
+                circle.attr("stroke", color)
+                circle.attr("fill","#fff")
 
-            text.attr("fill", color)
-        } else {
-            circle.attr("stroke", null)
-            circle.attr("fill",color)
+                text.attr("fill", color)
+            } else {
+                circle.attr("stroke", null)
+                circle.attr("fill",color)
 
-            text.attr("fill", "#fff")
+                text.attr("fill", "#fff")
+            }
         }
-
     }
 
     // Radar sections and rings
@@ -59,7 +61,6 @@
         .startAngle(function (d) {return d.startAngle + Math.PI/2})
         .endAngle(function(d) {return d.endAngle + Math.PI/2});
 
-    // console.log(arcs)
     onMount(() => {
         draw();
         // window.addEventListener('resize', draw);
@@ -178,10 +179,13 @@
                         return translate(b.x,b.y);
                     })
                     .on("mouseover", function (event, d) {
-                        highlightStore.highlight(d.id, d.color)
+                        highlightEntry(d.id);
                     })
                     .on("mouseout", function (event, d) {
-                        highlightStore.unHighlight(d.id,d.color)
+                        unHighlightEntry();
+                    })
+                    .on("click", function (event,d) {
+                        selectEntry(d.id)
                     });
 
         blip_elements.each( function (d) {

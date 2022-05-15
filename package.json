@@ -34,6 +34,7 @@
   "type": "module",
   "dependencies": {
     "@types/d3": "^7.1.0",
+    "cogwheel": "^2.1.0",
     "d3": "^7.4.0",
     "d3-array": "^3.1.6",
     "d3-force": "^3.0.0",

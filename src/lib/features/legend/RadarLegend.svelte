@@ -1,6 +1,5 @@
 <script>
-    import {highlightStore} from "./radar.store"
-    import RadarLegendEntry from "$lib/features/radar/RadarLegendEntry.svelte";
+    import RadarLegendEntry from "$lib/features/legend/RadarLegendEntry.svelte";
     export let config;
     export let entries;
 

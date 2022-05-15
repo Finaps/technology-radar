@@ -1,6 +1,6 @@
 <script>
-    import RadarVisualization from "$lib/features/radar/RadarVisualization.svelte";
-    import RadarLegend from "$lib/features/radar/RadarLegend.svelte";
+    import RadarVisualization from "$lib/features/visualisation/Visualisation.svelte";
+    import RadarLegend from "$lib/features/legend/RadarLegend.svelte";
 
     export let entries;
     export let config;
