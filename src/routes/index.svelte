@@ -40,6 +40,7 @@
     .radar-header{
         grid-row: 1;
         grid-column: 1 / -1;
+        border-bottom: 1px solid lightgray;
     }
 </style>
 

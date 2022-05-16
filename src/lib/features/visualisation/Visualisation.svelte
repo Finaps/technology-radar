@@ -126,7 +126,6 @@
             .attr('width', width + margin.left + margin.right)
             .attr('height', height + margin.top + margin.bottom)
             .attr("viewBox", [-width / 2, -height / 2, width, height])
-            .attr("style","position: sticky; top: 56px;")
             .attr("class","m-0");
 
 
@@ -219,11 +218,14 @@
     }
 </script>
 
-<div class="p-0" bind:this={vis} ></div>
+
+
+
+<div class="p-0 radar-visualisation" bind:this={vis} ></div>
 
 <style>
-    radar-visualisation{
+    .radar-visualisation{
         position: sticky;
-        top: 56px;
+        top: 0px;
     }
 </style>
