@@ -22,12 +22,25 @@
     <title>Finaps Technology Radar</title>
 </svelte:head>
 
+<div class="radar-layout">
+    <h1 class="radar-header p-0">Finaps Technology Radar {date.getFullYear()}</h1>
+    <Radar {entries} {config}/>
+</div>
 
-<h1 class="p-0">Finaps Technology Radar {date.getFullYear()}</h1>
+<style>
+    .radar-layout {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+        width: 100vw;
+        height: calc(100vh - env(safe-area-inset-bottom));
+        overflow: hidden;
+    }
 
-<Radar {entries} {config}/>
-
-
-
+    .radar-header{
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+</style>
 
 
