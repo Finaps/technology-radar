@@ -1,11 +1,13 @@
-<script lang="ts">
+<script>
     import {slide} from "svelte/transition";
     import {createLegendEntryStateStore} from './legend.store';
     import {highlightEntry, unHighlightEntry, selectEntry} from "$lib/features/radar/radar.store";
 
     export let entry;
+    let expanded;
+    let HTMLElement;
 
-    const legendEntryStateStore = createLegendEntryStateStore(entry);
+    let legendEntryStateStore = createLegendEntryStateStore(entry);
 
     function handleMouseOver() {
         highlightEntry(entry.id);
@@ -15,21 +17,28 @@
         unHighlightEntry();
     }
 
+    legendEntryStateStore.subscribe( value => {
+        if(value.expanded) HTMLElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    })
 
 </script>
-<div    id="legendEntry-{entry.id}"
-        class="radius-00">
-    <div class="px-000 radius-00"
-         style="background-color: {$legendEntryStateStore.headerBackgroundColor}; color: {$legendEntryStateStore.headerTextColor}"
+<div bind:this={HTMLElement} id="legendEntry-{entry.id}">
+    <div class="px-000"
+         style:background-color={$legendEntryStateStore.headerBackgroundColor}
+         style:color={$legendEntryStateStore.headerTextColor}
          on:mouseover={handleMouseOver}
          on:mouseout={handleMouseOut}
          on:click={() => selectEntry(entry.id) }>
         {entry.id}. {entry.name}
     </div>
     {#if $legendEntryStateStore.expanded}
-        <div    style="background-color: lightgray"
-                transition:slide>{entry.description}</div>
+        <div    class="p-00"
+                style:background-color="lightgray"
+                transition:slide>
+            <b>Description:</b>
+            <p>{entry.description}</p>
+        </div>
     {/if}
 </div>
-
-

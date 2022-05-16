@@ -6,7 +6,7 @@
     import {sort, map} from "d3-array";
     import {cartesian, polar} from "$lib/helpers/geometry";
     import {forceSimulation, forceCollide} from 'd3-force';
-    import {highlightStore,highlightEntry, unHighlightEntry,selectEntry} from "$lib/features/radar/radar.store";
+    import {highlightEntry, unHighlightEntry,selectEntry} from "$lib/features/radar/radar.store";
     import {blipActionStore} from "./visualisation.store";
 
     let vis; // binding with div for visualization
@@ -126,7 +126,8 @@
             .attr('width', width + margin.left + margin.right)
             .attr('height', height + margin.top + margin.bottom)
             .attr("viewBox", [-width / 2, -height / 2, width, height])
-            .attr("style","position: sticky; top: 56px;");
+            .attr("style","position: sticky; top: 56px;")
+            .attr("class","m-0");
 
 
         // create Radar
