@@ -23,7 +23,7 @@
     })
 </script>
 <div bind:this={HTMLElement}>
-    <div class="px-000"
+    <div class="px-00"
          style:background-color={($entryStateStore.isHighlighted) ? entry.color : "#fff" }
          style:color={($entryStateStore.isHighlighted) ? "#fff" :"#000"}
          on:mouseover={handleMouseOver}
