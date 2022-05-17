@@ -19,7 +19,7 @@
     }
 
     entrySelectedState.subscribe( isSelected =>{
-        if (isSelected) HTMLElement.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        if (isSelected && HTMLElement !== null) HTMLElement.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     })
 </script>
 <div bind:this={HTMLElement}>
