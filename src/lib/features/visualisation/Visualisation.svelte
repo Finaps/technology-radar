@@ -9,15 +9,29 @@
     import {highlightEntry, unHighlightEntry,selectEntry} from "$lib/features/radar/radar.store";
     import {blipActionStore} from "./visualisation.store";
 
-    let vis; // binding with div for visualization
+    let vis: HTMLElement; // binding with div for visualization
 
     export let entries;
 
     export let config;
 
+    // function convertRemToPixels(rem) {
+    //     return rem * parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+    // }
+
+    let elementHeight;
+
     // ViewBox dimensions
     const width = 700;
     const height = 700;
+
+    // const padding = {
+    //     top: convertRemToPixels(1),
+    //     bottom: convertRemToPixels(1),
+    //     left: 12,
+    //     right: 12
+    // }
+
     const margin = {
         top: 20,
         right: 20,
@@ -28,6 +42,7 @@
     // Radar rings and sections
     const rings = config.rings;
     const sections = config.sections;
+
     $: $blipActionStore, blipAction();
 
     function blipAction(){
@@ -63,7 +78,6 @@
 
     onMount(() => {
         draw();
-        // window.addEventListener('resize', draw);
     })
 
     function draw(): void {
@@ -123,16 +137,14 @@
         // create svg and create a group inside that is moved by means of margin
         const svg = select(vis)
             .append('svg')
-            .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom)
+            .attr('width', width )
+            .attr('height', elementHeight )
             .attr("viewBox", [-width / 2, -height / 2, width, height])
-            .attr("class","m-0");
+            .attr("style", "display: block; margin: auto 0;");
 
 
         // create Radar
         const radar = svg.append("g")
-            // .attr("class","")
-            // .attr("transform",  translate(width / 2, height / 2) )
 
         // Draw grid
         const grid = radar.append("g")
@@ -221,11 +233,11 @@
 
 
 
-<div class="p-0 radar-visualisation" bind:this={vis} ></div>
+<div bind:clientHeight={elementHeight} class="radar-visualisation-wrapper" bind:this={vis} ></div>
 
 <style>
-    .radar-visualisation{
-        position: sticky;
-        top: 0px;
+    .radar-visualisation-wrapper{
+        display: flex;
+        height: 100%;
     }
 </style>

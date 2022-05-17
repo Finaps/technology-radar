@@ -1,30 +1,29 @@
-<script>
+<script lang="ts">
     import RadarVisualization from "$lib/features/visualisation/Visualisation.svelte";
     import RadarLegend from "$lib/features/legend/RadarLegend.svelte";
 
     export let entries;
     export let config;
-
-    let w;
-
-    let date = new Date();
 </script>
 
-<svelte:window bind:outerHeight={w}/>
-
-<div class="flex-grow sidebar-l sidebar-w-2 radar-content gap-0"
-     style="--sidebar-width: 450px; --sidebar-content: 30%">
-    <section class="sidebar p-0">
-        <RadarLegend {entries} {config} />
-    </section>
-    <div>
-        <RadarVisualization {entries} {config} />
-    </div>
-
+<div class="radar-legend">
+    <RadarLegend {entries} {config}/>
+</div>
+<div class="px-0 py-2 radar-visualisation">
+    <RadarVisualization {entries} {config}/>
 </div>
 
+
+
 <style>
-    .radar-content{
+    .radar-legend {
+        grid-row: 2;
+        grid-column: 1;
+        overflow-y: auto;
+        border-right: 1px solid lightgray;
+    }
+
+    .radar-visualisation {
         grid-row: 2;
         grid-column: 2;
         overflow-y: auto;
