@@ -31,7 +31,7 @@
     .radar-layout {
         display: grid;
         grid-template-rows: auto 1fr auto;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 33% 2fr;
         width: 100vw;
         height: calc(100vh - env(safe-area-inset-bottom));
         overflow: hidden;
