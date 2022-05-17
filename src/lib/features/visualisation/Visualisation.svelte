@@ -20,6 +20,9 @@
     // }
 
     let elementHeight;
+    let clientWidth;
+
+    let elementWidth = Math.min(clientWidth, elementHeight);
 
     // ViewBox dimensions
     const width = 700;
@@ -137,10 +140,10 @@
         // create svg and create a group inside that is moved by means of margin
         const svg = select(vis)
             .append('svg')
-            .attr('width', width )
+            .attr('width', elementWidth )
             .attr('height', elementHeight )
             .attr("viewBox", [-width / 2, -height / 2, width, height])
-            .attr("style", "display: block; margin: auto 0;");
+            .attr("style", "display: block; margin: auto 1rem;");
 
 
         // create Radar
@@ -179,8 +182,7 @@
         }
 
         // Draw Blips
-        const rink = radar.append("g")
-            .attr("id","rink")
+        const rink = radar.attr("id","rink")
         const blip_elements = rink.selectAll(".blip")
             .data(blips)
             .enter()
@@ -233,7 +235,7 @@
 
 
 
-<div bind:clientHeight={elementHeight} class="radar-visualisation-wrapper" bind:this={vis} ></div>
+<div bind:clientHeight={elementHeight} bind:clientWidth={clientWidth} class="radar-visualisation-wrapper" bind:this={vis} ></div>
 
 <style>
     .radar-visualisation-wrapper{
