@@ -1,5 +1,5 @@
 <header>
-    <h1 class="p-0">Finaps Technology Radar</h1>
+    <h1 class="p-0"><a href ="/" style:text-decoration="none">Finaps Technology Radar</a></h1>
 </header>
 
 <style>
@@ -7,5 +7,6 @@
         grid-row: 1;
         grid-column: 1 / -1;
         border-bottom: 1px solid lightgray;
+        text-underline: none;
     }
 </style>

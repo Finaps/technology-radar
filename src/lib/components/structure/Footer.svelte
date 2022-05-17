@@ -1,6 +1,7 @@
 <footer class="w-full | py-000 px-00 | text-right">
-    <a href="/about" class="ml-000">Finaps Technology Radar</a> v0.5.0. Made by
-    <a href="https://finaps.nl">Finaps</a>
+    <b>
+        <a href="/about/" class="ml-000" style:text-decoration="none">Finaps Technology Radar</a>
+    </b>v0.5.0. Made by<a href="https://finaps.nl">Finaps</a>
 </footer>
 
 <style>
