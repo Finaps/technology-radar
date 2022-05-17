@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+    import {onDestroy, onMount} from 'svelte';
     import {select} from 'd3-selection'
     import {pie, arc} from 'd3-shape';
     import {bounded_ring, random_between, normal_between} from "../../helpers/bounding";
@@ -15,10 +15,6 @@
 
     export let config;
 
-    // function convertRemToPixels(rem) {
-    //     return rem * parseFloat(window.getComputedStyle(document.documentElement).fontSize);
-    // }
-
     let elementHeight;
     let clientWidth;
 
@@ -27,13 +23,6 @@
     // ViewBox dimensions
     const width = 700;
     const height = 700;
-
-    // const padding = {
-    //     top: convertRemToPixels(1),
-    //     bottom: convertRemToPixels(1),
-    //     left: 12,
-    //     right: 12
-    // }
 
     const margin = {
         top: 20,
@@ -84,8 +73,6 @@
     })
 
     function draw(): void {
-
-        select(vis).html(null);
 
         function translate(x, y) {
             return "translate(" + x + "," + y + ")";
