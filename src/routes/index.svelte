@@ -1,6 +1,8 @@
 <script>
     import Radar from "$lib/features/radar/Radar.svelte";
     import input_data from "$lib/data/techRadarEntriesMock.json";
+    import Footer from "$lib/components/structure/Footer.svelte";
+    import Header from "$lib/components/structure/Header.svelte";
 
     const config = input_data.config;
 
@@ -16,16 +18,13 @@
 
 </script>
 
-<svelte:head>
-    <title>Finaps Technology Radar</title>
-</svelte:head>
-
 <div class="radar-layout">
-    <header>
-        <h1 class="p-0">Finaps Technology Radar</h1>
-    </header>
+    <Header/>
     <Radar {entries} {config}/>
+    <Footer/>
 </div>
+
+
 
 <style>
     .radar-layout {
@@ -35,12 +34,6 @@
         width: 100vw;
         height: calc(100vh - env(safe-area-inset-bottom));
         overflow: hidden;
-    }
-
-    .radar-layout > header{
-        grid-row: 1;
-        grid-column: 1 / -1;
-        border-bottom: 1px solid lightgray;
     }
 </style>
 
