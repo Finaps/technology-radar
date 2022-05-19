@@ -1,6 +1,6 @@
 <script>
     import Radar from "$lib/features/radar/Radar.svelte";
-    import input_data from "$lib/data/techRadarEntriesMock.json";
+    import input_data from "$lib/data/techRadarEntries.json";
     import Footer from "$lib/components/structure/Footer.svelte";
     import Header from "$lib/components/structure/Header.svelte";
 
@@ -30,7 +30,7 @@
     .radar-layout {
         display: grid;
         grid-template-rows: auto 1fr auto;
-        grid-template-columns: 33% 2fr;
+        grid-template-columns: min(33%,350px) 2fr;
         width: 100vw;
         height: calc(100vh - env(safe-area-inset-bottom));
         overflow: hidden;
