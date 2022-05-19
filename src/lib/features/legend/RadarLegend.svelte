@@ -27,12 +27,14 @@
             </h3>
             <div class="mb-0">
                 {#each rings as ring, j}
-                    <div>
-                        <h4 class="px-000">{ring.label}</h4>
-                        {#each segmented[i][j] as entry}
-                            <RadarLegendEntry {entry}/>
-                        {/each  }
-                    </div>
+                    {#if segmented[i][j].length > 0}
+                        <div>
+                            <h4 class="px-000">{ring.label}</h4>
+                            {#each segmented[i][j] as entry}
+                                <RadarLegendEntry {entry}/>
+                            {/each   }
+                        </div>
+                    {/if}
                 {/each}
             </div>
         </div>

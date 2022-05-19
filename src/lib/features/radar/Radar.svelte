@@ -6,24 +6,24 @@
     export let config;
 </script>
 
-<div class="radar-legend">
+<div class="radar-legend-view">
     <RadarLegend {entries} {config}/>
 </div>
-<div class="px-0 py-2 radar-visualisation">
+<div class="px-0 py-2 radar-visualisation-view">
     <RadarVisualization {entries} {config}/>
 </div>
 
 
 
 <style>
-    .radar-legend {
+    .radar-legend-view {
         grid-row: 2;
         grid-column: 1;
         overflow-y: auto;
         border-right: 1px solid lightgray;
     }
 
-    .radar-visualisation {
+    .radar-visualisation-view {
         grid-row: 2;
         grid-column: 2;
         overflow-y: auto;
