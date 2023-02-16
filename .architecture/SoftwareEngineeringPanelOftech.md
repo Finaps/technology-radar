@@ -20,7 +20,7 @@ aid Finaps in solidifying its technology choices and to guide developers to make
 technology choice. 
 
 A secondary function of this panel is to have a place withing the software engineering domain, where we share 
-knowledge about certain topics, and/or comparison. We can even record comparitive pieces, and show where 
+knowledge about certain topics, and/or comparison. We can even record comparative pieces, and show where 
 each mentioned technology stand in the radar. This benefits us in that we not only have what you must choose, but why.
 
 ## Output
