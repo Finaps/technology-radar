@@ -24,7 +24,24 @@ _Give a summary of the functions the software would perform and the features to 
 
 ## 2. Functional Requirements
 
-_List the design requirements, graphics requirements, operating system requirements, and constraints of the product._
+Design requirements:
+- The tool must allow adding new blips the radar
+- The tool must allow editing blips from the radar
+- The tool must allow removing blips from the radar
+- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant)
+- The tool must show particular information of each individual blip
+- The tool must show a blip's changes through the radar over time
+- The tool must save a blip's progress through time and its changes
+
+Graphic requirements:
+- The tool must show clearly the position of each blip on the radar
+- The tool must show clearly the boudries between each quadrant and each level of adoption
+- The tool must be color coded to easely recognize blips that are and are not gropued in the same categories
+- The tool could show how close or far a blip is to its neighboring levels of adoption. *E.G. If a blip is closer to the "Asses" level of adoption than other blip, it acctually means that the technology is closer to being in the "Asses" level than the other blip.*
+
+Product constraints:
+- The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
+- The tool should not be taken as a market analysis
 
 ## 3. External Interface Requirements
 
