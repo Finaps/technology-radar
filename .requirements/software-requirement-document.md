@@ -5,7 +5,7 @@ This document describes in detail the concept, purpose, requirements and general
 ### 1.1 Product scope
 
 Goal:
-- To track and document relevant technologies/techniques in a way that reflects decisions made around them based on previous experience and their status in the current technology landscape of Finaps.
+- To track and document tha status of relevant technologies/techniques used in software development in relation with Finaps' current technology landscape.
 
 Benefits:
 - Provides a platform to communicate lessons learned, good practices and experiences.
