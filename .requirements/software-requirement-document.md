@@ -32,6 +32,13 @@ _List the design requirements, graphics requirements, operating system requireme
 
 _Describe the logic behind the interactions between the users and the software (screen layouts, style guides, etc)._
 
+The tool uses three main interfaces:
+1. **The full radar view**, where users can interact with each individual blip by hovering them, revealing the specific technology the blis is referencing. Each individual radar blip, serves also as a link to a **blip page**
+2. **Blip details page**, where more detail about the blip is shown, such as the reason as to why it has been moved to where it is, or a biref description of the technology/techinqe. Each blip details page has a reference to it's **history page**. 
+3. **Blip history page**, where a "map" of all changes through time the specific blip, as well as a small description for each change and the date it happened.
+
+The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page.
+
 ### 3.2 Hardware interface requirements
 
 _List the supported devices the software is intended to run on, the network requirements, and the communication protocols to be used._
