@@ -36,9 +36,9 @@ Design requirements:
 
 Graphic requirements:
 - The tool must show clearly the position of each blip on the radar
-- The tool must show clearly the boudries between each quadrant and each level of adoption
-- The tool must be color coded to easely recognize blips that are and are not gropued in the same categories
-- The tool could show how close or far a blip is to its neighboring levels of adoption. *E.G. If a blip is closer to the "Asses" level of adoption than other blip, it acctually means that the technology is closer to being in the "Asses" level than the other blip.*
+- The tool must show clearly the boundaries between each quadrant and each level of adoption
+- The tool must be color coded to easily recognize blips that are and are not grouped in the same categories
+- The tool could show how close or far a blip is to its neighboring levels of adoption. *E.G. If a blip is closer to the "Asses" level of adoption than other blip, it actually means that the technology is closer to being in the "Asses" level than the other blip.*
 
 Product constraints:
 - The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
