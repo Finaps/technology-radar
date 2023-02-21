@@ -16,6 +16,7 @@ Objectives:
 - To display Finaps' current technology context and its evolution through time.
 - To serve as a guide to Finaps engineers when selecting technologies for new projects.
 - To serve as a document on which to make technology-based decisions and investments.
+- To serve as a tool for the marketing team to show externally what Finaps can do
 
 
 ### 1.2 Product value
@@ -29,10 +30,14 @@ For Finaps management:
 - Gives a visual panorama view of the current state of interesting and current technologies in comparison to Finaps' use and experience with them.
 - Provides help and grounds to make business decisions related to technology used.
 
+For Finaps marketing team:
+- Provides a tool to show externally what Finaps can do
+- Provides material for potential marketing content
+
 
 ### 1.3 Intended audience
 
-Finaps management, Software Engineering Panel of Tech members, and all Finaps engineers.
+Finaps management, Software Engineering Panel of Tech members, Finaps marketing team, and all Finaps engineers.
 
 ### 1.4 Intended use
 
