@@ -25,6 +25,7 @@ _Give a summary of the functions the software would perform and the features to 
 ## 2. Functional Requirements
 
 Design requirements:
+- The tool must show all blips in the radar
 - The tool must allow adding new blips the radar
 - The tool must allow editing blips from the radar
 - The tool must allow removing blips from the radar
