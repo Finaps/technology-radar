@@ -26,13 +26,14 @@ _Give a summary of the functions the software would perform and the features to 
 
 Design requirements:
 - The tool must show all blips in the radar
-- The tool must allow adding new blips the radar
-- The tool must allow editing blips from the radar
-- The tool must allow removing blips from the radar
-- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant)
 - The tool must show particular information of each individual blip
 - The tool must show a blip's changes through the radar over time
 - The tool must save a blip's progress through time and its changes
+- The tool must allow a user to login to the "back office"
+- The tool must allow adding new blips the radar (Back office)
+- The tool must allow editing blips from the radar (Back office)
+- The tool must allow removing blips from the radar (Back office)
+- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant) (Back office)
 
 Graphic requirements:
 - The tool must show clearly the position of each blip on the radar
@@ -43,6 +44,7 @@ Graphic requirements:
 Product constraints:
 - The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
 - The tool should not be taken as a market analysis
+- The back office functionality of the tool must only be accesible by members of the Software Engineering Panel of Tehc
 
 ## 3. External Interface Requirements
 
