@@ -44,7 +44,7 @@ Graphic requirements:
 Product constraints:
 - The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
 - The tool should not be taken as a market analysis
-- The back office functionality of the tool must only be accesible by members of the Software Engineering Panel of Tehc
+- The back office functionality of the tool must only be accesible by members of the Software Engineering Panel of Tech
 
 ## 3. External Interface Requirements
 
