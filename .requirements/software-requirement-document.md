@@ -54,12 +54,11 @@ The tool will be hosted remotely and will use HTTP communication protocol to mov
 
 ### 3.3 Software interface requirements
 
-_Include the connections between your product and other software components, including frontend/backend framework, libraries, etc._
 The tool will be split into a front end (displaying the information on the radar itself and on the individual blips, as well as a back office front end containing interfaces to perform CRUD opperations), and a back end (controlling the CRUD opperations for the different individual blips, as well as managing sessions and database connections).
 
 ### 3.4 Communication interface requirements
 
-_List any requirements for the communication programs your product will use, like emails or embedded forms._
+The tool will use embeded forms in the front end to send information to and from de database through the back end. This applies for the CRUD opperations for the blips. 
 
 ## 4. Non-functional Requirements
 
