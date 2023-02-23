@@ -31,18 +31,17 @@ _List the design requirements, graphics requirements, operating system requireme
 ### 3.1 User interface requirements
 
 The tool uses the following interfaces for the radar:
-1. **The full radar view**, where users can interact with each individual blip by hovering them, revealing the specific technology the blis is referencing. Each individual radar blip, serves also as a link to a **blip page**. The radar is in full display with the appropriate legend to clear up any iconography used on this interface.
+1. **The full radar view**, where users can interact with each individual blip by hovering them, revealing the specific technology the blip is referencing. Each individual radar blip, serves also as a link to a **blip details page**. The radar is in full display with the appropriate legend to clear up any iconography used on this interface.
 2. **Blip details page**, where more detail about the blip is shown, such as the reason as to why it has been moved to where it is, or a biref description of the technology/techinqe. Each blip details page has a reference to it's **history page**. 
 3. **Blip history page**, where a "map" of all changes through time the specific blip, as well as a small description for each change and the date it happened.
 
 The tool uses the following interfaces for the "back office" section: 
-1. **Login page** to authenticate Software Engineer Panel of Thech members to the "back office" section of the radar.
+1. **Login page** to authenticate Software Engineer Panel of Tech members to the "back office" section of the radar.
 2. **See all blips page** A page where all blips are listed, each with relevant information about them and action buttons that lead to the **edit blip** page and the delete action.
 3. **Add blip page**, where there is a form that the users (Software Engineering Panel of Tech) fill to add a new blip to the radar.
 4. **Edit blip page**, where there is a form with the current information about the blip and the possibility to change each field in order tu update its values in the database.
 5. **Delete blip modal**, where a model pops up requiering user verification to delete a specific blip.
-
-
+6. **Move blip**, where the user is promped to provide the new level of adoption the blip will be moved to and a description to replace the current displayed one.
 
 The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page.
 
@@ -58,7 +57,7 @@ The tool will be split into a front end (displaying the information on the radar
 
 ### 3.4 Communication interface requirements
 
-The tool will use embeded forms in the front end to send information to and from de database through the back end. This applies for the CRUD opperations for the blips. 
+The tool will use embeded forms in the front end to gather and send information to and from de database through the back end. This applies for the CRUD opperations for the blips. 
 
 ## 4. Non-functional Requirements
 
