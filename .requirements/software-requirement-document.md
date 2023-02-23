@@ -22,7 +22,7 @@ Objectives:
 ### 1.2 Product value
 
 For Finaps engineers:
-- Provides aid when selecting a technology for a project based on previous experience and the opinions of the Software Engineering Panel of Tech.
+- Provides aid when selecting a technology for a project based on previous experience and the opinions of the Finaps Panel of Tech.
 - Provides a platform where knowledge about specific technologies can be shared.
 
 For Finaps management:
@@ -37,15 +37,15 @@ For Finaps marketing team:
 
 ### 1.3 Intended audience
 
-Finaps management, Software Engineering Panel of Tech members, Finaps marketing team, and all Finaps engineers.
+Finaps management, Finaps Panel of Tech members, Finaps marketing team, and all Finaps engineers.
 
 ### 1.4 Intended use
 
-This product is intended to work as the updated output of the Software Engineering Panel of Tech meetings and to be used as a tool and reference by all Finaps engineers. It is also intended to aid the strategical and tactical decision-making by Finaps management.
+This product is intended to work as the updated output of the Finaps Panel of Tech meetings and to be used as a tool and reference by all Finaps engineers. It is also intended to aid the strategical and tactical decision-making by Finaps management.
 
 ### 1.5 General description
 
-The Technology Radar is a tool that graphically shows the input made by the Software Engineering Panel of Tech in regards of Finaps' technology landscape. It will place individual radar blips into four different quadrants (languages & frameworks, infrastructure, datastores, and data management) and four different levels of adoption (Adopt, Trial, Assess and Hold). Each radar blip will contain additional information about itself, and can contain references to external literature and documentation, as well as its evolution through the radar. A single blip will be a part of a single quadrant and have a single level of adoption determined by the Software Engineering Panel of Tech.
+The Technology Radar is a tool that graphically shows the input made by the Finaps Panel of Tech in regards of Finaps' technology landscape. It will place individual radar blips into four different quadrants (languages & frameworks, infrastructure, datastores, and data management) and four different levels of adoption (Adopt, Trial, Assess and Hold). Each radar blip will contain additional information about itself, and can contain references to external literature and documentation, as well as its evolution through the radar. A single blip will be a part of a single quadrant and have a single level of adoption determined by the Finaps Panel of Tech.
 
 Levels of adoption:
 - **Adopt**: Blips that are proven to work and trusted by the team to serve our purpose. Technologies and techniques that are suggested to seriously consider. Mature for use.
