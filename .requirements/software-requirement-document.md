@@ -22,7 +22,7 @@ Objectives:
 ### 1.2 Product value
 
 For Finaps engineers:
-- Provides aid when selecting a technology for a project based on previous experience and the opinions of the Finaps Panel of Tech.
+- Provides aid when selecting a technology for a project based on previous experience and the opinions of the Software Engineering Panel of Tech.
 - Provides a platform where knowledge about specific technologies can be shared.
 
 For Finaps management:
@@ -51,13 +51,13 @@ Levels of adoption:
 - **Adopt**: Blips that are proven to work and trusted by the team to serve our purpose. Technologies and techniques that are suggested to seriously consider. Mature for use.
 - **Trial**: Blips that have worked in the past and are known to work well for us but are not entirely proven. Not quite ready to be adopted but we have knowledge and experience with them that can be shared.
 - **Asses**: Blips that are showing potential and we think are worth looking into. 
-- **Hold**: Blips that are fount not to be worth investing our time and effort. Technologies that are not recommended to work with even though they might be accepted in an industry level.
+- **Hold**: Blips that are found not to be worth investing our time and effort. Technologies that are not recommended to work with even though they might be accepted at an industry level.
 
-Radar quadrants:
-- **Languages & frameworks**
-- **Infrastructure**
-- **Datastores**
-- **Data management**
+Radar quadrants (subject to change):
+- **Languages & frameworks**: Programming languages and frameworks that can be used to develop a software development project, such as C#, TypeScript or Next.js.
+- **Infrastructure**: Technologies  and/or techniques that provide infrastructure to a software development project, such as Docker or Kubernetes. 
+- **Datastores**: Technologies  and/or techniques used to store data, such as Database Management Systems, Data Warehouses, remote file storage like PostgreSQL or Oracle DB. 
+- **Data management**: Technologies and/or techinques used to manipulate and manage data, such as Apache Kafka or AWS Data Pipeline.
 
 ## 2. Functional Requirements
 
