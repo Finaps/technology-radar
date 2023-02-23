@@ -48,6 +48,7 @@ Second alternative to the back-office section interfaces:
 4. **Edit blip page**, where there is a form with the current information about the blip and the possibility to change each field in order tu update its values in the database.
 5. **Delete blip modal**, where a model pops up requiering user verification to delete a specific blip.
 6. **Move blip**, where the user is promped to provide the new level of adoption the blip will be moved to and a description to replace the current displayed one.
+7. **Change requests page**, where members of the Finaps Panel of Tech would see the different radar change requests and look at the individualy to either accept, or reject them. 
 
 The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to suppotring pages such as the **request changes** page.
 
@@ -55,15 +56,19 @@ Both the blip details and blip history page could work as modals to the main rad
 
 ### 3.2 Hardware interface requirements
 
-The tool will be hosted remotely and will use HTTP communication protocol to move information form the back end to the end users, and vice versa.
+The tool will be hosted remotely (specifics are yet to be determined) and will use HTTP communication protocol to move information form the back end to the end users, and vice versa.
 
 ### 3.3 Software interface requirements
 
-The tool will be split into a front end (displaying the information on the radar itself and on the individual blips, as well as a back office front end containing interfaces to perform CRUD opperations), and a back end (controlling the CRUD opperations for the different individual blips, as well as managing sessions and database connections).
+The tool could be split into a radar view (displaying the information on the radar itself and on the individual blips, as well as a back office front end containing interfaces to perform CRUD opperations), and a back-office (controlling the CRUD opperations for the different individual blips, as well as change requests from Finaps engineers being from Pull Requests, or from the back-office request system).
+
+
 
 ### 3.4 Communication interface requirements
 
-The tool will use embeded forms in the front end to gather and send information to and from de database through the back end. This applies for the CRUD opperations for the blips. 
+For the first back-office alternative, the communication would be using a git repository and Pull Requests filled by Finaps engineers requesting for changes, and members of the Finaps Panel of Tech reviewing those PRs and giving feedback on them (approving them, rejecting them, or askin for forther clarification if needed). Once changes were accepted, they can be implementend into the radar. 
+
+For the seccond back-office alternative, the tool would use embeded forms in the front end to gather and send information to and from de database through the back end. This applies for the CRUD opperations for the blips, as well as embeded forms for Finaps engineers to submit change requests for the radar. These requests could be later revised and aproved or rejected form the back-office application itself and changes would be later implemented if aproved.
 
 ## 4. Non-functional Requirements
 
