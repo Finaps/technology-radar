@@ -25,19 +25,20 @@ _Give a summary of the functions the software would perform and the features to 
 ## 2. Functional Requirements
 
 Design requirements:
-- The tool must allow Fianps engineers to nevegate to the radar page and read its contents
-- The tool must show all blips in the radar
-- The tool must show particular information of each individual blip
-- The tool must show a blip's changes through the radar over time
-- The tool must save a blip's progress through time and its changes
-- The tool must allow Finaps engieneers to request changes to the radar (such as adding a new blip, or providing insight for the modification of the position of a current blip on the radar), giving the blip to change, the changes, and a reason for them
-- The tool must allow a user to login to the "back office"
-- The tool must allow adding new blips the radar (Back office)
-- The tool must allow editing blips from the radar (Back office)
-- The tool must allow removing blips from the radar (Back office)
-- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant) (Back office)
-- The tool must allow members of the Software Engineering Panel of Tech to review the change requests sent by engineers
-- The tool must allow members of the Softare Engineering Panel of Tech to reject or accept request change requests to the radar
+- The tool must allow Fianps engineers to nevegate to the radar page and read its contents (hosting environment and location of the tool is still to be determined).
+- The tool must show all blips in the radar.
+- The tool must show particular information of each individual blip when interacted with it.
+- The tool must show a blip's changes through the radar over time.
+- The tool must save a blip's progress through time and its changes.
+- The tool must allow Finaps engieneers to request changes to the radar (such as adding a new blip, or providing insight for the modification of the position of a current blip on the radar), giving the blip to change, the changes, and a reason for them.
+- The tool must allow a user to login to the "back office".
+- The tool must allow adding new blips the radar (Back office).
+- The tool must allow editing blips from the radar (Back office).
+- The tool must allow removing blips from the radar (Back office).
+- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant) (Back office).
+- The tool must allow members of the Finaps Panel of Tech to review the change requests sent by engineers.
+- The tool must allow members of the Finaps Panel of Tech to reject or accept request change requests to the radar.
+- The tool could allow Finaps marketing team to extract a "snapshot" of any current state of the radar to include in marketing campaings.
 
 Graphic requirements:
 - The tool must show clearly the position of each blip on the radar
@@ -47,8 +48,8 @@ Graphic requirements:
 
 Product constraints:
 - The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
-- The tool should not be taken as a market analysisß
-- The back office functionality of the tool must only be accesible by members of the Software Engineering Panel of Tech
+- The tool should not be taken as a market analysis
+- The back office functionality of the tool must only be accesible by members of the Finaps Panel of Tech
 
 ## 3. External Interface Requirements
 
