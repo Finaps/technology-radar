@@ -60,7 +60,7 @@ The tool will be hosted remotely (specifics are yet to be determined) and will u
 
 ### 3.3 Software interface requirements
 
-The tool could be split into a radar view (displaying the information on the radar itself and on the individual blips, as well as a back office front end containing interfaces to perform CRUD opperations), and a back-office (controlling the CRUD opperations for the different individual blips, as well as change requests from Finaps engineers being from Pull Requests, or from the back-office request system).
+The tool could be split into a radar view (displaying the information on the radar itself and on the individual blips), and a back-office (controlling the CRUD opperations for the different individual blips, as well as change requests from Finaps engineers being from Pull Requests, or from the back-office request system).
 
 
 
