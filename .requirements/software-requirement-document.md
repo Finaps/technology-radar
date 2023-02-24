@@ -61,7 +61,32 @@ Radar quadrants (subject to change):
 
 ## 2. Functional Requirements
 
-_List the design requirements, graphics requirements, operating system requirements, and constraints of the product._
+Design requirements:
+- The tool must allow Fianps engineers to nevegate to the radar page and read its contents (hosting environment and location of the tool is still to be determined).
+- The tool must show all blips in the radar.
+- The tool must show particular information of each individual blip when interacted with it.
+- The tool must show a blip's changes through the radar over time.
+- The tool must save a blip's progress through time and its changes.
+- The tool must allow Finaps engieneers to request changes to the radar (such as adding a new blip, or providing insight for the modification of the position of a current blip on the radar), giving the blip to change, the changes, and a reason for them.
+- The tool must allow a user to login to the "back office".
+- The tool must allow adding new blips the radar (Back office).
+- The tool must allow editing blips from the radar (Back office).
+- The tool must allow removing blips from the radar (Back office).
+- The tool must allow updating a blip's position on the radar (level of adoption and/or quadrant) (Back office).
+- The tool must allow members of the Finaps Panel of Tech to review the change requests sent by engineers.
+- The tool must allow members of the Finaps Panel of Tech to reject or accept request change requests to the radar.
+- The tool could allow Finaps marketing team to extract a "snapshot" of any current state of the radar to include in marketing campaings.
+
+Graphic requirements:
+- The tool must show clearly the position of each blip on the radar
+- The tool must show clearly the boundaries between each quadrant and each level of adoption
+- The tool must be color coded to easily recognize blips that are and are not grouped in the same categories
+- The tool could show how close or far a blip is to its neighboring levels of adoption. *E.G. If a blip is closer to the "Asses" level of adoption than other blip, it actually means that the technology is closer to being in the "Asses" level than the other blip.*
+
+Product constraints:
+- The tool should not be taken as an in-depth guide of the technologies presented, but as a reference point to make decisions.
+- The tool should not be taken as a market analysis
+- The back office functionality of the tool must only be accesible by members of the Finaps Panel of Tech
 
 ## 3. External Interface Requirements
 
