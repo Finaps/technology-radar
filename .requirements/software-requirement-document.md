@@ -114,35 +114,35 @@ _List any requirements for the communication programs your product will use, lik
 
 ## 4. Non-functional Requirements
 
-### 4.1 Security
-
-_Include any privacy and data protection regulations that should be adhered to._
-
-### 4.2 Capacity
+### 4.1 Functional suitability
 
 _Describe the current and future storage needs of your software._
 
-### 4.3 Compatibility
-
-_List the minimum hardware requirements for your software._
-
-### 4.4 Reliability
+### 4.2 Reliability
 
 _Calculate what the critical failure time of your product would be under normal usage._
 
-### 4.5 Scalability
+### 4.3 Operability
+
+_List the minimum hardware requirements for your software._
+
+### 4.4 Performance efficiency
 
 _Calculate the highest workloads under which your software will still perform as expected._
 
-### 4.6 Maintainability
+### 4.5 Security
 
-_Describe how continuous integration should be used to deploy features and bug fixes quickly._
+_Include any privacy and data protection regulations that should be adhered to._
 
-### 4.7 Usability
+### 4.6 Compatibility
 
 _Describe how easy it should be for end-users to use your software._
 
-### 4.8 Other
+### 4.7 Maintainability
+
+_Describe how continuous integration should be used to deploy features and bug fixes quickly._
+
+### 4.8 Transferability
 
 _List any additional non-functional requirements._
 
