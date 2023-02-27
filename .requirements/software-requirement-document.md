@@ -30,29 +30,11 @@ _List the design requirements, graphics requirements, operating system requireme
 
 ### 3.1 User interface requirements
 
-The tool uses the following interfaces for the radar:
-1. **The full radar view**, where users can interact with each individual blip by hovering them, revealing the specific technology the blip is referencing. Each individual radar blip serves also as a link to a **blip details page**. The radar is in full display with the appropriate legend to clear up any iconography used on this interface.
-2. **Blip details page**, where more detail about the blip is shown, such as the reason as to why it has been moved to where it is, or a brief description of the technology/technique. Each blip details page has a reference to it's **history page**. 
-3. **Blip history page**, where a "map" of all changes through time the specific blip has been through, as well as a small description for each change and the date it happened.
-4. **Request changes page**. This page would either take you to a git repository to submit a Pull Request with the changes a Finaps engineer would like to see on the radar, or to a form to fill out with the specification and reasons for the change, depending on the back-office solution selected from the alternatives listed below. The changes requested could range from the addition or deletion of a blip, to moving a blip to a new level of adoption. 
+For the radar view of the tool:
+The interfaces must allow the users to get the full view of the radar in its current state, as well as allowing them to interact with each radar blit to get more in-detail information about it, and its changes through history. The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to supporting pages such as the **request changes** page.Both the blip details and blip history page could work as modals or overlayed pages to the main radar page, keeping the radar visible to click and navigate through more radar blips.
 
-
-First alternative for the back-office section interfaces:
-1. Use a **git repository** of Markdown pages as a back-office, where additions, deletions, and modifications to blips are done with **Pull Requests**, and once accepted, can be added to the current version of the radar. 
-2. Pull Requests would be protected so that only members of the Finaps Panel of Tech could approve and merge them (or alternatively reject them).
-
-Second alternative to the back-office section interfaces: 
-1. **Login page** to authenticate Finaps Panel of Tech members to the back-office section of the radar tool.
-2. **See all blips page** A page where all blips are listed, each with relevant information about them and action buttons that lead to the **edit blip** page and the delete action.
-3. **Add blip page**, where there is a form that the users (Finaps Panel of Tech) fill to add a new blip to the radar.
-4. **Edit blip page**, where there is a form with the current information about the blip and the possibility to change each field in order to update its values in the database.
-5. **Delete blip modal**, where a model pops up requiring user verification to archive a specific blip.
-6. **Move blip**, where the user is prompted to provide the new level of adoption the blip will be moved to, and a description to replace the current one.
-7. **Change requests page**, where members of the Finaps Panel of Tech would see the different radar change requests and look at them individually to either accept or reject them. 
-
-The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to supporting pages such as the **request changes** page.
-
-Both the blip details and blip history page could work as modals or overlayed pages to the main radar page, keeping the radar visible to click and navigate through more radar blips.
+For the back office for the tool: 
+The tool should have interfaces that allow the users of the Finaps Panel of Tech to create, update, delete, and read information about the blips, as well as allowing them to accept/reject change requests from Finaps engineers.
 
 ### 3.2 Hardware interface requirements
 
@@ -66,9 +48,7 @@ The tool could be split into a radar view (displaying the information on the rad
 
 ### 3.4 Communication interface requirements
 
-For the first back-office alternative, communication would be done using a git repository and Pull Requests filled by Finaps engineers requesting for changes, and members of the Finaps Panel of Tech reviewing those PRs and giving feedback on them (approving them, rejecting them, or asking for further clarification if needed). Once changes were accepted, they can be implemented into the radar. 
-
-For the second back-office alternative, the tool would use embedded forms in the front end to gather and send information to and from de database through the back end. This applies for the CRUD operations for the blips, as well as embedded forms for Finaps engineers to submit change requests for the radar. These requests could be later revised and approved or rejected form the back-office application itself and changes would be later implemented if approved.
+_List any requirements for the communication programs your product will use, like emails or embedded forms._
 
 ## 4. Non-functional Requirements
 
