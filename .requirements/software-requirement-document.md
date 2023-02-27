@@ -92,15 +92,21 @@ Product constraints:
 
 ### 3.1 User interface requirements
 
-_Describe the logic behind the interactions between the users and the software (screen layouts, style guides, etc)._
+For the radar view of the tool:
+The interfaces must allow the users to get the full view of the radar in its current state, as well as allowing them to interact with each radar blip to get more in-detail information about it, and its changes through history. The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to supporting pages such as the **request changes** page. Both the blip details and blip history page could work as modals or overlayed pages to the main radar page, keeping the radar visible to click and navigate through more radar blips.
+
+For the back office for the tool: 
+The tool should have interfaces that allow the users of the Finaps Panel of Tech to create, update, delete, and read information about the blips, as well as allowing them to accept/reject change requests from Finaps engineers.
 
 ### 3.2 Hardware interface requirements
 
-_List the supported devices the software is intended to run on, the network requirements, and the communication protocols to be used._
+The tool will be hosted remotely (specifics are yet to be determined) and will use HTTP communication protocol to move information to and form the back end to the end users.
 
 ### 3.3 Software interface requirements
 
-_Include the connections between your product and other software components, including frontend/backend framework, libraries, etc._
+The tool could be split into a radar view (displaying the information on the radar itself and on the individual blips), and a back-office (controlling the CRUD operations for the different individual blips, as well as change requests from Finaps engineers, either from Pull Requests, or from the back-office request system, depending on which one is finally selected).
+
+
 
 ### 3.4 Communication interface requirements
 
