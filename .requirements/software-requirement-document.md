@@ -116,28 +116,27 @@ _List any requirements for the communication programs your product will use, lik
 
 ### 4.1 Functional suitability
 
-The Tech Radar should be able to provide and offer all functions that meet the stated objectives and goals. These functions must cover all specified tasks and objectives a user of the radar has (Functional completeness). All the functions must throw the expeced results (Functional correctness), and the functions must be able to accoplish the specified tasks and objectives (Functional appropriateness). All this should be accomplished by undesrtanding all potential user's needs and requirements. 
+The Tech Radar should be able to provide and offer all functions that meet the stated objectives and goals. These functions must cover all specified tasks and objectives a user of the radar has (Functional completeness). All the functions must throw the expected results (Functional correctness), and the functions must be able to accomplish the specified tasks and objectives (Functional appropriateness). All this should be accomplished by understanding all potential user's needs and requirements. 
 
 ### 4.2 Reliability
 
-The Tech Radar should be avaliable 99% of the time with a 1% of down time tolerance. (Subject to change)
+The Tech Radar should be available 99% of the time with a 1% of down time tolerance. (Subject to change)
 
 ### 4.3 Operability
 
-For users to have access to the tool, they must have a computer/tablet/smarthphone with internet connection and navigate to the Tech Radar on a compatible web brower (See section 4.6).
-
- The user interface should be visualy pleasing and intuitive enough for any user to perform the desired task without confusion. 
+- For users to have access to the tool, they must have a computer/tablet/smartphone with internet connection and navigate to the Tech Radar on a compatible web browser (See section 4.6).
+- The user interface should be visually pleasing and intuitive enough for any user to perform the desired task without confusion. 
 
 ### 4.4 Performance efficiency 
 
-Any system function should take less than one second to perform its task, so it feels as responsive and fast as possible for users. The tool sohuld have a limited amount of resources (blips) to be on the radar at any given version, to not clutter the view and understanding of the radar and to not impact performance in a negative way. (Subject to change)
+Any system function should take less than one second to perform its task, so it feels as responsive and fast as possible for users. The tool should have a limited number of resources (blips) on the radar at any given version, to not clutter the view and understanding of the radar and to not impact performance in a negative way. (Subject to change)
 
-Since the tool is not expected to recieve a lot of trafic most of the time, the tool should perform seamlessly with as much as 20 simultanious connections. (Subject to change)
+Since the tool is not expected to receive a lot of traffic most of the time, the tool should perform seamlessly with as much as 20 simultaneous connections. (Subject to change)
 
 ### 4.5 Security
 
-- The Tech Radar should not use any sensible information about Finaps internal opperations.
-- To access the back-office funcionality users need to be authenticated as members of the Finaps Panel of Tech, and must be authorized to use the back-office platform.
+- The Tech Radar should not contain any sensible information about Finaps internal operations.
+- To access the back-office functionality, users need to be authenticated as members of the Finaps Panel of Tech and must be authorized to use the back-office platform.
 - Data transactions and operations must guarantee data integrity.
 
 ### 4.6 Compatibility
@@ -150,13 +149,13 @@ The Tech Radar should be operational and usable in any of the following environm
 
 ### 4.7 Maintainability
 
-- The Tech Radar's content will be mantained by the Finaps Panel of Tech, giving updates to it according to the periodical meetings had by the team. s
-- All Finaps engineers will aslso be responsable of mantaining the radar by actively participating via the Change Requests feature at any time they consider necessary.
+- The Tech Radar's content will be maintained by the Finaps Panel of Tech, giving updates to it according to the periodical meetings had by the team.
+- All Finaps engineers will also be responsible of maintaining the radar by actively participating via the Change Requests feature at any time they consider necessary.
 
 
 ### 4.8 Transferability
 
-The Tech Radar should be able to adapted in the future for future hardware and software changes and/or environments, as well as it should be simple and easy to install/unininstall on new enviromnents.
+The Tech Radar should be able to adapted in the future for hardware and software changes ass well as new environments, and it should be simple and easy to install/uninstall on new environments.
 
 ## 5. Definitions and Acronyms
 
