@@ -116,35 +116,47 @@ _List any requirements for the communication programs your product will use, lik
 
 ### 4.1 Functional suitability
 
-_Describe the current and future storage needs of your software._
+The Tech Radar should be able to provide and offer all functions that meet the stated objectives and goals. These functions must cover all specified tasks and objectives a user of the radar has (Functional completeness). All the functions must throw the expeced results (Functional correctness), and the functions must be able to accoplish the specified tasks and objectives (Functional appropriateness). All this should be accomplished by undesrtanding all potential user's needs and requirements. 
 
 ### 4.2 Reliability
 
-_Calculate what the critical failure time of your product would be under normal usage._
+The Tech Radar should be avaliable 99% of the time with a 1% of down time tolerance. (Subject to change)
 
 ### 4.3 Operability
 
-_List the minimum hardware requirements for your software._
+For users to have access to the tool, they must have a computer/tablet/smarthphone with internet connection and navigate to the Tech Radar on a compatible web brower (See section 4.6).
 
-### 4.4 Performance efficiency
+ The user interface should be visualy pleasing and intuitive enough for any user to perform the desired task without confusion. 
 
-_Calculate the highest workloads under which your software will still perform as expected._
+### 4.4 Performance efficiency 
+
+Any system function should take less than one second to perform its task, so it feels as responsive and fast as possible for users. The tool sohuld have a limited amount of resources (blips) to be on the radar at any given version, to not clutter the view and understanding of the radar and to not impact performance in a negative way. (Subject to change)
+
+Since the tool is not expected to recieve a lot of trafic most of the time, the tool should perform seamlessly with as much as 20 simultanious connections. (Subject to change)
 
 ### 4.5 Security
 
-_Include any privacy and data protection regulations that should be adhered to._
+- The Tech Radar should not use any sensible information about Finaps internal opperations.
+- To access the back-office funcionality users need to be authenticated as members of the Finaps Panel of Tech, and must be authorized to use the back-office platform.
+- Data transactions and operations must guarantee data integrity.
 
 ### 4.6 Compatibility
 
-_Describe how easy it should be for end-users to use your software._
+The Tech Radar should be operational and usable in any of the following environments:
+- Any Chromium-based web browser (Google Chrome, Microsoft Edge, Brave, etc.)
+- Safari web browser
+- Mobile versions of Chromium-based web browsers
+- Safari mobile version
 
 ### 4.7 Maintainability
 
-_Describe how continuous integration should be used to deploy features and bug fixes quickly._
+- The Tech Radar's content will be mantained by the Finaps Panel of Tech, giving updates to it according to the periodical meetings had by the team. s
+- All Finaps engineers will aslso be responsable of mantaining the radar by actively participating via the Change Requests feature at any time they consider necessary.
+
 
 ### 4.8 Transferability
 
-_List any additional non-functional requirements._
+The Tech Radar should be able to adapted in the future for future hardware and software changes and/or environments, as well as it should be simple and easy to install/unininstall on new enviromnents.
 
 ## 5. Definitions and Acronyms
 
