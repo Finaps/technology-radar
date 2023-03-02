@@ -93,7 +93,9 @@ Product constraints:
 ### 3.1 User interface requirements
 
 For the radar view of the tool:
-The interfaces must allow the users to get the full view of the radar in its current state, as well as allowing them to interact with each radar blip to get more in-detail information about it, and its changes through history. The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to supporting pages such as the **request changes** page. Both the blip details and blip history page could work as modals or overlayed pages to the main radar page, keeping the radar visible to click and navigate through more radar blips.
+The interfaces must allow the users to get the full view of the radar in its current state, as well as allowing them to interact with each radar blip to get more in-detail information about it, and its changes through history. The full radar view serves mainly as a general overview of Finaps current technology landscape, allowing the users to observe the current state of the Tech radar as a whole. Each blip detail page gives the user much more context about each blip, and even more context is given with the blip history page, as well as including links to supporting pages such as the **request changes** page. Both the blip details and blip history page could work as modals or overlayed pages to the main radar page, keeping the radar visible to click and navigate through more radar blips. 
+
+In case the radar is accessed through a mobile device, the main radar view must still show the user all relevant information about the radar in a way that does not clutter the users view (*E.G. instead of showing the whole radar with all the blips, display a smaller radar with a button for each quadrant that takes the user to a list of all the blips on that quadrant*)
 
 For the back office for the tool: 
 The tool should have interfaces that allow the users of the Finaps Panel of Tech to create, update, delete, and read information about the blips, as well as allowing them to accept/reject change requests from Finaps engineers.
@@ -107,44 +109,56 @@ The tool will be hosted remotely (specifics are yet to be determined) and will u
 The tool could be split into a radar view (displaying the information on the radar itself and on the individual blips), and a back-office (controlling the CRUD operations for the different individual blips, as well as change requests from Finaps engineers, either from Pull Requests, or from the back-office request system, depending on which one is finally selected).
 
 
-
 ### 3.4 Communication interface requirements
 
 _List any requirements for the communication programs your product will use, like emails or embedded forms._
 
 ## 4. Non-functional Requirements
 
-### 4.1 Security
+### 4.1 Functional suitability
 
-_Include any privacy and data protection regulations that should be adhered to._
+The Tech Radar should be able to provide and offer all functions that meet the stated objectives and goals. These functions must cover all specified tasks and objectives a user of the radar has (Functional completeness). All the functions must throw the expected results (Functional correctness), and the functions must be able to accomplish the specified tasks and objectives (Functional appropriateness). All this should be accomplished by understanding all potential user's needs and requirements. 
 
-### 4.2 Capacity
+### 4.2 Reliability
 
-_Describe the current and future storage needs of your software._
+The Tech Radar should be available 99% of the time with a 1% of down time tolerance. (Subject to change)
 
-### 4.3 Compatibility
+### 4.3 Operability
 
-_List the minimum hardware requirements for your software._
+- For users to have access to the tool, they must have a computer/tablet/smartphone with internet connection and navigate to the Tech Radar on a compatible web browser (See section 4.6).
+- The user interface should be visually pleasing and intuitive enough for any user to perform the desired task without confusion. 
 
-### 4.4 Reliability
+### 4.4 Performance efficiency 
 
-_Calculate what the critical failure time of your product would be under normal usage._
+Any system function should take less than one second to perform its task, so it feels as responsive and fast as possible for users. The tool should have a limited number of resources (blips) on the radar at any given version, to not clutter the view and understanding of the radar and to not impact performance in a negative way. (Subject to change)
 
-### 4.5 Scalability
+Since the tool is not expected to receive a lot of traffic most of the time, the tool should perform seamlessly with as much as 20 simultaneous connections. (Subject to change)
 
-_Calculate the highest workloads under which your software will still perform as expected._
+### 4.5 Security
 
-### 4.6 Maintainability
+- The Tech Radar should not contain any sensible information about Finaps internal operations.
+- To access the back-office functionality, users need to be authenticated as members of the Finaps Panel of Tech and must be authorized to use the back-office platform.
+- Data transactions and operations must guarantee data integrity.
 
-_Describe how continuous integration should be used to deploy features and bug fixes quickly._
+### 4.6 Compatibility
 
-### 4.7 Usability
+The Tech Radar should be operational and usable in any of the following environments:
+- Any Chromium-based web browser (Google Chrome, Microsoft Edge, Brave, etc.)
+- Safari web browser
+- Mozilla Firefox
+- Mobile versions of Chromium-based web browsers
+- Safari mobile version
+- Mozilla Firefox mobile verison
 
-_Describe how easy it should be for end-users to use your software._
+### 4.7 Maintainability
 
-### 4.8 Other
+- The Tech Radar's content will be maintained by the Finaps Panel of Tech, giving updates to it according to the periodical meetings had by the team.
+- All Finaps engineers will also be responsible of maintaining the radar by actively participating via the Change Requests feature at any time they consider necessary.
 
-_List any additional non-functional requirements._
+
+### 4.8 Transferability
+
+The Tech Radar should be able to adapted in the future for hardware and software changes as well as new environments, and it should be simple and easy to install/uninstall on new environments.
 
 ## 5. Definitions and Acronyms
 
