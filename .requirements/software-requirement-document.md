@@ -144,8 +144,10 @@ Since the tool is not expected to receive a lot of traffic most of the time, the
 The Tech Radar should be operational and usable in any of the following environments:
 - Any Chromium-based web browser (Google Chrome, Microsoft Edge, Brave, etc.)
 - Safari web browser
+- Mozilla Firefox
 - Mobile versions of Chromium-based web browsers
 - Safari mobile version
+- Mozilla Firegox mobile verison
 
 ### 4.7 Maintainability
 
