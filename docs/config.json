@@ -1,0 +1,501 @@
+{
+  "date": "2024.2",
+  "entries": [
+    {
+      "label": ".NET",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "https://dotnet.microsoft.com/en-us/",
+      "moved": 0
+    },
+    {
+      "label": ".NET Core",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "(S)CSS",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Angular",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Azure AKS",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Azure Container Apps",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Azure DevOps",
+      "quadrant": 1,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Azure Pipelines",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "C#",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "CheckStyle",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "CSS-in-JS",
+      "quadrant": 2,
+      "ring": 3,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Docker",
+      "quadrant": 1,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Error Prone",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Feo.css",
+      "quadrant": 3,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Flutter",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "GraphQL",
+      "quadrant": 2,
+      "ring": 3,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Hibernate",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "HTML",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "HTMX (+ AlpineJS)",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Intelij DataGrip",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Intelij IDEA",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Intelij Rider",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Jacoco",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Java",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "JavaScript",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Jest",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Junit",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Karma + Jasmine",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Liquibase",
+      "quadrant": 1,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Lombok",
+      "quadrant": 2,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mailpit",
+      "quadrant": 1,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix",
+      "quadrant": 1,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Quality and Security Management",
+      "quadrant": 3,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Studio Pro",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mockito",
+      "quadrant": 2,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "MSW",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "MySQL",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "NextJS",
+      "quadrant": 2,
+      "ring": 3,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Nx",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Omnext Mendix quality analysis",
+      "quadrant": 3,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "OpenAPI Generator",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Playwright",
+      "quadrant": 3,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "PostgreSQL",
+      "quadrant": 1,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Postman",
+      "quadrant": 3,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Postman Newman",
+      "quadrant": 3,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Python",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "React",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "React Native",
+      "quadrant": 2,
+      "ring": 2,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Spring Boot",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Spring Security",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Tailwind",
+      "quadrant": 2,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "TestContainers",
+      "quadrant": 2,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Thymeleaf",
+      "quadrant": 2,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Turborepo",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "TypeScript",
+      "quadrant": 2,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "ViteJS",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Vitest",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Webpack + Babel",
+      "quadrant": 3,
+      "ring": 3,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Studio Pro",
+      "quadrant": 3,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Cloud",
+      "quadrant": 1,
+      "ring": 0,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Workflow",
+      "quadrant": 1,
+      "ring": 1,
+      "active": true,
+      "link": "",
+      "moved": 0
+    },
+    {
+      "label": "Mendix Visual Modeling",
+      "quadrant": 2,
+      "ring": 0,
+      "active": null,
+      "link": "",
+      "moved": 0
+    }
+  ]
+}
