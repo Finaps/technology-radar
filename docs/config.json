@@ -5,496 +5,864 @@
       "label": ".NET",
       "quadrant": 2,
       "ring": 0,
+      "description": "",
+      "link": "",
       "active": true,
-      "link": "https://dotnet.microsoft.com/en-us/",
       "moved": 0
     },
     {
       "label": ".NET Core",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "(S)CSS",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "Core browser language; SCSS is a mature extension that makes writing large CSS code bases easier (although CSS is coming close, so this might update the future)",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Adobe Creative Cloud",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Adobe Photoshop",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Angular",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "One of two mature preferred single-page application frameworks",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Azure AKS",
       "quadrant": 1,
       "ring": 1,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": false,
+      "moved": 0
+    },
+    {
+      "label": "Azure Bicep",
+      "quadrant": 2,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Cloud",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Azure Container Apps",
       "quadrant": 1,
-      "ring": 1,
-      "active": true,
+      "ring": 0,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Data Factory",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Azure DevOps",
       "quadrant": 1,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Function App",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Key Vault",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Azure Pipelines",
       "quadrant": 1,
-      "ring": 1,
-      "active": true,
+      "ring": 0,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure SQL DB",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Storage Account",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Virtual Machine",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Virtual Network",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Babel",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "C#",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Calendly",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "CheckStyle",
       "quadrant": 2,
-      "ring": 2,
-      "active": true,
+      "ring": 1,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Confluence",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "CSS-in-JS",
       "quadrant": 2,
       "ring": 3,
-      "active": true,
+      "description": "Not a \"sustainable\" solution, and other solutions have a preference.",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Docker",
       "quadrant": 1,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Elastic Cloud",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Entity Framework Core",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Error Prone",
       "quadrant": 2,
-      "ring": 2,
-      "active": true,
+      "ring": 1,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Feo.css",
       "quadrant": 3,
       "ring": 2,
-      "active": true,
+      "description": "Lightweight (S)CSS starter",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "FinSight",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Flutter",
       "quadrant": 2,
       "ring": 2,
-      "active": true,
+      "description": "Native mobile framework, based on Dart language, needs to be weighted against React Native",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "GitHub",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "GraphQL",
       "quadrant": 2,
       "ring": 3,
-      "active": true,
+      "description": "In most settings it is a clear overhead compared to proper architecture + REST",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Hibernate",
       "quadrant": 2,
-      "ring": 2,
-      "active": true,
+      "ring": 1,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "HTML",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "Core browser language",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "HTMX (+ AlpineJS)",
       "quadrant": 2,
       "ring": 2,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Hubspot",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Intelij DataGrip",
       "quadrant": 3,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Intelij IDEA",
       "quadrant": 3,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Intelij Rider",
       "quadrant": 3,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Invision",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Jacoco",
       "quadrant": 2,
       "ring": 2,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Java",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "JavaScript",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "Core browser language",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Jest",
-      "quadrant": 3,
+      "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference.",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Junit",
       "quadrant": 2,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Karma + Jasmine",
       "quadrant": 3,
       "ring": 0,
-      "active": true,
+      "description": "Testframework for unit + integration testing, focused on AngularJS",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Liquibase",
       "quadrant": 1,
       "ring": 2,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Lombok",
       "quadrant": 2,
       "ring": 1,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Lusha",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Mailpit",
       "quadrant": 1,
-      "ring": 2,
-      "active": true,
+      "ring": 1,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Mendix",
       "quadrant": 1,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Mendix Quality and Security Management",
-      "quadrant": 3,
-      "ring": 1,
       "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Mendix Studio Pro",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Mockito",
-      "quadrant": 2,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "MSW",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "MySQL",
-      "quadrant": 1,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "NextJS",
-      "quadrant": 2,
-      "ring": 3,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Nx",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Omnext Mendix quality analysis",
-      "quadrant": 3,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "OpenAPI Generator",
-      "quadrant": 1,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Playwright",
-      "quadrant": 3,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "PostgreSQL",
-      "quadrant": 1,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Postman",
-      "quadrant": 3,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Postman Newman",
-      "quadrant": 3,
-      "ring": 2,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Python",
-      "quadrant": 2,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "React",
-      "quadrant": 2,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "React Native",
-      "quadrant": 2,
-      "ring": 2,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Spring Boot",
-      "quadrant": 2,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Spring Security",
-      "quadrant": 2,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Tailwind",
-      "quadrant": 2,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "TestContainers",
-      "quadrant": 2,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Thymeleaf",
-      "quadrant": 2,
-      "ring": 1,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Turborepo",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "TypeScript",
-      "quadrant": 2,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "ViteJS",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Vitest",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Webpack + Babel",
-      "quadrant": 3,
-      "ring": 3,
-      "active": true,
-      "link": "",
-      "moved": 0
-    },
-    {
-      "label": "Mendix Studio Pro",
-      "quadrant": 3,
-      "ring": 0,
-      "active": true,
-      "link": "",
       "moved": 0
     },
     {
       "label": "Mendix Cloud",
       "quadrant": 1,
       "ring": 0,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
       "moved": 0
     },
     {
-      "label": "Mendix Workflow",
-      "quadrant": 1,
+      "label": "Mendix Quality and Security Management",
+      "quadrant": 3,
       "ring": 1,
-      "active": true,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Mendix Studio Pro",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     },
     {
       "label": "Mendix Visual Modeling",
       "quadrant": 2,
       "ring": 0,
-      "active": null,
+      "description": "",
       "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Mock Service Worker",
+      "quadrant": 2,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Mockito",
+      "quadrant": 2,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "MSW",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "Mocking of API endpoints",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "MyPy",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "MySQL",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "NextJS",
+      "quadrant": 2,
+      "ring": 3,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Nx",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "Monorepo setup, aimed at AngularJS",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Omnext Mendix quality analysis",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "OpenAPI Generator",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Parallels",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "PgAdmin",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "pip-audit",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Playwright",
+      "quadrant": 3,
+      "ring": 2,
+      "description": "End-2-end test framework. ",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "PostgreSQL",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Postman",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Postman Newman",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": false,
+      "moved": 0
+    },
+    {
+      "label": "PowerBI",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Powershell",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "PyLint",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Python",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "React",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "One of two mature preferred single-page application frameworks",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "React Native",
+      "quadrant": 2,
+      "ring": 2,
+      "description": "Native mobile framework based on React, needs to be weighted against Flutter",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Sketch",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "SonarQube",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Spring Boot",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "SQL",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Stoplight",
+      "quadrant": 3,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Tailwind",
+      "quadrant": 2,
+      "ring": 2,
+      "description": "Utility-first CSS framework; value over plain (S)CSS needs to be assessed (and trialed properly)",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Terraform",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "TestContainers",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Thymeleaf",
+      "quadrant": 2,
+      "ring": 1,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Trello",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Turborepo",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "Monorepo setup, aimed at React",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "TypeScript",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "Preferred approach over JavaScript in a team setting with various level of expertise",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Visual Studio Code",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "ViteJS",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "Build tool",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Vitest",
+      "quadrant": 3,
+      "ring": 0,
+      "description": "Test framework for unit + integration testing, integrates with ViteJS",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Webpack + Babel",
+      "quadrant": 3,
+      "ring": 3,
+      "description": "Build tool; ViteJS is an easier & faster setup",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Wordpress",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "",
+      "link": "",
+      "active": true,
       "moved": 0
     }
   ]
