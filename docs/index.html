@@ -17,11 +17,14 @@
 
 <body>
 
-  <h1>Finaps Tech Radar</h1>
+  <h1>Finaps Tech Radar </h1>
+  <div id="version"></div>
 
   <svg id="radar"></svg>
 
   <script>
+
+
     const quadrants = [
       { name: "Techniques", id: 4 },
       { name: "Platforms", id: 1 },
@@ -39,6 +42,16 @@
     fetch('./config.json').then(function (response) {
       return response.json();
     }).then(function (data) {
+
+      let label = document.createElement("span");
+      label.textContent = data.date;
+
+      let span = document.createElement("span");
+      span.appendChild(label)
+
+
+      document.getElementById("version").appendChild(span);
+
       radar_visualization({
         svg_id: "radar",
         width: 1400,
@@ -70,8 +83,7 @@
         // li.appendChild(document.createTextNode(item.ring));
 
         const id = item.quadrant + '-' + item.ring
-        console.log(id)
-        document.getElementById(item.quadrant + '-' + item.ring).appendChild(li);
+        document.getElementById(id).appendChild(li);
       })
 
 
