@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <div class="d-flex justify-between">
     <div>
       <h1>Finaps Tech Radar</h1>
@@ -30,6 +31,85 @@
 
   <svg id="radar"></svg>
 
+=======
+
+  <h1>Finaps Tech Radar </h1>
+  <div id="version"></div>
+
+  <svg id="radar"></svg>
+
+  <script>
+
+
+    const quadrants = [
+      { name: "Techniques", id: 4 },
+      { name: "Platforms", id: 1 },
+      { name: "Languages & Frameworks", id: 2 },
+      { name: "Tools", id: 3 },
+    ]
+
+    const rings = [
+      { name: "ADOPT", color: "var(--color-accent-1)", id: 0 },
+      { name: "TRIAL", color: "var(--color-accent-2)", id: 1 },
+      { name: "ASSESS", color: "var(--color-accent-3)", id: 2 },
+      { name: "HOLD", color: "var(--color-accent-4)", id: 3 }
+    ]
+
+    fetch('./config.json').then(function (response) {
+      return response.json();
+    }).then(function (data) {
+
+      let label = document.createElement("span");
+      label.textContent = data.date;
+
+      let span = document.createElement("span");
+      span.appendChild(label)
+
+
+      document.getElementById("version").appendChild(span);
+
+      radar_visualization({
+        svg_id: "radar",
+        width: 1400,
+        height: 1000,
+        colors: {
+          background: "var(--bg-base-color)",
+          grid: '#dddde0',
+          inactive: "#ddd",
+          bubble: "var(--font-color-inverse)"
+        },
+        title: "Finaps Tech Radar",
+        date: data.date,
+        quadrants: quadrants,
+        rings: rings,
+        print_rings: true,
+        print_layout: false,
+        links_in_new_tabs: true,
+        // zoomed_quadrant: 0,
+        entries: data.entries,
+      });
+
+      data.entries.forEach(function (item) {
+        let label = document.createElement("b");
+        label.textContent = item.label;
+
+        let li = document.createElement("li");
+        li.appendChild(label);
+        // li.appendChild(document.createTextNode(item.description));
+        // li.appendChild(document.createTextNode(item.ring));
+
+        const id = item.quadrant + '-' + item.ring
+        document.getElementById(id).appendChild(li);
+      })
+
+
+    }).catch(function (err) {
+      console.log('Error loading config.json', err);
+    });
+  </script>
+
+
+>>>>>>> 7e2ba6d (feat: added date in title)
   <div class="d-flex d-column mb-2">
     <div id="2">
       <h2>Languages & Frameworks</h2>
