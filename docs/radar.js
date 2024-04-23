@@ -57,10 +57,10 @@ function radar_visualization(config) {
   const footer_offset = { x: -675, y: 420 };
 
   const legend_offset = [
-    { x: 450, y: 90 },
-    { x: -675, y: 90 },
-    { x: -675, y: -310 },
-    { x: 450, y: -310 },
+    { pos: 'br', x: 450, y: 290 },
+    { pos: 'bl', x: -675, y: 290 },
+    { pos: 'tl', x: -675, y: -310 },
+    { pos: 'tr', x: 450, y: -310 },
   ];
 
   function polar(cartesian) {
@@ -265,7 +265,7 @@ function radar_visualization(config) {
         .attr('text-anchor', 'middle')
         .style('fill', config.rings[i].color)
         .style('opacity', 0.35)
-        .style('font-family', 'Arial, Helvetica')
+        .style('font-family', 'var(--font-family)')
         .style('font-size', '42px')
         .style('font-weight', 'bold')
         .style('pointer-events', 'none')
@@ -286,7 +286,7 @@ function radar_visualization(config) {
   }
 
   // draw title and legend (only in print layout)
-  if (config.print_layout) {
+  if (config.print_title) {
     // title
     radar
       .append('text')
@@ -313,7 +313,36 @@ function radar_visualization(config) {
       .attr('xml:space', 'preserve')
       .style('font-family', 'Arial, Helvetica')
       .style('font-size', '10px');
-
+  }
+  if (config.print_legend) {
+    // legend
+    var legend = radar.append('g');
+    for (var quadrant = 0; quadrant < 4; quadrant++) {
+      legend
+        .append('text')
+        .attr(
+          'transform',
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45),
+        )
+        .text(config.quadrants[quadrant].name)
+        .style('font-family', 'var(--font-family)')
+        .style('font-size', 'var(--size-3)')
+        .style('font-weight', '900')
+        .style('fill', 'var(--font-color)');
+      legend
+        .append('text')
+        .attr(
+          'transform',
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 0),
+        )
+        .attr('width', 200)
+        .attr('height', 500)
+        .text(config.quadrants[quadrant].description)
+        .style('font-family', 'var(--font-family)')
+        .style('fill', 'var(--font-color)');
+    }
+  }
+  if (config.print_layout) {
     // legend
     var legend = radar.append('g');
     for (var quadrant = 0; quadrant < 4; quadrant++) {
