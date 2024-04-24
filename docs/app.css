@@ -37,8 +37,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-#root,
-#__next {
+#root {
   isolation: isolate;
 }
 
@@ -253,6 +252,11 @@ ul {
 
 .img-circle {
   border-radius: 9999px;
+  max-width: 1.5rem;
+}
+
+.img-lg {
+  max-width: 2.5rem;
 }
 
 /* UTILITIES
