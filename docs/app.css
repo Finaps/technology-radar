@@ -172,6 +172,10 @@ h3 {
   justify-content: space-between;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .d-grid {
   display: grid;
   gap: 1rem;
@@ -253,6 +257,7 @@ ul {
 .img-circle {
   border-radius: 9999px;
   max-width: 1.5rem;
+  max-height: 1.5rem;
 }
 
 .img-lg {

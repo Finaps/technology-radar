@@ -31,7 +31,7 @@ fetch('./data.json')
       label.setAttribute('onClick', params);
       label.textContent = item.label;
 
-      let favicon = document.createElement('img');
+      const favicon = document.createElement('img');
       favicon.setAttribute('class', 'img-circle');
 
       if (!item.link) {
@@ -45,7 +45,7 @@ fetch('./data.json')
           `https://www.google.com/s2/favicons?domain=${item.link}&sz=128`,
         );
       }
-
+      item.favObject = favicon;
       label.appendChild(favicon);
 
       let li = document.createElement('li');
@@ -85,12 +85,13 @@ function openTechDetails(index) {
   openModal('modal-details');
 
   // favicon
-  let favicon = document.createElement('img');
-  favicon.setAttribute('class', 'img-circle img-lg');
-  favicon.setAttribute(
-    'src',
-    `https://www.google.com/s2/favicons?domain=${item.link}&sz=128`,
-  );
+  // let favicon = document.createElement('img');
+  // favicon = object.favObject;
+  // favicon.setAttribute('class', 'img-circle img-lg');
+  // favicon.setAttribute(
+  //   'src',
+  //   `https://www.google.com/s2/favicons?domain=${item.link}&sz=128`,
+  // );
 
   // Append title
   let header = document.createElement('h3');
@@ -98,8 +99,9 @@ function openTechDetails(index) {
   header.textContent = item.label;
 
   const title = document.createElement('div');
-  title.setAttribute('class', 'd-flex');
-  title.appendChild(favicon);
+  title.setAttribute('class', 'd-flex align-center');
+
+  title.appendChild(item.favObject.cloneNode(true));
   title.appendChild(header);
 
   document.getElementById('tech-details-header').replaceChildren(title);
