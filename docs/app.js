@@ -69,7 +69,6 @@ function openModal(id) {
 function closeModal() {
   document.querySelector('.modal.open').classList.remove('open');
   document.body.classList.remove('modal-open');
-  // document.getElementsById('tech-details-header').remove();
 }
 
 // close modals on background click
@@ -83,15 +82,6 @@ function openTechDetails(index) {
   const item = dataSet[index];
 
   openModal('modal-details');
-
-  // favicon
-  // let favicon = document.createElement('img');
-  // favicon = object.favObject;
-  // favicon.setAttribute('class', 'img-circle img-lg');
-  // favicon.setAttribute(
-  //   'src',
-  //   `https://www.google.com/s2/favicons?domain=${item.link}&sz=128`,
-  // );
 
   // Append title
   let header = document.createElement('h3');
