@@ -2,92 +2,196 @@
 <html lang="en">
 
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta name="description" content="Finaps Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams at Finaps to pick the best technologies for new projects">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Finaps Tech Radar</title>
-<link rel="shortcut icon" href="https://finaps.nl/storage/uploads/2023/05/ogfinaps.png">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="description"
+    content="Finaps Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams at Finaps to pick the best technologies for new projects">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finaps Tech Radar</title>
+  <link rel="shortcut icon" href="https://finaps.nl/storage/uploads/2023/05/ogfinaps.png">
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="radar.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="config.js"></script>
+  <script src="radar.js"></script>
+  <script src="app.js"></script>
 
-<link rel="stylesheet" href="radar.css">
+  <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+  <div class="d-flex justify-between">
+    <div>
+      <h1>Finaps Tech Radar</h1>
+      <div id="version"></div>
+    </div>
+    <div>
+      <button class="btn-transparent" onClick="openModal('modal-introduction')">Read introduction</button>
+    </div>
+  </div>
 
-<svg id="radar"></svg>
+  <svg id="radar"></svg>
 
-<script>
-fetch('./config.json').then(function(response) {
-  return response.json();
-}).then(function(data) {
-  radar_visualization({
-    svg_id: "radar",
-    width: 1450,
-    height: 1000,
-    colors: {
-      background: "#fff",
-      grid: '#dddde0',
-      inactive: "#ddd"
-    },
-    title: "Finaps Tech Radar",
-    date: data.date,
-    quadrants: [
-        { name: "Techniques" },
-        { name: "Platforms" },
-        { name: "Languages & Frameworks" },
-        { name: "Tools" },
-    ],
-    rings: [
-      { name: "ADOPT", color: "#5ba300" },
-      { name: "TRIAL", color: "#009eb0" },
-      { name: "ASSESS", color: "#c7ba00" },
-      { name: "HOLD", color: "#e09b96" }
-    ],
-    print_layout: true,
-    links_in_new_tabs: true,
-    // zoomed_quadrant: 0,
-    entries: data.entries
-  });
-}).catch(function(err) {
-  console.log('Error loading config.json', err);
-});
-</script>
+  <div class="d-flex d-column mb-2">
+    <div id="2">
+      <h2>Languages & Frameworks</h2>
+      <div class="d-grid">
+        <div>
+          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+          <ul id="2-0"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+          <ul id="2-1"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+          <ul id="2-2"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-4 mb-1'>HOLD</div>
+          <ul id="2-3"></ul>
+        </div>
 
-<table>
-<tr>
-<td>
+      </div>
+    </div>
 
-<h3>What is the Tech Radar?</h3>
+    <div id="3">
+      <h2>Tools</h2>
+      <div class="d-grid">
+        <div>
+          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+          <ul id="3-0"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+          <ul id="3-1"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+          <ul id="3-2"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-4 mb-1'>HOLD</div>
+          <ul id="3-3"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>
-The Finaps Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. We use four rings with the following semantics:
-</p>
-
-<ul>
-<li><strong>ADOPT</strong> &mdash; Technologies that are proven to work and trusted by the team to serve our purpose. Technologies and techniques that are suggested to seriously consider. Mature for use</li>
-<li><strong>TRIAL</strong> &mdash; Technologies that have worked in the past and are known to work well for us but are not entirely proven. Not quite ready to be adopted, but we have knowledge and experience with them that can be shared.</li>
-<li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us; technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS technologies have higher risks; they are often brand new and highly unproven in our organisation. You will find some engineers that have knowledge in the technology and promote it, you may even find teams that have started a prototyping effort.</li>
-<li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, but usually can be continued for existing projects.</li>
-</ul>
-
-</td><td>
-
-<h3>What is the purpose?</h3>
-
-<p>
-The Tech Radar is a tool to inspire and support Engineering teams at Finaps to pick the best technologies for new projects; it provides a platform to share knowledge and experience in technologies, to reflect on technology decisions and continuously evolve our technology landscape. Based on the <a href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets out the changes in technologies that are interesting in software development &mdash; changes that we think our engineering teams should pay attention to and use in their projects.
-</p>
-
-<h3>How do we maintain it?</h3>
-
-<p>
-The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who facilitate and drive the technology selection discussions at Finaps across the Engineering Community. Assignment of technologies to rings is the outcome of ring change proposals, which are discussed and voted on. The Tech Radar is open for contribution for all Engineering teams at Finaps and depends on their active participation to share lessons learned, pitfalls, and contribute to good practices on using the technologies.<br/>
-</p>
-
-</td></tr>
-</table>
-
+  <div class="d-flex d-column">
+    <div id="1">
+      <h2>Platforms & Operations</h2>
+      <div class="d-grid">
+        <div>
+          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+          <ul id="1-0"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+          <ul id="1-1"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+          <ul id="1-2"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-4 mb-1'>HOLD</div>
+          <ul id="1-3"></ul>
+        </div>
+      </div>
+    </div>
+    <div id="4">
+      <h2>Methods & Patterns</h2>
+      <div class="d-grid">
+        <div>
+          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+          <ul id="4-0"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+          <ul id="4-1"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+          <ul id="4-2"></ul>
+        </div>
+        <div>
+          <div class='badge bg-accent-4 mb-1'>HOLD</div>
+          <ul id="4-3"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+<div id="modal-introduction" class="modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-header">
+      <h3 class="m-0">What is the Tech Radar?</h3>
+      <button type="button" onclick="closeModal()" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>
+        The Finaps Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring
+          assignment</em>. We use four rings with the following semantics:
+      </p>
+      <ul>
+        <li><strong>ADOPT</strong> &mdash; Technologies that are proven to work and trusted by the team to serve our
+          purpose. Technologies and techniques that are suggested to seriously consider. Mature for use and active
+          offering to clients expected</li>
+        <li><strong>TRIAL</strong> &mdash; Technologies that have worked in the past and are known to work well for us
+          but are not entirely proven. Not quite ready to be adopted, but we have knowledge and experience with them
+          that can be shared. At this stage technologies are not actively offered to clients</li>
+        <li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us;
+          technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS
+          technologies have higher risks; they are often brand new and highly unproven in our organisation. You will
+          find some engineers that have knowledge in the technology and promote it, you may even find teams that have
+          started a prototyping effort.</li>
+        <li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that
+          we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects,
+          but usually can be continued for existing projects.</li>
+      </ul>
+      <h3>What is the purpose?</h3>
+      <p>
+        The Tech Radar is a tool to inspire and support Engineering teams at Finaps to pick the best technologies for
+        new projects; it provides a platform to share knowledge and experience in technologies, to reflect on
+        technology decisions and continuously evolve our technology landscape. Based on the <a
+          href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets out the
+        changes in technologies that are interesting in software development &mdash; changes that we think our
+        engineering teams should pay attention to and use in their projects.
+      </p>
+      <h3>How do we maintain it?</h3>
+      <p>
+        The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who facilitate and drive the
+        technology selection discussions at Finaps across the Engineering Community. Assignment of technologies to
+        rings is the outcome of ring change proposals, which are discussed and voted on. The Tech Radar is open for
+        contribution for all Engineering teams at Finaps and depends on their active participation to share lessons
+        learned, pitfalls, and contribute to good practices on using the technologies.<br />
+      </p>
+    </div>
+    <div class="modal-footer"><button class="btn-primary" onclick="closeModal()">Close</button></div>
+  </div>
+</div>
+
+<div id="modal-details" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <div class="d-flex align-center">
+        <img id="modal-fav" class="img-circle" />
+        <h3 id="modal-title" class="m-0"></h3>
+      </div>
+      <button type="button" onclick="closeModal()" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div id="modal-body" class="modal-body">
+      <p id="modal-description" class="mb-1"></p>
+      <a id="modal-link" target="_blank" />
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+
 </html>

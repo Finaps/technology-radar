@@ -6,7 +6,7 @@
       "quadrant": 2,
       "ring": 0,
       "description": "",
-      "link": "",
+      "link": "https://dotnet.microsoft.com/en-us/",
       "active": true,
       "moved": 0
     },
@@ -15,7 +15,7 @@
       "quadrant": 2,
       "ring": 0,
       "description": "",
-      "link": "",
+      "link": "https://dotnet.microsoft.com/en-us/download",
       "active": true,
       "moved": 0
     },
@@ -24,7 +24,7 @@
       "quadrant": 2,
       "ring": 0,
       "description": "Core browser language; SCSS is a mature extension that makes writing large CSS code bases easier (although CSS is coming close, so this might update the future)",
-      "link": "",
+      "link": "https://sass-lang.com/",
       "active": true,
       "moved": 0
     },
