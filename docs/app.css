@@ -2,6 +2,22 @@
 CUSTOM CSS
 */
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/open_sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/open_sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
 :root {
   --color-accent-1: #01bfad;
   --color-accent-2: #a98fef;
@@ -30,9 +46,8 @@ CUSTOM CSS
   --body-bg-color: #ffffff;
   --font-color: var(--color-grey-3);
   --font-color-inverse: #ffffff;
-  --font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
-    'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family: 'Open Sans', monospace;
+  --font-family-header: 'Poppins', monospace;
 
   --color-primary: #191970;
   --color-secondary: #feaa00;
@@ -53,6 +68,7 @@ CUSTOM CSS
   --btn-color-default: var(--font-color);
   --modal-width: 500px;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --base-bg-color: var(--color-grey-3);
@@ -77,6 +93,7 @@ html {
 
 body {
   font-family: var(--font-family);
+  font-weight: normal;
   padding: 2rem;
   max-width: 1400px;
   margin: auto;
@@ -91,9 +108,10 @@ body {
 h1,
 h2,
 h3 {
+  font-family: var(--font-family-header);
   color: var(--header-color);
   margin-bottom: 1rem;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 h1 {
