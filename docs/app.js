@@ -45,7 +45,7 @@ fetch('./data.json')
           `https://www.google.com/s2/favicons?domain=${item.link}&sz=128`,
         );
       }
-      item.favObject = favicon;
+      item.favObjectUrl = favicon.getAttribute('src');
       label.appendChild(favicon);
 
       let li = document.createElement('li');
@@ -67,10 +67,6 @@ function openModal(id) {
 
 // close currently open modal
 function closeModal() {
-  const favicon = document.getElementById('modal-favicon');
-  while (favicon.firstChild) {
-    favicon.removeChild(favicon.firstChild);
-  }
   document.querySelector('.modal.open').classList.remove('open');
   document.body.classList.remove('modal-open');
 }
@@ -87,9 +83,7 @@ function openTechDetails(index) {
 
   openModal('modal-details');
 
-  document
-    .getElementById('modal-favicon')
-    .appendChild(item.favObject.cloneNode(false));
+  document.getElementById('modal-fav').setAttribute('src', item.favObjectUrl);
   document.getElementById('modal-title').textContent = item.label;
   document.getElementById('modal-description').textContent = item.description;
   document.getElementById('modal-link').textContent = item.link;
