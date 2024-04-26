@@ -81,11 +81,11 @@ document.addEventListener('click', (event) => {
 function openTechDetails(index) {
   const item = dataSet[index];
 
-  openModal('modal-details');
-
   document.getElementById('modal-fav').setAttribute('src', item.favObjectUrl);
   document.getElementById('modal-title').textContent = item.label;
   document.getElementById('modal-description').textContent = item.description;
   document.getElementById('modal-link').textContent = item.link;
   document.getElementById('modal-link').setAttribute('href', item.link);
+
+  openModal('modal-details');
 }
