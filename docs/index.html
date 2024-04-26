@@ -137,7 +137,8 @@
       </p>
       <ul>
         <li><strong>ADOPT</strong> &mdash; Technologies that are proven to work and trusted by the team to serve our
-          purpose. Technologies and techniques that are suggested to seriously consider. Mature for use and active offering to clients expected</li>
+          purpose. Technologies and techniques that are suggested to seriously consider. Mature for use and active
+          offering to clients expected</li>
         <li><strong>TRIAL</strong> &mdash; Technologies that have worked in the past and are known to work well for us
           but are not entirely proven. Not quite ready to be adopted, but we have knowledge and experience with them
           that can be shared. At this stage technologies are not actively offered to clients</li>
@@ -175,17 +176,22 @@
 <div id="modal-details" class="modal">
   <div class="modal-dialog">
     <div class="modal-header">
-      <div id="tech-details-header"></div>
+      <div class="d-flex align-center">
+        <div id="modal-favicon"></div>
+        <h3 id="modal-title" class="m-0"></h3>
+      </div>
       <button type="button" onclick="closeModal()" class="btn-close" data-bs-dismiss="modal"
         aria-label="Close"></button>
     </div>
-    <div class="modal-body">
-      <div id="tech-details-content"></div>
+    <div id="modal-body" class="modal-body">
+      <p id="modal-description" class="mb-1"></p>
+      <a id="modal-link" target="_blank" />
     </div>
     <div class="modal-footer">
       <button class="btn-primary" onclick="closeModal()">Close</button>
     </div>
   </div>
 </div>
+
 
 </html>

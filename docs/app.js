@@ -67,6 +67,10 @@ function openModal(id) {
 
 // close currently open modal
 function closeModal() {
+  const favicon = document.getElementById('modal-favicon');
+  while (favicon.firstChild) {
+    favicon.removeChild(favicon.firstChild);
+  }
   document.querySelector('.modal.open').classList.remove('open');
   document.body.classList.remove('modal-open');
 }
@@ -83,36 +87,11 @@ function openTechDetails(index) {
 
   openModal('modal-details');
 
-  // Append title
-  let header = document.createElement('h3');
-  header.setAttribute('class', 'm-0');
-  header.textContent = item.label;
-
-  const title = document.createElement('div');
-  title.setAttribute('class', 'd-flex align-center');
-
-  title.appendChild(item.favObject.cloneNode(true));
-  title.appendChild(header);
-
-  document.getElementById('tech-details-header').replaceChildren(title);
-
-  // Create content
-  const content = document.createElement('div');
-
-  // Create description
-  const description = document.createElement('p');
-  description.setAttribute('class', 'mb-1');
-  description.textContent = item.description;
-  content.appendChild(description);
-
-  // Create link
-  const link = document.createElement('a');
-  link.setAttribute('href', item.link);
-  link.setAttribute('target', '_blank');
-  link.setAttribute('class', '');
-  link.textContent = item.link;
-  content.appendChild(link);
-
-  // Append content
-  document.getElementById('tech-details-content').replaceChildren(content);
+  document
+    .getElementById('modal-favicon')
+    .appendChild(item.favObject.cloneNode(false));
+  document.getElementById('modal-title').textContent = item.label;
+  document.getElementById('modal-description').textContent = item.description;
+  document.getElementById('modal-link').textContent = item.link;
+  document.getElementById('modal-link').setAttribute('href', item.link);
 }
