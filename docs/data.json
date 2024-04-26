@@ -26,7 +26,7 @@
       "description": "Core browser language; SCSS is a mature extension that makes writing large CSS code bases easier (although CSS is coming close, so this might update the future)",
       "link": "https://sass-lang.com/",
       "active": true,
-      "moved": 0
+      "moved": 1
     },
     {
       "label": "Adobe Creative Cloud",

@@ -145,10 +145,9 @@ function radar_visualization(config) {
     var point = entry.segment.random();
     entry.x = point.x;
     entry.y = point.y;
-    entry.color =
-      entry.active || config.print_layout
-        ? config.rings[entry.ring].color
-        : config.colors.inactive;
+    entry.color = entry.active
+      ? config.rings[entry.ring].color
+      : config.colors.inactive;
   }
 
   // partition entries according to segments
@@ -292,7 +291,7 @@ function radar_visualization(config) {
       .append('text')
       .attr('transform', translate(title_offset.x, title_offset.y))
       .text(config.title)
-      .style('font-family', 'Arial, Helvetica')
+      .style('font-family', 'var(--font-family)')
       .style('font-size', '30')
       .style('font-weight', 'bold');
 
@@ -301,7 +300,7 @@ function radar_visualization(config) {
       .append('text')
       .attr('transform', translate(title_offset.x, title_offset.y + 20))
       .text(config.date || '')
-      .style('font-family', 'Arial, Helvetica')
+      .style('font-family', 'var(--font-family)')
       .style('font-size', '14')
       .style('fill', '#999');
 
@@ -311,7 +310,7 @@ function radar_visualization(config) {
       .attr('transform', translate(footer_offset.x, footer_offset.y))
       .text('▲ moved up     ▼ moved down')
       .attr('xml:space', 'preserve')
-      .style('font-family', 'Arial, Helvetica')
+      .style('font-family', 'var(--font-family)')
       .style('font-size', '10px');
   }
   if (config.print_legend) {
@@ -342,65 +341,6 @@ function radar_visualization(config) {
         .style('fill', 'var(--font-color)');
     }
   }
-  if (config.print_layout) {
-    // legend
-    var legend = radar.append('g');
-    for (var quadrant = 0; quadrant < 4; quadrant++) {
-      legend
-        .append('text')
-        .attr(
-          'transform',
-          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45),
-        )
-        .text(config.quadrants[quadrant].name)
-        .style('font-family', 'Arial, Helvetica')
-        .style('font-size', '2rem')
-        .style('font-weight', 'bold');
-      for (var ring = 0; ring < 4; ring++) {
-        legend
-          .append('text')
-          .attr('transform', legend_transform(quadrant, ring))
-          .text(config.rings[ring].name)
-          .style('font-family', 'Arial, Helvetica')
-          .style('font-size', '1rem')
-          .style('font-weight', 'bold')
-          .style('fill', config.rings[ring].color);
-        legend
-          .selectAll('.legend' + quadrant + ring)
-          .data(segmented[quadrant][ring])
-          .enter()
-          .append('a')
-          .attr('href', function (d, i) {
-            return d.link ? d.link : '#'; // stay on same page if no link was provided
-          })
-          // Add a target if (and only if) there is a link and we want new tabs
-          .attr('target', function (d, i) {
-            return d.link && config.links_in_new_tabs ? '_blank' : null;
-          })
-          .append('text')
-          .attr('transform', function (d, i) {
-            return legend_transform(quadrant, ring, i);
-          })
-          .attr('class', 'legend' + quadrant + ring)
-          .attr('id', function (d, i) {
-            return 'legendItem' + d.id;
-          })
-          .text(function (d, i) {
-            return d.id + '. ' + d.label;
-          })
-          .style('font-family', 'Arial, Helvetica')
-          .style('font-size', '1rem')
-          .on('mouseover', function (d) {
-            showBubble(d);
-            highlightLegendItem(d);
-          })
-          .on('mouseout', function (d) {
-            hideBubble(d);
-            unhighlightLegendItem(d);
-          });
-      }
-    }
-  }
 
   // layer for entries
   var rink = radar.append('g').attr('id', 'rink');
@@ -417,28 +357,26 @@ function radar_visualization(config) {
   bubble.append('rect').attr('rx', 4).attr('ry', 4).style('fill', '#333');
   bubble
     .append('text')
-    .style('font-family', 'sans-serif')
-    .style('font-size', '10px')
+    .style('font-family', 'var(--font-family)')
+    .style('font-size', 'var(--font-size-small)')
     .style('fill', '#fff');
   bubble.append('path').attr('d', 'M 0,0 10,0 5,8 z').style('fill', '#333');
 
   function showBubble(d) {
-    if (d.active || config.print_layout) {
-      var tooltip = d3.select('#bubble text').text(d.label);
-      var bbox = tooltip.node().getBBox();
-      d3.select('#bubble')
-        .attr('transform', translate(d.x - bbox.width / 2, d.y - 16))
-        .style('opacity', 0.8);
-      d3.select('#bubble rect')
-        .attr('x', -5)
-        .attr('y', -bbox.height)
-        .attr('width', bbox.width + 10)
-        .attr('height', bbox.height + 4);
-      d3.select('#bubble path').attr(
-        'transform',
-        translate(bbox.width / 2 - 5, 3),
-      );
-    }
+    var tooltip = d3.select('#bubble text').text(d.label);
+    var bbox = tooltip.node().getBBox();
+    d3.select('#bubble')
+      .attr('transform', translate(d.x - bbox.width / 2, d.y - 16))
+      .style('opacity', 0.9);
+    d3.select('#bubble rect')
+      .attr('x', -5)
+      .attr('y', -bbox.height)
+      .attr('width', bbox.width + 10)
+      .attr('height', bbox.height + 4);
+    d3.select('#bubble path').attr(
+      'transform',
+      translate(bbox.width / 2 - 5, 3),
+    );
   }
 
   function hideBubble(d) {
@@ -446,18 +384,6 @@ function radar_visualization(config) {
       .select('#bubble')
       .attr('transform', translate(0, 0))
       .style('opacity', 0);
-  }
-
-  function highlightLegendItem(d) {
-    var legendItem = document.getElementById('legendItem' + d.id);
-    legendItem.setAttribute('filter', 'url(#solid)');
-    legendItem.setAttribute('fill', 'white');
-  }
-
-  function unhighlightLegendItem(d) {
-    var legendItem = document.getElementById('legendItem' + d.id);
-    legendItem.removeAttribute('filter');
-    legendItem.removeAttribute('fill');
   }
 
   // draw blips on radar
@@ -470,59 +396,54 @@ function radar_visualization(config) {
     .attr('transform', function (d, i) {
       return legend_transform(d.quadrant, d.ring, i);
     })
+    .on('click', function (d) {
+      openTechDetails(d.index);
+    })
     .on('mouseover', function (d) {
       showBubble(d);
-      highlightLegendItem(d);
     })
     .on('mouseout', function (d) {
       hideBubble(d);
-      unhighlightLegendItem(d);
     });
 
   // configure each blip
   blips.each(function (d) {
     var blip = d3.select(this);
 
-    // blip link
-    if (d.active && Object.prototype.hasOwnProperty.call(d, 'link') && d.link) {
-      blip = blip.append('a').attr('xlink:href', d.link);
-
-      if (config.links_in_new_tabs) {
-        blip.attr('target', '_blank');
-      }
-    }
-
     // blip shape
     if (d.moved > 0) {
       blip
         .append('path')
         .attr('d', 'M -11,5 11,5 0,-13 z') // triangle pointing up
-        .style('fill', d.color);
+        .style('fill', d.color)
+        .style('stroke', d.color);
     } else if (d.moved < 0) {
       blip
         .append('path')
         .attr('d', 'M -11,-5 11,-5 0,13 z') // triangle pointing down
-        .style('fill', d.color);
+        .style('fill', d.color)
+        .style('stroke', d.color);
     } else {
-      blip.append('circle').attr('r', 9).attr('fill', d.color);
+      blip
+        .append('circle')
+        .attr('r', 9)
+        .attr('fill', d.color)
+        .style('stroke', d.color);
     }
 
     // blip text
-    if (d.active || config.print_layout) {
-      var blip_text = config.print_layout ? d.id : d.label.match(/[a-z]/i);
-      blip
-        .append('text')
-        .text(blip_text)
-        .attr('y', 3)
-        .attr('text-anchor', 'middle')
-        .style('fill', config.bubble)
-        .style('font-family', 'Arial, Helvetica')
-        .style('font-size', function (d) {
-          return blip_text.length > 2 ? '8px' : '9px';
-        })
-        .style('pointer-events', 'none')
-        .style('user-select', 'none');
-    }
+    var blip_text = d.label.match(/[a-z]/i);
+    blip
+      .append('text')
+      .text(blip_text)
+      .attr('y', 4.5)
+      .attr('text-anchor', 'middle')
+      .style('fill', config.bubble)
+      .style('font-family', 'var(--font-family)')
+      .style('font-size', 'var(--font-size-small)')
+      .style('font-weight', 'bold')
+      .style('pointer-events', 'none')
+      .style('user-select', 'none');
   });
 
   // make sure that blips stay inside their segment

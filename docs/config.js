@@ -38,8 +38,8 @@ const RADAR_CONFIG = {
   height: 1000,
   colors: {
     background: 'var(--bg-base-color)',
-    grid: '#dddde0',
-    inactive: '#ddd',
+    grid: 'var(--border-color)',
+    inactive: 'var(--color-grey-1)',
     bubble: 'var(--font-color-inverse)',
   },
   title: 'Finaps Tech Radar',
