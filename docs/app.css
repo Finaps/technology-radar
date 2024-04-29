@@ -358,6 +358,7 @@ body.modal-open {
 
 /* RADAR
 -------------------------------*/
+
 .blip {
   cursor: pointer;
 }
@@ -367,4 +368,59 @@ body.modal-open {
   stroke-width: 2px;
   stroke-linejoin: round;
   stroke-linecap: round;
+}
+
+.blip > text {
+  fill: var(--font-color-inverse);
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-small);
+  pointer-events: none;
+  user-select: none;
+}
+
+#radar .legend-header {
+  font-family: var(--font-family);
+  font-size: var(--size-3);
+  font-weight: 900;
+  fill: var(--font-color);
+}
+#radar .legend-text {
+  font-family: var(--font-family);
+  fill: var(--font-color);
+}
+
+#radar .line {
+  stroke-width: 2;
+}
+
+#radar .circle {
+  fill: none;
+  stroke-width: 2;
+}
+
+#radar .circle-text {
+  opacity: 0.35;
+  font-family: var(--font-family-header);
+  font-size: var(--size-1);
+  pointer-events: none;
+  user-select: none;
+}
+
+#radar #bubble {
+  pointer-events: none;
+  user-select: none;
+}
+
+#bubble rect {
+  fill: var(--color-grey-10);
+}
+
+#bubble path {
+  fill: var(--color-grey-10);
+}
+
+#bubble text {
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  fill: var(--color-white);
 }

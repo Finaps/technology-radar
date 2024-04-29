@@ -197,7 +197,6 @@ function radar_visualization(config) {
 
   var svg = d3
     .select('svg#' + config.svg_id)
-    .style('background-color', config.colors.background)
     .attr('width', scaled_width)
     .attr('height', scaled_height);
 
@@ -218,20 +217,21 @@ function radar_visualization(config) {
   // draw grid lines
   grid
     .append('line')
+    .attr('class', 'line')
     .attr('x1', 0)
     .attr('y1', -400)
     .attr('x2', 0)
     .attr('y2', 400)
-    .style('stroke', config.colors.grid)
-    .style('stroke-width', 1);
+    .style('stroke', config.colors.grid);
+
   grid
     .append('line')
+    .attr('class', 'line')
     .attr('x1', -400)
     .attr('y1', 0)
     .attr('x2', 400)
     .attr('y2', 0)
-    .style('stroke', config.colors.grid)
-    .style('stroke-width', 1);
+    .style('stroke', config.colors.grid);
 
   // background color. Usage `.attr("filter", "url(#solid)")`
   // SOURCE: https://stackoverflow.com/a/31013492/2609980
@@ -250,25 +250,19 @@ function radar_visualization(config) {
   for (var i = 0; i < rings.length; i++) {
     grid
       .append('circle')
+      .attr('class', 'circle')
       .attr('cx', 0)
       .attr('cy', 0)
       .attr('r', rings[i].radius)
-      .style('fill', 'none')
-      .style('stroke', config.colors.grid)
-      .style('stroke-width', 1);
+      .style('stroke', config.colors.grid);
     if (config.print_rings) {
       grid
         .append('text')
         .text(config.rings[i].name)
+        .attr('class', 'circle-text')
         .attr('y', -rings[i].radius + 62)
         .attr('text-anchor', 'middle')
-        .style('fill', config.rings[i].color)
-        .style('opacity', 0.35)
-        .style('font-family', 'var(--font-family)')
-        .style('font-size', '42px')
-        .style('font-weight', 'bold')
-        .style('pointer-events', 'none')
-        .style('user-select', 'none');
+        .style('fill', config.rings[i].color);
     }
   }
 
@@ -284,61 +278,26 @@ function radar_visualization(config) {
     );
   }
 
-  // draw title and legend (only in print layout)
-  if (config.print_title) {
-    // title
-    radar
-      .append('text')
-      .attr('transform', translate(title_offset.x, title_offset.y))
-      .text(config.title)
-      .style('font-family', 'var(--font-family)')
-      .style('font-size', '30')
-      .style('font-weight', 'bold');
-
-    // date
-    radar
-      .append('text')
-      .attr('transform', translate(title_offset.x, title_offset.y + 20))
-      .text(config.date || '')
-      .style('font-family', 'var(--font-family)')
-      .style('font-size', '14')
-      .style('fill', '#999');
-
-    // footer
-    radar
-      .append('text')
-      .attr('transform', translate(footer_offset.x, footer_offset.y))
-      .text('▲ moved up     ▼ moved down')
-      .attr('xml:space', 'preserve')
-      .style('font-family', 'var(--font-family)')
-      .style('font-size', '10px');
-  }
   if (config.print_legend) {
     // legend
     var legend = radar.append('g');
     for (var quadrant = 0; quadrant < 4; quadrant++) {
       legend
         .append('text')
+        .attr('class', 'legend-header')
         .attr(
           'transform',
           translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45),
         )
-        .text(config.quadrants[quadrant].name)
-        .style('font-family', 'var(--font-family)')
-        .style('font-size', 'var(--size-3)')
-        .style('font-weight', '900')
-        .style('fill', 'var(--font-color)');
+        .text(config.quadrants[quadrant].name);
       legend
         .append('text')
+        .attr('class', 'legend-text')
         .attr(
           'transform',
           translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 0),
         )
-        .attr('width', 200)
-        .attr('height', 500)
-        .text(config.quadrants[quadrant].description)
-        .style('font-family', 'var(--font-family)')
-        .style('fill', 'var(--font-color)');
+        .text(config.quadrants[quadrant].description);
     }
   }
 
@@ -351,16 +310,10 @@ function radar_visualization(config) {
     .attr('id', 'bubble')
     .attr('x', 0)
     .attr('y', 0)
-    .style('opacity', 0)
-    .style('pointer-events', 'none')
-    .style('user-select', 'none');
-  bubble.append('rect').attr('rx', 4).attr('ry', 4).style('fill', '#333');
-  bubble
-    .append('text')
-    .style('font-family', 'var(--font-family)')
-    .style('font-size', 'var(--font-size-small)')
-    .style('fill', '#fff');
-  bubble.append('path').attr('d', 'M 0,0 10,0 5,8 z').style('fill', '#333');
+    .style('opacity', 0);
+  bubble.append('rect').attr('rx', 4).attr('ry', 4);
+  bubble.append('text');
+  bubble.append('path').attr('d', 'M 0,0 10,0 5,8 z');
 
   function showBubble(d) {
     var tooltip = d3.select('#bubble text').text(d.label);
@@ -437,13 +390,7 @@ function radar_visualization(config) {
       .append('text')
       .text(blip_text)
       .attr('y', 4.5)
-      .attr('text-anchor', 'middle')
-      .style('fill', config.bubble)
-      .style('font-family', 'var(--font-family)')
-      .style('font-size', 'var(--font-size-small)')
-      .style('font-weight', 'bold')
-      .style('pointer-events', 'none')
-      .style('user-select', 'none');
+      .attr('text-anchor', 'middle');
   });
 
   // make sure that blips stay inside their segment
