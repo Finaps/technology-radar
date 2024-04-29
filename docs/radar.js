@@ -379,17 +379,19 @@ function radar_visualization(config) {
     } else {
       blip
         .append('circle')
-        .attr('r', 9)
+        .attr('r', 10)
         .attr('fill', d.color)
         .style('stroke', d.color);
     }
 
     // blip text
-    var blip_text = d.label.match(/[a-z]/i);
+    // var blip_text = d.label.match(/[a-z]/i);
+    console.log(d);
+    var blip_text = d.id;
     blip
       .append('text')
       .text(blip_text)
-      .attr('y', 4.5)
+      .attr('y', 5)
       .attr('text-anchor', 'middle');
   });
 

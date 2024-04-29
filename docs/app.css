@@ -48,6 +48,7 @@ CUSTOM CSS
   --body-bg-color: var(--color-white);
   --font-color: var(--color-grey-3);
   --font-color-inverse: var(--color-white);
+  --font-color-grey: var(--color-grey-40);
   --font-family: 'Open Sans', monospace;
   --font-family-header: 'Poppins', monospace;
 
@@ -165,12 +166,18 @@ h3 {
   background-color: var(--color-accent-6);
 }
 
+.text-gray {
+  color: var(--font-color-grey);
+}
+
 /* CONTAINERS
 -------------------------------*/
 
 .d-flex {
   display: flex;
   gap: 1rem;
+  /* weird fix needed to keep flex and grid inside the container */
+  contain: inline-size;
 }
 
 .d-column > div {
@@ -241,9 +248,10 @@ button.btn-close {
 }
 
 .btn-image {
-  flex-direction: row-reverse;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 button.btn-sm {

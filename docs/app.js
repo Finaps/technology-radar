@@ -22,15 +22,16 @@ fetch('./data.json')
     radar_visualization(radarInput);
 
     dataSet.forEach(function (item) {
-      let label = document.createElement('button');
-      label.setAttribute(
+      // create button
+      const button = document.createElement('button');
+      button.setAttribute(
         'class',
         'btn-transparent btn-sm text-left d-flex btn-image',
       );
       const params = `openTechDetails(${item.index})`;
-      label.setAttribute('onClick', params);
-      label.textContent = item.label;
+      button.setAttribute('onClick', params);
 
+      // create favicon
       const favicon = document.createElement('img');
       favicon.setAttribute('class', 'img-circle');
 
@@ -46,10 +47,19 @@ fetch('./data.json')
         );
       }
       item.favObjectUrl = favicon.getAttribute('src');
-      label.appendChild(favicon);
+      button.appendChild(favicon);
 
-      let li = document.createElement('li');
-      li.appendChild(label);
+      // create index + label
+      const index = document.createElement('span');
+      const label = document.createElement('span');
+      index.textContent = '#' + item.id;
+      index.setAttribute('class', 'text-gray');
+      label.textContent = item.label;
+      button.appendChild(index);
+      button.appendChild(label);
+
+      const li = document.createElement('li');
+      li.appendChild(button);
 
       const id = item.quadrant + '-' + item.ring;
       document.getElementById(id).appendChild(li);
