@@ -56,6 +56,7 @@ CUSTOM CSS
   --color-secondary: #feaa00;
 
   --border-color: var(--color-grey-70);
+  --border-radius: 0.25rem;
 
   --size-1: 3rem;
   --size-2: 1.75rem;
@@ -96,6 +97,7 @@ body {
   margin: auto;
   background-color: var(--body-bg-color);
   border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   color: var(--font-color);
 }
 
@@ -176,8 +178,6 @@ h3 {
 .d-flex {
   display: flex;
   gap: 1rem;
-  /* weird fix needed to keep flex and grid inside the container */
-  contain: inline-size;
 }
 
 .d-column > div {
@@ -194,8 +194,22 @@ h3 {
 
 .d-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+
+  &.items {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  &.quadrants {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  }
+}
+
+.quadrants {
+  background-color: var(--base-bg-color);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 /* BUTTONS

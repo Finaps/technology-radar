@@ -32,25 +32,18 @@ const RINGS = [
   { name: 'HOLD', color: 'var(--color-accent-4)', id: 3 },
 ];
 
+const RADAR_WIDTH = 1400 - 4 * 16;
+
 const RADAR_CONFIG = {
   svg_id: 'radar',
-  width: 1400,
+  width: RADAR_WIDTH,
   height: 1000,
   colors: {
-    background: 'var(--bg-base-color)',
     grid: 'var(--border-color)',
     inactive: 'var(--color-grey-1)',
-    bubble: 'var(--font-color-inverse)',
   },
-  title: 'Finaps Tech Radar',
-  // date: data.date,
   quadrants: QUADRANTS,
   rings: RINGS,
   print_rings: true,
-  print_title: false,
   print_legend: true,
-  print_layout: false,
-  links_in_new_tabs: true,
-  // zoomed_quadrant: 0,
-  // entries: data.entries,
 };
