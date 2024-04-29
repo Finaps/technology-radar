@@ -276,7 +276,7 @@ button.btn-sm {
 /* LISTS
 -------------------------------*/
 
-ul {
+.list {
   list-style: none;
   padding: 0;
 }
