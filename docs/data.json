@@ -1,5 +1,5 @@
 {
-  "date": "2024.2",
+  "date": "2024.4.29",
   "entries": [
     {
       "label": "Adobe Creative Cloud",
@@ -236,15 +236,6 @@
       "moved": 0
     },
     {
-      "label": "Jest",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference.",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
       "label": "Junit",
       "quadrant": 2,
       "ring": 0,
@@ -357,6 +348,15 @@
       "quadrant": 3,
       "ring": 1,
       "description": "",
+      "link": "",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Jest",
+      "quadrant": 3,
+      "ring": 3,
+      "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference.",
       "link": "",
       "active": true,
       "moved": 0
