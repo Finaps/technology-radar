@@ -40,7 +40,7 @@ const RADAR_CONFIG = {
   height: 1000,
   colors: {
     grid: 'var(--border-color)',
-    inactive: 'var(--color-grey-1)',
+    inactive: 'var(--bg-inactive-blip)',
   },
   quadrants: QUADRANTS,
   rings: RINGS,
