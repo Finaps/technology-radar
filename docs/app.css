@@ -211,6 +211,28 @@ h3 {
   padding: 2rem;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
+  gap: 5rem;
+}
+
+.container-radar {
+  display: grid;
+  grid-template-columns: 250px auto 250px;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+.container-radar .radar {
+  justify-self: center;
+}
+
+.container-radar .radar svg > g {
+  transform-origin: center left;
+}
+
+.container-radar .legend-list {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* BUTTONS
@@ -321,6 +343,10 @@ ul {
 
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* MODAL STYLES

@@ -99,3 +99,12 @@ function openTechDetails(index) {
 
   openModal('modal-details');
 }
+
+addEventListener('resize', (event) => {
+  const container = document.querySelector('.radar');
+  const scale = window.innerWidth > 1400 ? 1 : container.clientWidth / 804;
+  if (scale < 1) {
+    const radar = document.querySelector('#radar > g');
+    radar.setAttribute('style', `scale: ${scale};`);
+  }
+});
