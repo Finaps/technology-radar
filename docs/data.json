@@ -2,155 +2,11 @@
   "date": "2024.4.29",
   "entries": [
     {
-      "label": "Adobe Creative Cloud",
-      "quadrant": 1,
-      "ring": 1,
-      "description": "",
-      "link": "Link",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Azure Cloud",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "Link",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Azure DevOps",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Calendly",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Confluence",
-      "quadrant": 1,
-      "ring": 2,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Elastic Cloud",
-      "quadrant": 1,
-      "ring": 1,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "GitHub",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Hubspot",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Invision",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Lusha",
-      "quadrant": 1,
-      "ring": 1,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Mendix",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Mendix Cloud",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "PostgreSQL",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "PowerBI",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "SAS",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Wordpress",
-      "quadrant": 1,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
       "label": ".NET Core",
       "quadrant": 2,
       "ring": 0,
-      "description": "",
-      "link": "Link",
+      "description": ".NET Core is a free, open-source, and modular software development framework developed by Microsoft. It is a cross-platform implementation of .NET that can run on Windows, macOS, and Linux. .NET Core is designed to be lightweight, flexible, and high-performance, with a focus on cloud-ready web applications.  It includes a runtime, a set of libraries, and development tools that support multiple programming languages like C#, Visual Basic, and F#. ",
+      "link": "https://dotnet.microsoft.com/en-us/",
       "active": true,
       "moved": 0
     },
@@ -159,7 +15,16 @@
       "quadrant": 2,
       "ring": 0,
       "description": "Core browser language; SCSS is a mature extension that makes writing large CSS code bases easier (although CSS is coming close, so this might update the future)",
-      "link": "",
+      "link": "https://sass-lang.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Adobe Creative Cloud",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "Adobe Creative Cloud is a subscription-based software as a service (SaaS) offering from Adobe that provides users with access to a collection of software applications and cloud services for graphic design, video editing, web development, photography, and more. ",
+      "link": "https://www.adobe.com/nl/creativecloud.html",
       "active": true,
       "moved": 0
     },
@@ -167,8 +32,8 @@
       "label": "Angular",
       "quadrant": 2,
       "ring": 0,
-      "description": "One of two mature preferred single-page application frameworks",
-      "link": "Link",
+      "description": "Angular is an open-source, TypeScript-based web application framework developed and maintained by Google. It is designed for building single-page applications (SPAs) and provides a comprehensive set of tools and features to simplify the development process.",
+      "link": "https://angular.io/",
       "active": true,
       "moved": 0
     },
@@ -176,8 +41,26 @@
       "label": "Azure Bicep",
       "quadrant": 2,
       "ring": 1,
-      "description": "",
-      "link": "",
+      "description": "Bicep is a language for declaratively deploying Azure resources. You can use Bicep instead of JSON for developing your Azure Resource Manager templates (ARM templates).",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure Cloud",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "The Azure Cloud is Microsoft's public cloud platform that offers a large collection of cloud computing services and solutions.  It provides access, management, and development of applications and services through a global network of Microsoft data centers. \n",
+      "link": "https://azure.microsoft.com/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Azure DevOps",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "Azure DevOps is a comprehensive set of cloud-hosted DevOps services provided by Microsoft. It offers a suite of tools and features that enable teams to plan, develop, test, and deploy software applications efficiently. Azure DevOps supports a wide range of programming languages, frameworks, and platforms, allowing teams to use the tools and technologies they are familiar with. It is designed to help organizations streamline their software development and delivery processes, improve collaboration, and increase the overall efficiency of their DevOps workflows. ",
+      "link": "https://azure.microsoft.com/en-us/products/devops",
       "active": true,
       "moved": 0
     },
@@ -185,152 +68,35 @@
       "label": "C#",
       "quadrant": 2,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "C# is a modern, general-purpose, and object-oriented programming language developed by Microsoft. It was first released in 2000 as part of the .NET Framework initiative. C# was designed with the goals of simplicity, robustness, programmer productivity, and suitability for a wide range of applications, from small embedded systems to large-scale enterprise software. It has become one of the most popular programming languages, particularly for .NET development.",
+      "link": "https://dotnet.microsoft.com/en-us/languages/csharp",
       "active": true,
       "moved": 0
     },
     {
-      "label": "Flutter",
-      "quadrant": 2,
+      "label": "Calendly",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "Calendly is an automated scheduling software that simplifies the process of booking meetings and appointments.",
+      "link": "https://calendly.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Confluence",
+      "quadrant": 1,
       "ring": 2,
-      "description": "Native mobile framework, based on Dart language, needs to be weighted against React Native",
-      "link": "",
+      "description": "Confluence is a collaborative workspace and content management system developed by Atlassian. It allows teams to create, organize, and share information, documents, and project updates in a centralized platform. ",
+      "link": "https://www.atlassian.com/software/confluence",
       "active": true,
       "moved": 0
     },
     {
-      "label": "GraphQL",
-      "quadrant": 2,
-      "ring": 3,
-      "description": "In most settings it is a clear overhead compared to proper architecture + REST",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "HTML",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "Core browser language",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Java",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "JavaScript",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "Core browser language",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Junit",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "NextJS",
-      "quadrant": 2,
-      "ring": 3,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Python",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "React",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "One of two mature preferred single-page application frameworks",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "React Native",
-      "quadrant": 2,
-      "ring": 2,
-      "description": "Native mobile framework based on React, needs to be weighted against Flutter",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Spring Boot",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "SQL",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Tailwind",
-      "quadrant": 2,
-      "ring": 2,
-      "description": "Utility-first CSS framework; value over plain (S)CSS needs to be assessed (and trialed properly)",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "TestContainers",
-      "quadrant": 2,
-      "ring": 2,
-      "description": "",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "TypeScript",
-      "quadrant": 2,
-      "ring": 0,
-      "description": "Preferred approach over JavaScript in a team setting with various level of expertise",
-      "link": "",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "label": "Adobe Photoshop",
-      "quadrant": 3,
-      "ring": 0,
-      "description": "",
-      "link": "Link",
+      "label": "Elastic Cloud",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "Elastic Cloud is a family of cloud-based services offered by Elastic that provide hosted and managed solutions for Elasticsearch, Kibana, and other Elastic Stack components. Elastic Cloud makes it easy for organizations to leverage the power of the Elastic Stack in the cloud, with the benefits of a fully managed service that scales to meet their needs.",
+      "link": "https://www.elastic.co/cloud",
       "active": true,
       "moved": 0
     },
@@ -338,8 +104,8 @@
       "label": "Figma",
       "quadrant": 3,
       "ring": 3,
-      "description": "",
-      "link": "",
+      "description": "Figma is a collaborative, browser-based interface design tool that has become popular in the design industry.",
+      "link": "https://www.figma.com",
       "active": false,
       "moved": 0
     },
@@ -348,7 +114,79 @@
       "quadrant": 3,
       "ring": 1,
       "description": "",
-      "link": "",
+      "link": "https://github.com/FinapsMX/Finsight-CLI",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Flutter",
+      "quadrant": 2,
+      "ring": 2,
+      "description": "Flutter is an open-source UI software development kit created by Google. It allows developers to build high-performance, high-fidelity mobile, web, and desktop applications from a single codebase using the Dart programming language.",
+      "link": "https://flutter.dev",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "GitHub",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "GitHub is an online platform that allows developers to store, manage, and collaborate on software projects. It is a web-based interface that uses the Git version control system, enabling multiple people to work on the same codebase simultaneously. GitHub serves as a social network for developers, allowing them to build profiles, share their work, and contribute to open-source projects.  It provides features like code hosting, version control, issue tracking, and project management tools to facilitate collaborative software development.",
+      "link": "https://github.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "GraphQL",
+      "quadrant": 2,
+      "ring": 3,
+      "description": "GraphQL is a query language and runtime for APIs that provides a more efficient and flexible alternative to traditional REST APIs. GraphQL is a modern approach to building APIs that improves developer experience, performance, and flexibility compared to traditional REST APIs.",
+      "link": "https://graphql.org",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "HTML",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "HTML, or Hypertext Markup Language, is the standard markup language used to create and structure web pages. It provides the basic building blocks for the content and layout of a website, allowing developers to define the semantic meaning and structure of the various elements on a web page.",
+      "link": "https://html.spec.whatwg.org/multipage/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Hubspot",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "HubSpot is a leading cloud-based customer relationship management (CRM) and marketing platform that provides a suite of tools to help businesses attract, engage, and delight customers.",
+      "link": "https://www.hubspot.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Invision",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "InVision is a powerful prototyping, collaboration, and workflow tool designed for designers and product teams",
+      "link": "https://www.invisionapp.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Java",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "Java is a popular, high-level, object-oriented programming language created in 1995 by James Gosling at Sun Microsystems (now owned by Oracle).",
+      "link": "https://www.java.com/en/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "JavaScript",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "JavaScript is a versatile, high-level programming language that is primarily used for creating dynamic web content and interactive user experiences. JavaScript is an essential language for creating interactive and dynamic web experiences, and its versatility has led to its widespread adoption across a variety of software development domains.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_overview",
       "active": true,
       "moved": 0
     },
@@ -357,7 +195,7 @@
       "quadrant": 3,
       "ring": 3,
       "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference.",
-      "link": "",
+      "link": "https://jestjs.io",
       "active": true,
       "moved": 0
     },
@@ -365,8 +203,44 @@
       "label": "Jetbrains",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "JetBrains is a global software company that specializes in creating intelligent, productivity-enhancing tools for software developers and teams. JetBrains offers an extensive portfolio of integrated development environments (IDEs) for a variety of programming languages, including Java, Ruby, Python, PHP, Objective-C, and .NET. Some of their most popular IDEs include IntelliJ IDEA, ReSharper, PyCharm, and WebStorm. The company also develops tools for team collaboration, continuous integration, and issue tracking, such as TeamCity and YouTrack.\n1",
+      "link": "https://www.jetbrains.com/ides/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Junit",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "JUnit is a popular open-source unit testing framework for the Java programming language. It allows developers to write and execute automated tests to ensure the reliability and correctness of their Java code. ",
+      "link": "https://junit.org/junit5/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Lusha",
+      "quadrant": 1,
+      "ring": 1,
+      "description": "Lusha is a sales intelligence platform that helps businesses identify and connect with sales leads.",
+      "link": "https://www.lusha.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Mendix",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "Mendix is a leading low-code application development platform that enables organizations to rapidly build and deploy enterprise-grade software applications.",
+      "link": "https://www.mendix.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "NextJS",
+      "quadrant": 2,
+      "ring": 3,
+      "description": "Next.js is a powerful React framework that simplifies the process of building fast, interactive, and SEO-friendly web applications. Next.js provides developers with a comprehensive set of tools and features to create production-ready, scalable web applications quickly and efficiently.",
+      "link": "https://nextjs.org",
       "active": true,
       "moved": 0
     },
@@ -374,17 +248,17 @@
       "label": "Omnext Mendix quality analysis",
       "quadrant": 3,
       "ring": 1,
-      "description": "",
-      "link": "",
+      "description": "Omnext is a software analysis platform that provides in-depth quality and security evaluations for Mendix applications. The Omnext platform allows Mendix developers and administrators to continuously monitor the technical quality of their applications and take proactive steps to prevent technical debt, security vulnerabilities, and other issues.",
+      "link": "https://www.omnext.com/mendix-quality-analysis/",
       "active": true,
       "moved": 0
     },
     {
       "label": "Parallels",
       "quadrant": 3,
-      "ring": 0,
-      "description": "",
-      "link": "",
+      "ring": 3,
+      "description": "Parallels is a software company that specializes in virtualization solutions, allowing users to run Windows, Linux, and other operating systems on Apple Macintosh computers.",
+      "link": "https://www.parallels.com",
       "active": true,
       "moved": 0
     },
@@ -392,8 +266,8 @@
       "label": "PgAdmin",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "pgAdmin is the leading open-source graphical user interface (GUI) management tool for the PostgreSQL database. It provides a comprehensive set of features to simplify the administration and development of PostgreSQL databases. ",
+      "link": "https://www.pgadmin.org",
       "active": true,
       "moved": 0
     },
@@ -401,8 +275,17 @@
       "label": "Playwright",
       "quadrant": 3,
       "ring": 2,
-      "description": "End-2-end test framework. ",
-      "link": "",
+      "description": "Playwright is a modern, open-source test automation framework developed by Microsoft that enables reliable end-to-end testing for web applications across multiple browsers and platforms.",
+      "link": "https://playwright.dev",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "PostgreSQL",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "PostgreSQL is a powerful, open-source object-relational database management system (ORDBMS) that emphasizes extensibility and SQL compliance. PostgreSQL was originally developed at the University of California, Berkeley in the 1980s as a successor to the Ingres database. It has been actively developed for over 35 years by a global community of contributors, making it a mature and feature-rich open-source database solution.",
+      "link": "https://www.postgresql.org",
       "active": true,
       "moved": 0
     },
@@ -410,8 +293,53 @@
       "label": "Postman",
       "quadrant": 3,
       "ring": 1,
-      "description": "",
-      "link": "",
+      "description": "Postman is an API testing and development platform that simplifies the process of building, testing, and documenting APIs. It provides a user-friendly graphical interface for sending HTTP requests, viewing responses, and organizing API tests into collections.\nPostman allows developers to create, test, and document APIs more efficiently by offering features such as environment variables, scripting, and collaboration tools.",
+      "link": "https://www.postman.com",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "PowerBI",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "Power BI is a comprehensive business intelligence and data visualization platform developed by Microsoft. It allows users to connect to a wide range of data sources, transform and analyze the data, and create interactive dashboards and reports. ",
+      "link": "https://www.microsoft.com/en-us/power-platform/products/power-bi",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Python",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "Python is a high-level, general-purpose programming language known for its simplicity, readability, and versatility.",
+      "link": "https://www.python.org",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "React",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "React is known for its component-based architecture, where applications are built using reusable UI components. Each component can manage its own state and render a piece of the user interface. React utilizes a virtual DOM (Document Object Model) to efficiently update the actual DOM, making applications faster and more responsive.",
+      "link": "https://react.dev",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "React Native",
+      "quadrant": 2,
+      "ring": 2,
+      "description": "React Native is an open-source framework developed by Meta Platforms (formerly Facebook) that allows developers to build mobile applications for both iOS and Android platforms using JavaScript and React, a popular JavaScript library for building user interfaces.",
+      "link": "https://reactnative.dev",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "SAS",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "SAS (Statistical Analysis System) is a comprehensive software suite developed by SAS Institute for advanced data management, analytics, and reporting.",
+      "link": "https://www.sas.com/",
       "active": true,
       "moved": 0
     },
@@ -419,8 +347,8 @@
       "label": "Sketch",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "Sketch is a popular digital design and prototyping tool used by designers, developers, and creative professionals. It was first released in 2010 and has since become one of the leading design applications, particularly in the web and mobile app design industries.",
+      "link": "https://www.sketch.com",
       "active": true,
       "moved": 0
     },
@@ -428,8 +356,35 @@
       "label": "SonarQube",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality. It performs automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities across 29 programming languages. SonarQube provides reports on various code quality metrics such as duplicated code, coding standards, unit tests, code coverage, code complexity, comments, and security recommendations. It integrates with various development tools and CI/CD pipelines to enable continuous code quality monitoring and improvement",
+      "link": "https://www.sonarsource.com/products/sonarqube/",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Spring Boot",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "Spring Boot is an open-source Java framework that simplifies the development and deployment of Spring-based applications. It provides a pre-configured template that allows developers to quickly build and run stand-alone, production-ready Spring applications with minimal configuration",
+      "link": "https://spring.io",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "SQL",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "SQL (Structured Query Language) is a programming language used to manage and manipulate data stored in relational databases. It allows users to create, modify, and query databases, as well as insert, update, and delete data. SQL is the standard language for relational database management systems (RDBMS) and is used by major database vendors like MySQL, Oracle, Microsoft SQL Server, and PostgreSQL. Key features of SQL include its ability to perform fast data processing, its user-friendly syntax, and its support for multiple data views. SQL is an essential tool for data management, analysis, and business intelligence across many industries.",
+      "link": "https://en.wikipedia.org/wiki/SQL",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Tailwind",
+      "quadrant": 2,
+      "ring": 2,
+      "description": "Tailwind CSS is a utility-first CSS framework that streamlines web development by providing a set of pre-designed utility classes. These classes enable rapid styling without writing custom CSS, promoting consistency and scalability.",
+      "link": "https://tailwindcss.com",
       "active": true,
       "moved": 0
     },
@@ -437,8 +392,17 @@
       "label": "Terraform",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "Terraform is a powerful Infrastructure as Code (IaC) software tool offered by HashiCorp. It allows users to define and provision both on-premises and cloud resources in a declarative configuration language, enabling consistent, repeatable, and reliable infrastructure management.",
+      "link": "https://www.terraform.io",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "TypeScript",
+      "quadrant": 2,
+      "ring": 0,
+      "description": "TypeScript is a superset of JavaScript that adds optional static typing to the language. It was developed and is maintained by Microsoft. TypeScript is a typed superset of JavaScript that enhances developer productivity, improves code quality, and provides a more robust development experience, while still maintaining full compatibility with standard JavaScript.",
+      "link": "https://www.typescriptlang.org",
       "active": true,
       "moved": 0
     },
@@ -446,8 +410,8 @@
       "label": "Visual Studio Code",
       "quadrant": 3,
       "ring": 0,
-      "description": "",
-      "link": "",
+      "description": "Visual Studio Code (VS Code) is a free, open-source, and highly customizable code editor developed by Microsoft. It is available for Windows, macOS, and Linux operating systems. Overall, Visual Studio Code is a highly versatile and popular code editor used by developers of all experience levels to write, test, and deploy a variety of software applications",
+      "link": "https://code.visualstudio.com",
       "active": true,
       "moved": 0
     },
@@ -455,8 +419,8 @@
       "label": "ViteJS",
       "quadrant": 3,
       "ring": 0,
-      "description": "Build tool",
-      "link": "",
+      "description": "Vite is a fast and efficient build tool for modern web development. Overall, Vite provides a faster and more efficient development experience compared to traditional build tools, making it a popular choice for building modern web applications.",
+      "link": "https://vitejs.dev",
       "active": true,
       "moved": 0
     },
@@ -464,8 +428,8 @@
       "label": "Vitest",
       "quadrant": 3,
       "ring": 0,
-      "description": "Test framework for unit + integration testing, integrates with ViteJS",
-      "link": "",
+      "description": "Vitest is a next-generation testing framework powered by Vite. It is a fast, stable, and feature-rich testing solution that integrates seamlessly with Vite projects. ",
+      "link": "https://vitest.dev",
       "active": true,
       "moved": 0
     },
@@ -473,8 +437,17 @@
       "label": "Webpack + Babel",
       "quadrant": 3,
       "ring": 3,
-      "description": "Build tool; ViteJS is an easier & faster setup",
-      "link": "",
+      "description": "Webpack is a popular module bundler that takes your JavaScript files, along with other assets like CSS, images, and fonts, and bundles them into a single file for efficient delivery to the browser. Babel is a JavaScript compiler that allows you to use the latest features of the JavaScript language, even if they are not yet supported by all browsers. Babel takes your modern JavaScript code and \"transpiles\" it into a version that is compatible with older browsers.\nIn a typical web application, Webpack is used to bundle all the JavaScript files, while Babel is used to transpile the modern JavaScript code to ensure compatibility across different browsers. Webpack uses the babel-loader to handle the transpilation of JavaScript files before bundling them",
+      "link": "https://webpack.js.org",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Wordpress",
+      "quadrant": 1,
+      "ring": 0,
+      "description": "WordPress is a free and open-source content management system (CMS) that allows anyone to create and manage websites easily. Originally designed as a blogging platform, WordPress has evolved to support a wide range of website types, from blogs and portfolios to e-commerce stores and membership sites.",
+      "link": "https://wordpress.com/",
       "active": true,
       "moved": 0
     }
