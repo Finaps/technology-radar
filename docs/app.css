@@ -18,6 +18,12 @@ CUSTOM CSS
   src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Reddit Mono';
+  src: url('./fonts/Reddit_Mono/RedditMono-VariableFont_wght.ttf')
+    format('truetype');
+}
+
 :root {
   --color-accent-1: #01bfad;
   --color-accent-2: #a98fef;
@@ -45,19 +51,20 @@ CUSTOM CSS
   --color-grey-90: #f5f5f5;
   --color-grey-95: #fafafa;
 
-  --base-bg-color: var(--color-grey-1);
+  --base-bg-color: var(--color-accent-3);
   --body-bg-color: var(--color-white);
-  --font-color: var(--color-grey-3);
+  --font-color: #000000;
   --font-color-inverse: var(--color-white);
   --font-color-grey: var(--color-grey-40);
-  --font-family: 'Open Sans', monospace;
-  --font-family-header: 'Poppins', monospace;
+  --font-family: 'Reddit Mono', monospace;
+  --font-family-header: 'Reddit Mono', monospace;
 
   --color-primary: #191970;
   --color-secondary: #feaa00;
 
-  --border-color: var(--color-grey-70);
-  --border-radius: 0.25rem;
+  --border-color: #000000;
+  --border-radius: 0.5rem;
+  --border-width: 4px;
 
   --size-1: 3rem;
   --size-2: 1.75rem;
@@ -69,9 +76,11 @@ CUSTOM CSS
 
   --icon-cross: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 
-  --btn-bg-default: var(--color-grey-1);
+  --btn-bg-default: var(--color-secondary);
   --btn-color-default: var(--font-color);
   --modal-width: 500px;
+
+  --box-shadow: 4px 6px 0px 0px var(--border-color);
 
   --bg-inactive-blip: var(--color-grey-40);
 }
@@ -90,7 +99,7 @@ CUSTOM CSS
 
 html {
   background-color: var(--base-bg-color);
-  padding-top: 2rem;
+  padding: 2rem;
 }
 
 body {
@@ -100,9 +109,19 @@ body {
   max-width: 1400px;
   margin: auto;
   background-color: var(--body-bg-color);
-  border: 1px solid var(--border-color);
+  border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
   color: var(--font-color);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  max-width: 164px;
+}
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: contrast(0) brightness(100);
+  }
 }
 
 /* TYPOGRAPHY
@@ -114,7 +133,7 @@ h3 {
   font-family: var(--font-family-header);
   color: var(--header-color);
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 h1 {
@@ -156,24 +175,33 @@ h3 {
 .bg-accent-1 {
   background-color: var(--color-accent-1);
 }
+
 .bg-accent-2 {
   background-color: var(--color-accent-2);
 }
+
 .bg-accent-3 {
   background-color: var(--color-accent-3);
 }
+
 .bg-accent-4 {
   background-color: var(--color-accent-4);
 }
+
 .bg-accent-5 {
   background-color: var(--color-accent-5);
 }
+
 .bg-accent-6 {
   background-color: var(--color-accent-6);
 }
 
 .text-gray {
   color: var(--font-color-grey);
+}
+
+.title {
+  color: var(--color-secondary);
 }
 
 /* CONTAINERS
@@ -204,16 +232,31 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
   &.quadrants {
-    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    border: var(--border-width) solid var(--border-color);
   }
 }
 
 .quadrants {
-  background-color: var(--base-bg-color);
-  padding: 2rem;
-  border: 1px solid var(--border-color);
+  border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
+}
+
+.quadrants > div {
+  border-right: var(--border-width) solid var(--border-color);
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.quadrants > div:last-child {
+  border-right: none;
+}
+
+.quadrants .badge {
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.quadrants button {
+  border-radius: 0;
 }
 
 /* BUTTONS
@@ -227,12 +270,15 @@ a {
 button {
   padding: 0.5rem 1rem;
   cursor: pointer;
-  border-radius: 0.25rem;
-  border: none;
+  border-radius: var(--border-radius);
   font-weight: 600;
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: 2px 3px 0px 0px var(--border-color);
   &:hover {
     transition: all 0.15s ease-in-out;
     filter: brightness(120%);
+    transform: translate(2px, 3px);
+    box-shadow: 0px 0px 0px 0px var(--border-color);
   }
 }
 
@@ -246,12 +292,19 @@ button.btn-primary {
   color: var(--color-white);
 }
 
+button.btn-secondary {
+  background-color: var(--color-secondary);
+}
+
 button.btn-transparent {
   background-color: transparent;
   border: none;
   color: var(--font-color);
+  box-shadow: none;
   &:hover {
     background-color: var(--btn-bg-default);
+    transform: none;
+    box-shadow: none;
   }
 }
 
@@ -288,8 +341,7 @@ ul {
 -------------------------------*/
 
 .badge {
-  padding: 0.5rem 0.75rem;
-  border-radius: 9999px;
+  padding: 1rem 0.75rem;
   font-weight: bold;
   color: var(--color-grey-3);
   font-size: var(--font-size-small);
