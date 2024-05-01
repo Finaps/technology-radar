@@ -1,18 +1,18 @@
 const QUADRANTS = [
   {
-    name: 'Techniques',
+    name: 'Technologies',
     id: 4,
   },
   {
-    name: 'Platforms',
+    name: 'Tools',
     id: 1,
   },
   {
-    name: 'Languages & Frameworks',
+    name: 'Platforms',
     id: 2,
   },
   {
-    name: 'Tools',
+    name: 'Internal',
     id: 3,
   },
 ];
