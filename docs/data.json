@@ -119,15 +119,6 @@
       "moved": 0
     },
     {
-      "label": "HTML + (S)CSS",
-      "quadrant": 3,
-      "ring": 0,
-      "description": "Core browser language; SCSS is a mature extension that makes writing large CSS code bases easier (although CSS is coming close, so this might update the future)",
-      "link": "https://sass-lang.com",
-      "active": true,
-      "moved": 0
-    },
-    {
       "label": "Mendix",
       "quadrant": 3,
       "ring": 0,
@@ -376,6 +367,15 @@
       "ring": 0,
       "description": "Vitest is a next-generation testing framework powered by Vite. It is a fast, stable, and feature-rich testing solution that integrates seamlessly with Vite projects. ",
       "link": "https://vitest.dev",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Bicep",
+      "quadrant": 2,
+      "ring": 1,
+      "description": " Bicep provides a simpler, more developer-friendly syntax for defining Azure infrastructure, while maintaining full compatibility with the underlying ARM template capabilities",
+      "link": "https://github.com/Azure/bicep?tab=readme-ov-file",
       "active": true,
       "moved": 0
     },
