@@ -3,22 +3,6 @@ CUSTOM CSS
 */
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('./fonts/open_sans/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('./fonts/open_sans/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Reddit Mono';
   src: url('./fonts/Reddit_Mono/RedditMono-VariableFont_wght.ttf')
     format('truetype');
@@ -106,7 +90,7 @@ body {
   font-family: var(--font-family);
   font-weight: normal;
   padding: 2rem;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
   background-color: var(--body-bg-color);
   border: var(--border-width) solid var(--border-color);
@@ -229,7 +213,7 @@ h3 {
 
   &.items {
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
   &.quadrants {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
@@ -278,6 +262,10 @@ h3 {
 
 .quadrants button {
   border-radius: 0;
+}
+
+.quadrants button span:last-child {
+  word-break: break-word;
 }
 
 /* BUTTONS
@@ -389,6 +377,10 @@ button.btn-sm {
 
 .mb-2 {
   margin-bottom: 2rem;
+}
+
+.mr-0_25 {
+  margin-right: 0.25rem;
 }
 
 .m-0 {
@@ -526,4 +518,11 @@ body.modal-open {
   font-family: var(--font-family);
   font-size: var(--font-size-small);
   fill: var(--color-white);
+}
+
+/* LOGO
+-------------------------------*/
+
+.logo #text rect {
+  filter: contrast(100);
 }

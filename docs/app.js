@@ -50,13 +50,18 @@ fetch('./data.json')
       button.appendChild(favicon);
 
       // create index + label
+      const body = document.createElement('div');
+
       const index = document.createElement('span');
-      const label = document.createElement('span');
+      index.setAttribute('class', 'text-gray mr-0_25');
       index.textContent = '#' + item.id;
-      index.setAttribute('class', 'text-gray');
+
+      const label = document.createElement('span');
       label.textContent = item.label;
-      button.appendChild(index);
-      button.appendChild(label);
+
+      body.appendChild(index);
+      body.appendChild(label);
+      button.appendChild(body);
 
       const li = document.createElement('li');
       li.appendChild(button);
