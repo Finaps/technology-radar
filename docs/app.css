@@ -247,6 +247,20 @@ h3 {
   grid-template-rows: 1fr 1fr;
 }
 
+@media (width < 1168px) {
+  .container-radar {
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1/1;
+  }
+  .container-radar .legend-list {
+    display: none;
+  }
+  .container-radar .radar svg > g {
+    transform-origin: revert;
+  }
+}
+
 .quadrants > div {
   border-right: var(--border-width) solid var(--border-color);
   border-bottom: var(--border-width) solid var(--border-color);
