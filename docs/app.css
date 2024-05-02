@@ -520,10 +520,3 @@ body.modal-open {
   font-size: var(--font-size-small);
   fill: var(--color-white);
 }
-
-/* LOGO
--------------------------------*/
-
-.logo #text rect {
-  filter: contrast(100);
-}
