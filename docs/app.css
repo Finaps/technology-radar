@@ -90,7 +90,7 @@ body {
   font-family: var(--font-family);
   font-weight: normal;
   padding: 2rem;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
   background-color: var(--body-bg-color);
   border: var(--border-width) solid var(--border-color);
@@ -213,7 +213,7 @@ h3 {
 
   &.items {
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
   &.quadrants {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
@@ -360,12 +360,13 @@ button.btn-sm {
 
 .img-circle {
   border-radius: 9999px;
-  max-width: 1.5rem;
-  max-height: 1.5rem;
+  max-width: 1rem;
+  max-height: 1rem;
 }
 
 .img-lg {
   max-width: 2.5rem;
+  max-height: 2.5rem;
 }
 
 /* UTILITIES

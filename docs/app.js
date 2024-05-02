@@ -21,6 +21,8 @@ fetch('./data.json')
     };
     radar_visualization(radarInput);
 
+    setRadarScale();
+
     dataSet.forEach(function (item) {
       // create button
       const button = document.createElement('button');
@@ -105,11 +107,11 @@ function openTechDetails(index) {
   openModal('modal-details');
 }
 
-addEventListener('resize', (event) => {
+function setRadarScale() {
   const container = document.querySelector('.radar');
-  const scale = window.innerWidth > 1400 ? 1 : container.clientWidth / 804;
-  if (scale < 1) {
-    const radar = document.querySelector('#radar > g');
-    radar.setAttribute('style', `scale: ${scale};`);
-  }
-});
+  const radar = document.querySelector('#radar > g');
+  const scale = container.clientWidth > 804 ? 1 : container.clientWidth / 804;
+  radar.setAttribute('style', `scale: ${scale};`);
+}
+
+addEventListener('resize', setRadarScale);
