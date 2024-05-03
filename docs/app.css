@@ -3,22 +3,6 @@ CUSTOM CSS
 */
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('./fonts/open_sans/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('./fonts/open_sans/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Reddit Mono';
   src: url('./fonts/Reddit_Mono/RedditMono-VariableFont_wght.ttf')
     format('truetype');
@@ -229,18 +213,12 @@ h3 {
 
   &.items {
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
-  &.quadrants {
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-    border: var(--border-width) solid var(--border-color);
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
   }
 }
 
-.quadrants {
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-}
+/* RADAR
+-------------------------------*/
 
 .container-radar {
   display: grid;
@@ -255,6 +233,7 @@ h3 {
 
 .container-radar .radar svg > g {
   transform-origin: center left;
+  transform: translate(402px, 402px);
 }
 
 .container-radar .legend-list {
@@ -263,9 +242,35 @@ h3 {
   grid-template-rows: 1fr 1fr;
 }
 
+@media (width < 1168px) {
+  .container-radar {
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1/1;
+  }
+  .container-radar .legend-list {
+    display: none;
+  }
+  .container-radar .radar svg > g {
+    transform-origin: revert;
+  }
+}
+
+/* QUADRANTS
+-------------------------------*/
+.quadrants {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
 .quadrants > div {
   border-right: var(--border-width) solid var(--border-color);
-  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+@media (width < 650px) {
+  .quadrants > div {
+    border-right: none;
+  }
 }
 
 .quadrants > div:last-child {
@@ -278,6 +283,10 @@ h3 {
 
 .quadrants button {
   border-radius: 0;
+}
+
+.quadrants button span:last-child {
+  word-break: break-word;
 }
 
 /* BUTTONS
@@ -372,12 +381,13 @@ button.btn-sm {
 
 .img-circle {
   border-radius: 9999px;
-  max-width: 1.5rem;
-  max-height: 1.5rem;
+  max-width: 1rem;
+  max-height: 1rem;
 }
 
 .img-lg {
   max-width: 2.5rem;
+  max-height: 2.5rem;
 }
 
 /* UTILITIES
@@ -389,6 +399,10 @@ button.btn-sm {
 
 .mb-2 {
   margin-bottom: 2rem;
+}
+
+.mr-0_25 {
+  margin-right: 0.25rem;
 }
 
 .m-0 {
@@ -526,4 +540,48 @@ body.modal-open {
   font-family: var(--font-family);
   font-size: var(--font-size-small);
   fill: var(--color-white);
+}
+
+/**
+ * A layout of X columns that switches from horizontal to vertical the moment
+ * the width of parent becomes less than a set value. 
+ *
+ * --layout-gap: set the gap between the child elements (horizontal & vertical)
+ * --layout-threshold: the min-width of a single child elements
+ * --layout-direction: sets flex-direction
+ */
+
+.switcher {
+  --switcher-layout-gap: 0;
+  --switcher-layout-threshold: 500px;
+  --switcher-layout-direction: row;
+
+  display: flex;
+  flex-direction: var(--switcher-layout-direction);
+  flex-wrap: wrap;
+  gap: var(--switcher-layout-gap);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-layout-threshold) - 100%) * 999);
+}
+
+/**
+ * tile-based sytem that determines the amount of columns based on a min-width
+ * for each tile. The wrapper fills the entire available horizonal space
+ *
+ * --layout-threshold: sets the minimum width of each tile
+ * --layout-gap: set the gap between the child elements (horizontal & vertical)
+ */
+.tiles {
+  --tiles-layout-threshold: 500px;
+  --tiles-layout-gap: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--tiles-layout-threshold), 100%), 1fr)
+  );
+  gap: var(--tiles-layout-gap);
 }

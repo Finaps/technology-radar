@@ -21,6 +21,8 @@ fetch('./data.json')
     };
     radar_visualization(radarInput);
 
+    setRadarScale();
+
     dataSet.forEach(function (item) {
       // create button
       const button = document.createElement('button');
@@ -50,13 +52,18 @@ fetch('./data.json')
       button.appendChild(favicon);
 
       // create index + label
+      const body = document.createElement('div');
+
       const index = document.createElement('span');
-      const label = document.createElement('span');
+      index.setAttribute('class', 'text-gray mr-0_25');
       index.textContent = '#' + item.id;
-      index.setAttribute('class', 'text-gray');
+
+      const label = document.createElement('span');
       label.textContent = item.label;
-      button.appendChild(index);
-      button.appendChild(label);
+
+      body.appendChild(index);
+      body.appendChild(label);
+      button.appendChild(body);
 
       const li = document.createElement('li');
       li.appendChild(button);
@@ -100,11 +107,11 @@ function openTechDetails(index) {
   openModal('modal-details');
 }
 
-addEventListener('resize', (event) => {
+function setRadarScale() {
   const container = document.querySelector('.radar');
-  const scale = window.innerWidth > 1400 ? 1 : container.clientWidth / 804;
-  if (scale < 1) {
-    const radar = document.querySelector('#radar > g');
-    radar.setAttribute('style', `scale: ${scale};`);
-  }
-});
+  const radar = document.querySelector('#radar > g');
+  const scale = container.clientWidth > 804 ? 1 : container.clientWidth / 804;
+  radar.setAttribute('style', `scale: ${scale};`);
+}
+
+addEventListener('resize', setRadarScale);
