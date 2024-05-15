@@ -2,234 +2,210 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <meta name="description"
-    content="Finaps Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams at Finaps to pick the best technologies for new projects">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Finaps Tech Radar</title>
-  <link rel="shortcut icon" href="https://finaps.nl/storage/uploads/2023/05/ogfinaps.png">
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Finaps Tools & Technologies Radar: visualizing technology choices to support Finaps Engineering teams in selecting appropriate technologies for new projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finaps Tools & Technologies Radar</title>
+    <link rel="shortcut icon" href="https://finaps.nl/storage/uploads/2023/05/ogfinaps.png">
 
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="config.js"></script>
-  <script src="radar.js"></script>
-  <script src="app.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="config.js"></script>
+    <script src="radar.js"></script>
+    <script src="app.js"></script>
 
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
 
-  <div class="d-flex justify-between">
-
+<div class="d-flex justify-between">
     <div>
-      <img src="./logo.svg" class="logo" alt="Finaps logo" />
-      <h1 class="title">Finaps Tech Radar</h1>
-      <div id="version"></div>
+        <img src="./logo.svg" class="logo" alt="Finaps logo">
+        <h1 class="title">Finaps Tools & Technologies Radar</h1>
+        <div id="version"></div>
     </div>
     <div>
-      <button class="btn-secondary" onClick="openModal('modal-introduction')">Read introduction</button>
+        <button class="btn-secondary" onclick="openModal('modal-introduction')">Read Introduction</button>
     </div>
-  </div>
+</div>
 
-  <div class="container-radar">
+<div class="container-radar">
     <div class="legend-list">
-      <div class="legend">
-        <h3 class="legend-header">
-          Tools
-        </h3>
-        <p class="legend-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      <div class="legend align-end">
-        <h3 class="legend-header">
-          Platforms
-        </h3>
-        <p class="legend-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
+        <div class="legend">
+            <h3 class="legend-header">Tools</h3>
+            <p class="legend-description">Specific task-oriented tools enhancing quality and efficiency (e.g. static
+                code analysis tools).</p>
+        </div>
+        <div class="legend align-end">
+            <h3 class="legend-header">Platforms</h3>
+            <p class="legend-description">Foundations for software such as cloud services, virtual platforms, or data
+                platforms (e.g. Azure Cloud, JVM, SAS Viya).</p>
+        </div>
     </div>
 
     <div class='radar'>
-      <svg id="radar"></svg>
+        <svg id="radar"></svg>
     </div>
 
     <div class="legend-list">
-      <div class="legend text-right">
-        <h3 class="legend-header">
-          Technologies
-        </h3>
-        <p class="legend-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="legend align-end text-right">
-        <h3 class="legend-header">
-          Internal Software
-        </h3>
-        <p class="legend-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
+        <div class="legend text-right">
+            <h3 class="legend-header">Technologies</h3>
+            <p class="legend-description">Skills-based tools requiring knowledge and experience (e.g. Mendix,
+                programming languages).</p>
+        </div>
+        <div class="legend align-end text-right">
+            <h3 class="legend-header">Internal Software</h3>
+            <p class="legend-description">Software used at Finaps to boost productivity.</p>
+        </div>
     </div>
-  </div>
+</div>
 
-  <div class="tiles | items">
+<div class="tiles | items">
     <div id="2">
-      <h2>Tools</h2>
-      <div class="switcher | quadrants">
-        <div>
-          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
-          <ul class="list mb-1" id="2-0"></ul>
+        <h2>Tools</h2>
+        <div class="switcher | quadrants">
+            <div>
+                <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+                <ul class="list mb-1" id="2-0"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+                <ul class="list mb-1" id="2-1"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+                <ul class="list mb-1" id="2-2"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-4 mb-1'>HOLD</div>
+                <ul class="list mb-1" id="2-3"></ul>
+            </div>
         </div>
-        <div>
-          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
-          <ul class="list mb-1" id="2-1"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
-          <ul class="list mb-1" id="2-2"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-4 mb-1'>HOLD</div>
-          <ul class="list mb-1" id="2-3"></ul>
-        </div>
-      </div>
     </div>
     <div id="3">
-      <h2>Technologies</h2>
-      <div class="switcher | quadrants">
-        <div>
-          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
-          <ul class="list mb-1" id="3-0"></ul>
+        <h2>Technologies</h2>
+        <div class="switcher | quadrants">
+            <div>
+                <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+                <ul class="list mb-1" id="3-0"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+                <ul class="list mb-1" id="3-1"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+                <ul class="list mb-1" id="3-2"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-4 mb-1'>HOLD</div>
+                <ul class="list mb-1" id="3-3"></ul>
+            </div>
         </div>
-        <div>
-          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
-          <ul class="list mb-1" id="3-1"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
-          <ul class="list mb-1" id="3-2"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-4 mb-1'>HOLD</div>
-          <ul class="list mb-1" id="3-3"></ul>
-        </div>
-      </div>
     </div>
     <div id="1">
-      <h2>Platforms</h2>
-      <div class="switcher | quadrants">
-        <div>
-          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
-          <ul class="list mb-1" id="1-0"></ul>
+        <h2>Platforms</h2>
+        <div class="switcher | quadrants">
+            <div>
+                <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+                <ul class="list mb-1" id="1-0"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+                <ul class="list mb-1" id="1-1"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+                <ul class="list mb-1" id="1-2"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-4 mb-1'>HOLD</div>
+                <ul class="list mb-1" id="1-3"></ul>
+            </div>
         </div>
-        <div>
-          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
-          <ul class="list mb-1" id="1-1"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
-          <ul class="list mb-1" id="1-2"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-4 mb-1'>HOLD</div>
-          <ul class="list mb-1" id="1-3"></ul>
-        </div>
-      </div>
     </div>
     <div id="0">
-      <h2>Internal Software</h2>
-      <div class="switcher | quadrants">
-        <div>
-          <div class='badge bg-accent-1 mb-1'>ADOPT</div>
-          <ul class="list mb-1" id="0-0"></ul>
+        <h2>Internal Software</h2>
+        <div class="switcher | quadrants">
+            <div>
+                <div class='badge bg-accent-1 mb-1'>ADOPT</div>
+                <ul class="list mb-1" id="0-0"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-2 mb-1'>TRIAL</div>
+                <ul class="list mb-1" id="0-1"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-3 mb-1'>ASSESS</div>
+                <ul class="list mb-1" id="0-2"></ul>
+            </div>
+            <div>
+                <div class='badge bg-accent-4 mb-1'>HOLD</div>
+                <ul class="list mb-1" id="0-3"></ul>
+            </div>
         </div>
-        <div>
-          <div class='badge bg-accent-2 mb-1'>TRIAL</div>
-          <ul class="list mb-1" id="0-1"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-3 mb-1'>ASSESS</div>
-          <ul class="list mb-1" id="0-2"></ul>
-        </div>
-        <div>
-          <div class='badge bg-accent-4 mb-1'>HOLD</div>
-          <ul class="list mb-1" id="0-3"></ul>
-        </div>
-      </div>
     </div>
-  </div>
-
+</div>
 </body>
-
 <div id="modal-introduction" class="modal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-header">
-      <h3 class="m-0">What is the Tech Radar?</h3>
-      <button type="button" onclick="closeModal()" class="btn-close" data-bs-dismiss="modal"
-        aria-label="Close"></button>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-header">
+            <h3 class="m-0">What is the Tech Radar?</h3>
+            <button type="button" onclick="closeModal()" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>The Finaps Tools & Technologies Radar is a list of tools and technologies with an assessment result.</p>
+            <h3>Radar Structure</h3>
+            <p>The Radar tracks tools and technologies, called blips, organized into quadrants and rings. Quadrants
+                represent types of blips, and rings indicate our usage recommendation.</p>
+            <h3>Blips</h3>
+            <p>Blips are technologies or techniques relevant to software development, often changing position in the
+                Radar, indicating our confidence in them.</p>
+            <h3>Quadrants</h3>
+            <ul class="mb-1">
+                <li><strong>Tools</strong> &mdash; Task-specific tools enhancing quality and efficiency.</li>
+                <li><strong>Technologies</strong> &mdash; Skill-based tools requiring knowledge and experience.</li>
+                <li><strong>Platforms</strong> &mdash; Foundations for software like cloud services or virtual
+                    platforms.
+                </li>
+                <li><strong>Internal Software</strong> &mdash; Software boosting Finaps productivity.</li>
+            </ul>
+            <h3>Rings</h3>
+            <ul class="mb-1">
+                <li><strong>Adopt</strong> &mdash; Proactively used in projects.</li>
+                <li><strong>Trial</strong> &mdash; Undergoing evaluation.</li>
+                <li><strong>Assess</strong> &mdash; Promising tools/technologies to monitor.</li>
+                <li><strong>Hold</strong> &mdash; Not recommended for projects.</li>
+            </ul>
+            <h3>Goal</h3>
+            <p class="mb-1">Ensure new tools/technologies are properly evaluated and the accepted list is
+                up-to-date.</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-primary" onclick="closeModal()">Close</button>
+        </div>
     </div>
-    <div class="modal-body">
-      <p>
-        The Finaps Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring
-          assignment</em>. We use four rings with the following semantics:
-      </p>
-      <ul class="mb-1">
-        <li><strong>ADOPT</strong> &mdash; Technologies that are proven to work and trusted by the team to serve our
-          purpose. Technologies and techniques that are suggested to seriously consider. Mature for use and active
-          offering to clients expected</li>
-        <li><strong>TRIAL</strong> &mdash; Technologies that have worked in the past and are known to work well for us
-          but are not entirely proven. Not quite ready to be adopted, but we have knowledge and experience with them
-          that can be shared. At this stage technologies are not actively offered to clients</li>
-        <li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us;
-          technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS
-          technologies have higher risks; they are often brand new and highly unproven in our organisation. You will
-          find some engineers that have knowledge in the technology and promote it, you may even find teams that have
-          started a prototyping effort.</li>
-        <li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that
-          we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects,
-          but usually can be continued for existing projects.</li>
-      </ul>
-      <h3>What is the purpose?</h3>
-      <p class="mb-1">
-        The Tech Radar is a tool to inspire and support Engineering teams at Finaps to pick the best technologies for
-        new projects; it provides a platform to share knowledge and experience in technologies, to reflect on
-        technology decisions and continuously evolve our technology landscape. Based on the <a
-          href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets out the
-        changes in technologies that are interesting in software development &mdash; changes that we think our
-        engineering teams should pay attention to and use in their projects.
-      </p>
-      <h3>How do we maintain it?</h3>
-      <p>
-        The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who facilitate and drive the
-        technology selection discussions at Finaps across the Engineering Community. Assignment of technologies to
-        rings is the outcome of ring change proposals, which are discussed and voted on. The Tech Radar is open for
-        contribution for all Engineering teams at Finaps and depends on their active participation to share lessons
-        learned, pitfalls, and contribute to good practices on using the technologies.<br />
-      </p>
-    </div>
-    <div class="modal-footer"><button class="btn-primary" onclick="closeModal()">Close</button></div>
-  </div>
 </div>
 
 <div id="modal-details" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <div class="d-flex align-center">
-        <img id="modal-fav" class="img-circle img-lg" />
-        <h3 id="modal-title" class="m-0"></h3>
-      </div>
-      <button type="button" onclick="closeModal()" class="btn-close" data-bs-dismiss="modal"
-        aria-label="Close"></button>
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <div class="d-flex align-center">
+                <img id="modal-fav" class="img-circle img-lg" alt="">
+                <h3 id="modal-title" class="m-0"></h3>
+            </div>
+            <button type="button" onclick="closeModal()" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div id="modal-body" class="modal-body">
+            <p id="modal-description" class="mb-1"></p>
+            <a id="modal-link" target="_blank"></a>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-primary" onclick="closeModal()">Close</button>
+        </div>
     </div>
-    <div id="modal-body" class="modal-body">
-      <p id="modal-description" class="mb-1"></p>
-      <a id="modal-link" target="_blank" />
-    </div>
-    <div class="modal-footer">
-      <button class="btn-primary" onclick="closeModal()">Close</button>
-    </div>
-  </div>
 </div>
-
 
 </html>

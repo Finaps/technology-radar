@@ -132,6 +132,10 @@ h3 {
   font-size: var(--size-3);
 }
 
+p {
+  margin-bottom: 0.5rem;
+}
+
 .color-accent-1 {
   color: var(--color-accent-1);
 }
