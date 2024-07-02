@@ -2,28 +2,60 @@
   "date": "2024.5.15",
   "entries": [
     {
-      "label": ".NET Core (C#)",
-      "quadrant": 3,
-      "ring": 0,
-      "link": "https://dotnet.microsoft.com/en-us/",
-      "active": true,
-      "description": ".NET Core is a free, open-source, and modular software development framework developed by Microsoft. It is a cross-platform implementation of .NET that can run on Windows, macOS, and Linux. .NET Core is designed to be lightweight, flexible, and high-performance, with a focus on cloud-ready web applications.  It includes a runtime, a set of libraries, and development tools that support multiple programming languages like C#, Visual Basic, and F#. "
-    },
-    {
-      "label": "Adobe Creative Cloud",
+      "label": "API-First Design",
       "quadrant": 0,
-      "ring": 1,
-      "link": "https://www.adobe.com/nl/creativecloud.html",
+      "ring": 0,
+      "link": "https://swagger.io/resources/articles/adopting-an-api-first-approach/",
       "active": true,
-      "description": "Adobe Creative Cloud is a subscription-based software as a service (SaaS) offering from Adobe that provides users with access to a collection of software applications and cloud services for graphic design, video editing, web development, photography, and more. "
+      "description": "API-First Design is an approach to software development where the API is designed before the implementation. This approach ensures that the API meets the needs of developers and is consistent across different applications."
     },
     {
-      "label": "Angular (TypeScript)",
-      "quadrant": 3,
+      "label": "DevOps",
+      "quadrant": 0,
       "ring": 0,
-      "link": "https://angular.io/",
+      "link": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-devops/",
       "active": true,
-      "description": "Angular is an open-source, TypeScript-based web application framework developed and maintained by Google. It is designed for building single-page applications (SPAs) and provides a comprehensive set of tools and features to simplify the development process."
+      "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) aiming to shorten the systems development life cycle and provide continuous delivery with high software quality."
+    },
+    {
+      "label": "Domain Driven Design",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
+      "active": true,
+      "description": "Domain Driven Design (DDD) is an approach to software development that centers the development on programming a domain model that has a rich understanding of the processes and rules of a domain."
+    },
+    {
+      "label": "Kanban",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://kanban.university",
+      "active": true,
+      "description": "Kanban is a visual system for managing work as it moves through a process, emphasizing continuous delivery while not overburdening the development team."
+    },
+    {
+      "label": "Lean Software Development",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://www.lean.org/explore-lean/what-is-lean/",
+      "active": true,
+      "description": "Lean Software Development is an adaptation of lean manufacturing principles and practices to the software development domain. It aims to eliminate waste and optimize efficiency in the software development process."
+    },
+    {
+      "label": "Scrum",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://www.scrum.org",
+      "active": true,
+      "description": "Scrum is an agile framework for project management that emphasizes iterative progress, team collaboration, and flexible response to change."
+    },
+    {
+      "label": "Test Driven Design",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://martinfowler.com/bliki/TestDrivenDevelopment.html",
+      "active": true,
+      "description": "Test Driven Design (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests."
     },
     {
       "label": "Azure Cloud",
@@ -34,204 +66,12 @@
       "description": "The Azure Cloud is Microsoft's public cloud platform that offers a large collection of cloud computing services and solutions.  It provides access, management, and development of applications and services through a global network of Microsoft data centers. \n"
     },
     {
-      "label": "Azure DevOps",
-      "quadrant": 2,
-      "ring": 0,
-      "link": "https://azure.microsoft.com/en-us/products/devops",
-      "active": true,
-      "description": "Azure DevOps is a comprehensive set of cloud-hosted DevOps services provided by Microsoft. It offers a suite of tools and features that enable teams to plan, develop, test, and deploy software applications efficiently. Azure DevOps supports a wide range of programming languages, frameworks, and platforms, allowing teams to use the tools and technologies they are familiar with. It is designed to help organizations streamline their software development and delivery processes, improve collaboration, and increase the overall efficiency of their DevOps workflows. "
-    },
-    {
-      "label": "Bicep",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "https://github.com/Azure/bicep?tab=readme-ov-file",
-      "active": true,
-      "description": " Bicep provides a simpler, more developer-friendly syntax for defining Azure infrastructure, while maintaining full compatibility with the underlying ARM template capabilities"
-    },
-    {
-      "label": "BitBucket",
-      "quadrant": 2,
-      "ring": 3,
-      "link": "",
-      "active": true,
-      "description": "Bitbucket is a Git-based source code repository hosting service owned by Atlassian. It offers both commercial plans and free accounts with an unlimited number of private repositories."
-    },
-    {
-      "label": "Calendly",
-      "quadrant": 0,
-      "ring": 0,
-      "link": "https://calendly.com",
-      "active": true,
-      "description": "Calendly is an automated scheduling software that simplifies the process of booking meetings and appointments."
-    },
-    {
-      "label": "Confluence",
-      "quadrant": 0,
-      "ring": 1,
-      "link": "https://www.atlassian.com/software/confluence",
-      "active": true,
-      "description": "Confluence is a collaborative workspace and content management system developed by Atlassian. It allows teams to create, organize, and share information, documents, and project updates in a centralized platform. "
-    },
-    {
-      "label": "Datadog",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "",
-      "active": true,
-      "description": "Datadog is a comprehensive monitoring and analytics platform that provides full visibility into an organization's application environment. Datadog aims to give organizations comprehensive observability into their entire technology stack, enabling them to more efficiently troubleshoot issues, optimize performance, and make data-driven decisions."
-    },
-    {
       "label": "Elastic Cloud",
       "quadrant": 1,
       "ring": 1,
       "link": "https://www.elastic.co/cloud",
       "active": true,
       "description": "Elastic Cloud is a family of cloud-based services offered by Elastic that provide hosted and managed solutions for Elasticsearch, Kibana, and other Elastic Stack components. Elastic Cloud makes it easy for organizations to leverage the power of the Elastic Stack in the cloud, with the benefits of a fully managed service that scales to meet their needs."
-    },
-    {
-      "label": "Figjam",
-      "quadrant": 2,
-      "ring": 2,
-      "link": "https://www.figma.com/figjam/",
-      "active": true,
-      "description": "FigJam is a collaborative online whiteboard tool developed by Figma that allows teams to ideate, brainstorm, and work together on various projects and design tasks. FigJam is primarily targeted at product teams and those involved in visual experience development, offering a more streamlined collaborative experience compared to more general-purpose tools like Miro"
-    },
-    {
-      "label": "Figma design",
-      "quadrant": 2,
-      "ring": 2,
-      "link": "https://www.figma.com/design/",
-      "active": true,
-      "description": "Figma is a collaborative, browser-based interface design tool that has become popular in the design industry."
-    },
-    {
-      "label": "FinSight",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "https://github.com/FinapsMX/Finsight-CLI",
-      "active": true,
-      "description": ""
-    },
-    {
-      "label": "Flutter (Dart)",
-      "quadrant": 3,
-      "ring": 1,
-      "link": "https://flutter.dev",
-      "active": true,
-      "description": "Flutter is an open-source UI software development kit created by Google. It allows developers to build high-performance, high-fidelity mobile, web, and desktop applications from a single codebase using the Dart programming language."
-    },
-    {
-      "label": "GitHub",
-      "quadrant": 2,
-      "ring": 0,
-      "link": "https://github.com",
-      "active": true,
-      "description": "GitHub is an online platform that allows developers to store, manage, and collaborate on software projects. It is a web-based interface that uses the Git version control system, enabling multiple people to work on the same codebase simultaneously. GitHub serves as a social network for developers, allowing them to build profiles, share their work, and contribute to open-source projects.  It provides features like code hosting, version control, issue tracking, and project management tools to facilitate collaborative software development."
-    },
-    {
-      "label": "Github Copilot",
-      "quadrant": 2,
-      "ring": 2,
-      "link": "https://github.com/features/copilot",
-      "active": true,
-      "description": "GitHub Copilot is an AI-powered coding assistant that helps developers write code faster and more efficiently. It provides real-time code suggestions and completions as developers type, drawing from a vast corpus of publicly available code to offer contextual assistance throughout the software development lifecycle"
-    },
-    {
-      "label": "GraphQL (JavaScript)",
-      "quadrant": 3,
-      "ring": 3,
-      "link": "https://graphql.org",
-      "active": true,
-      "description": "GraphQL is a query language and runtime for APIs that provides a more efficient and flexible alternative to traditional REST APIs. GraphQL is a modern approach to building APIs that improves developer experience, performance, and flexibility compared to traditional REST APIs."
-    },
-    {
-      "label": "Hubspot",
-      "quadrant": 0,
-      "ring": 0,
-      "link": "https://www.hubspot.com",
-      "active": true,
-      "description": "HubSpot is a leading cloud-based customer relationship management (CRM) and marketing platform that provides a suite of tools to help businesses attract, engage, and delight customers."
-    },
-    {
-      "label": "Invision",
-      "quadrant": 2,
-      "ring": 0,
-      "link": "https://www.invisionapp.com",
-      "active": true,
-      "description": "InVision is a powerful prototyping, collaboration, and workflow tool designed for designers and product teams"
-    },
-    {
-      "label": "Jest",
-      "quadrant": 2,
-      "ring": 3,
-      "link": "https://jestjs.io",
-      "active": true,
-      "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference."
-    },
-    {
-      "label": "Jetbrains AI Assistant",
-      "quadrant": 2,
-      "ring": 2,
-      "link": "",
-      "active": true,
-      "description": "JetBrains AI Assistant is an AI-powered feature integrated into JetBrains IDEs like IntelliJ IDEA, PyCharm, and ReSharper. It uses large language models to provide a variety of AI-powered capabilities to assist developer. The AI Assistant is powered by the JetBrains AI service, which transparently connects users to different large language models, including OpenAI and JetBrains' own proprietary models. This deep integration with the IDE aims to increase developer productivity throughout the coding workflow."
-    },
-    {
-      "label": "Jetbrains IDEs",
-      "quadrant": 2,
-      "ring": 0,
-      "link": "https://www.jetbrains.com/ides/",
-      "active": true,
-      "description": "JetBrains is a global software company that specializes in creating intelligent, productivity-enhancing tools for software developers and teams. JetBrains offers an extensive portfolio of integrated development environments (IDEs) for a variety of programming languages, including Java, Ruby, Python, PHP, Objective-C, and .NET. Some of their most popular IDEs include IntelliJ IDEA, ReSharper, PyCharm, and WebStorm. The company also develops tools for team collaboration, continuous integration, and issue tracking, such as TeamCity and YouTrack."
-    },
-    {
-      "label": "Jira",
-      "quadrant": 2,
-      "ring": 3,
-      "link": "",
-      "active": true,
-      "description": "Jira is a comprehensive project management and issue-tracking software developed by Atlassian. It is widely used by software development teams and other organizations to plan, track, and manage their work."
-    },
-    {
-      "label": "Jotform",
-      "quadrant": 0,
-      "ring": 2,
-      "link": "",
-      "active": true,
-      "description": "Jotform is a powerful online form builder that allows users to easily create and customize forms for various purposes, such as collecting information, selling products, conducting surveys, and managing data. With its intuitive drag-and-drop interface, Jotform enables users to build forms without any coding knowledge"
-    },
-    {
-      "label": "Junit",
-      "quadrant": 2,
-      "ring": 0,
-      "link": "https://junit.org/junit5/",
-      "active": true,
-      "description": "JUnit is a popular open-source unit testing framework for the Java programming language. It allows developers to write and execute automated tests to ensure the reliability and correctness of their Java code. "
-    },
-    {
-      "label": "Lusha",
-      "quadrant": 0,
-      "ring": 1,
-      "link": "https://www.lusha.com",
-      "active": true,
-      "description": "Lusha is a sales intelligence platform that helps businesses identify and connect with sales leads."
-    },
-    {
-      "label": "Mailgun",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "",
-      "active": true,
-      "description": "Mailgun is a powerful email API service designed for developers to send, receive, and track emails easily and efficiently. It offers a reliable and scalable platform. Mailgun's APIs work with various programming languages and frameworks, making it easy for developers to integrate email seamlessly into their systems."
-    },
-    {
-      "label": "Mendix",
-      "quadrant": 3,
-      "ring": 0,
-      "link": "https://www.mendix.com",
-      "active": true,
-      "description": "Mendix is a leading low-code application development platform that enables organizations to rapidly build and deploy enterprise-grade software applications."
     },
     {
       "label": "Mendix Cloud",
@@ -242,36 +82,52 @@
       "description": "Mendix Cloud is the default deployment option for Mendix applications. It is a public cloud service for Mendix applications, built and maintained by Mendix on top of Amazon Web Services (AWS). Mendix Cloud is optimized to run Mendix applications, is available in multiple regions around the globe, and comes with high availability options."
     },
     {
-      "label": "NextJS",
-      "quadrant": 2,
+      "label": "SAS Viya",
+      "quadrant": 1,
       "ring": 0,
-      "link": "https://nextjs.org",
-      "active": true,
-      "description": "Next.js is a powerful React framework that simplifies the process of building fast, interactive, and SEO-friendly web applications. Next.js provides developers with a comprehensive set of tools and features to create production-ready, scalable web applications quickly and efficiently."
+      "link": "https://www.sas.com/en_us/software/viya.html",
+      "active": false,
+      "description": "SAS provides Software as a Service (SaaS) offerings that deliver analytics capabilities through the cloud. SAS provides a SaaS customer experience aligned with their analytics software and industry knowledge, allowing organizations to consume analytics as a cloud service managed by SAS experts"
     },
     {
-      "label": "Omnext Mendix quality analysis",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "https://www.omnext.com/mendix-quality-analysis/",
-      "active": true,
-      "description": "Omnext is a software analysis platform that provides in-depth quality and security evaluations for Mendix applications. The Omnext platform allows Mendix developers and administrators to continuously monitor the technical quality of their applications and take proactive steps to prevent technical debt, security vulnerabilities, and other issues."
-    },
-    {
-      "label": "PgAdmin",
-      "quadrant": 2,
+      "label": ".NET Core (C#)",
+      "quadrant": 3,
       "ring": 0,
-      "link": "https://www.pgadmin.org",
+      "link": "https://dotnet.microsoft.com/en-us/",
       "active": true,
-      "description": "pgAdmin is the leading open-source graphical user interface (GUI) management tool for the PostgreSQL database. It provides a comprehensive set of features to simplify the administration and development of PostgreSQL databases. "
+      "description": ".NET Core is a free, open-source, and modular software development framework developed by Microsoft. It is a cross-platform implementation of .NET that can run on Windows, macOS, and Linux. .NET Core is designed to be lightweight, flexible, and high-performance, with a focus on cloud-ready web applications.  It includes a runtime, a set of libraries, and development tools that support multiple programming languages like C#, Visual Basic, and F#. "
     },
     {
-      "label": "Playwright",
-      "quadrant": 2,
-      "ring": 1,
-      "link": "https://playwright.dev",
+      "label": "Angular (TypeScript)",
+      "quadrant": 3,
+      "ring": 0,
+      "link": "https://angular.io/",
       "active": true,
-      "description": "Playwright is a modern, open-source test automation framework developed by Microsoft that enables reliable end-to-end testing for web applications across multiple browsers and platforms."
+      "description": "Angular is an open-source, TypeScript-based web application framework developed and maintained by Google. It is designed for building single-page applications (SPAs) and provides a comprehensive set of tools and features to simplify the development process."
+    },
+    {
+      "label": "Flutter (Dart)",
+      "quadrant": 3,
+      "ring": 1,
+      "link": "https://flutter.dev",
+      "active": true,
+      "description": "Flutter is an open-source UI software development kit created by Google. It allows developers to build high-performance, high-fidelity mobile, web, and desktop applications from a single codebase using the Dart programming language."
+    },
+    {
+      "label": "GraphQL (JavaScript)",
+      "quadrant": 3,
+      "ring": 3,
+      "link": "https://graphql.org",
+      "active": true,
+      "description": "GraphQL is a query language and runtime for APIs that provides a more efficient and flexible alternative to traditional REST APIs. GraphQL is a modern approach to building APIs that improves developer experience, performance, and flexibility compared to traditional REST APIs."
+    },
+    {
+      "label": "Mendix",
+      "quadrant": 3,
+      "ring": 0,
+      "link": "https://www.mendix.com",
+      "active": true,
+      "description": "Mendix is a leading low-code application development platform that enables organizations to rapidly build and deploy enterprise-grade software applications."
     },
     {
       "label": "PostgreSQL",
@@ -280,14 +136,6 @@
       "link": "https://www.postgresql.org",
       "active": true,
       "description": "PostgreSQL is a powerful, open-source object-relational database management system (ORDBMS) that emphasizes extensibility and SQL compliance. PostgreSQL was originally developed at the University of California, Berkeley in the 1980s as a successor to the Ingres database. It has been actively developed for over 35 years by a global community of contributors, making it a mature and feature-rich open-source database solution."
-    },
-    {
-      "label": "Postman",
-      "quadrant": 2,
-      "ring": 3,
-      "link": "https://www.postman.com",
-      "active": true,
-      "description": "Postman is an API testing and development platform that simplifies the process of building, testing, and documenting APIs. It provides a user-friendly graphical interface for sending HTTP requests, viewing responses, and organizing API tests into collections.\nPostman allows developers to create, test, and document APIs more efficiently by offering features such as environment variables, scripting, and collaboration tools."
     },
     {
       "label": "PowerBI",
@@ -330,12 +178,188 @@
       "description": "SAS (Statistical Analysis System) is a comprehensive software suite developed by SAS Institute for advanced data management, analytics, and reporting."
     },
     {
-      "label": "SAS Viya",
-      "quadrant": 1,
+      "label": "Spring Boot (Java)",
+      "quadrant": 3,
       "ring": 0,
-      "link": "https://www.sas.com/en_us/software/viya.html",
-      "active": false,
-      "description": "SAS provides Software as a Service (SaaS) offerings that deliver analytics capabilities through the cloud. SAS provides a SaaS customer experience aligned with their analytics software and industry knowledge, allowing organizations to consume analytics as a cloud service managed by SAS experts"
+      "link": "https://spring.io",
+      "active": true,
+      "description": "Spring Boot is an open-source Java framework that simplifies the development and deployment of Spring-based applications. It provides a pre-configured template that allows developers to quickly build and run stand-alone, production-ready Spring applications with minimal configuration"
+    },
+    {
+      "label": "Terraform",
+      "quadrant": 3,
+      "ring": 0,
+      "link": "https://www.terraform.io",
+      "active": true,
+      "description": "Terraform is a powerful Infrastructure as Code (IaC) software tool offered by HashiCorp. It allows users to define and provision both on-premises and cloud resources in a declarative configuration language, enabling consistent, repeatable, and reliable infrastructure management."
+    },
+    {
+      "label": "Azure DevOps",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://azure.microsoft.com/en-us/products/devops",
+      "active": true,
+      "description": "Azure DevOps is a comprehensive set of cloud-hosted DevOps services provided by Microsoft. It offers a suite of tools and features that enable teams to plan, develop, test, and deploy software applications efficiently. Azure DevOps supports a wide range of programming languages, frameworks, and platforms, allowing teams to use the tools and technologies they are familiar with. It is designed to help organizations streamline their software development and delivery processes, improve collaboration, and increase the overall efficiency of their DevOps workflows. "
+    },
+    {
+      "label": "Bicep",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "https://github.com/Azure/bicep?tab=readme-ov-file",
+      "active": true,
+      "description": " Bicep provides a simpler, more developer-friendly syntax for defining Azure infrastructure, while maintaining full compatibility with the underlying ARM template capabilities"
+    },
+    {
+      "label": "BitBucket",
+      "quadrant": 2,
+      "ring": 3,
+      "link": "",
+      "active": true,
+      "description": "Bitbucket is a Git-based source code repository hosting service owned by Atlassian. It offers both commercial plans and free accounts with an unlimited number of private repositories."
+    },
+    {
+      "label": "Datadog",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "",
+      "active": true,
+      "description": "Datadog is a comprehensive monitoring and analytics platform that provides full visibility into an organization's application environment. Datadog aims to give organizations comprehensive observability into their entire technology stack, enabling them to more efficiently troubleshoot issues, optimize performance, and make data-driven decisions."
+    },
+    {
+      "label": "Figjam",
+      "quadrant": 2,
+      "ring": 2,
+      "link": "https://www.figma.com/figjam/",
+      "active": true,
+      "description": "FigJam is a collaborative online whiteboard tool developed by Figma that allows teams to ideate, brainstorm, and work together on various projects and design tasks. FigJam is primarily targeted at product teams and those involved in visual experience development, offering a more streamlined collaborative experience compared to more general-purpose tools like Miro"
+    },
+    {
+      "label": "Figma design",
+      "quadrant": 2,
+      "ring": 2,
+      "link": "https://www.figma.com/design/",
+      "active": true,
+      "description": "Figma is a collaborative, browser-based interface design tool that has become popular in the design industry."
+    },
+    {
+      "label": "FinSight",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "https://github.com/FinapsMX/Finsight-CLI",
+      "active": true,
+      "description": ""
+    },
+    {
+      "label": "GitHub",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://github.com",
+      "active": true,
+      "description": "GitHub is an online platform that allows developers to store, manage, and collaborate on software projects. It is a web-based interface that uses the Git version control system, enabling multiple people to work on the same codebase simultaneously. GitHub serves as a social network for developers, allowing them to build profiles, share their work, and contribute to open-source projects.  It provides features like code hosting, version control, issue tracking, and project management tools to facilitate collaborative software development."
+    },
+    {
+      "label": "Github Copilot",
+      "quadrant": 2,
+      "ring": 2,
+      "link": "https://github.com/features/copilot",
+      "active": true,
+      "description": "GitHub Copilot is an AI-powered coding assistant that helps developers write code faster and more efficiently. It provides real-time code suggestions and completions as developers type, drawing from a vast corpus of publicly available code to offer contextual assistance throughout the software development lifecycle"
+    },
+    {
+      "label": "Invision",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://www.invisionapp.com",
+      "active": true,
+      "description": "InVision is a powerful prototyping, collaboration, and workflow tool designed for designers and product teams"
+    },
+    {
+      "label": "Jest",
+      "quadrant": 2,
+      "ring": 3,
+      "link": "https://jestjs.io",
+      "active": true,
+      "description": "Test framework for unit + integration testing; Vitest is preferred, if ViteJS is chosen, otherwise no preference."
+    },
+    {
+      "label": "Jetbrains AI Assistant",
+      "quadrant": 2,
+      "ring": 2,
+      "link": "",
+      "active": true,
+      "description": "JetBrains AI Assistant is an AI-powered feature integrated into JetBrains IDEs like IntelliJ IDEA, PyCharm, and ReSharper. It uses large language models to provide a variety of AI-powered capabilities to assist developer. The AI Assistant is powered by the JetBrains AI service, which transparently connects users to different large language models, including OpenAI and JetBrains' own proprietary models. This deep integration with the IDE aims to increase developer productivity throughout the coding workflow."
+    },
+    {
+      "label": "Jetbrains IDEs",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://www.jetbrains.com/ides/",
+      "active": true,
+      "description": "JetBrains is a global software company that specializes in creating intelligent, productivity-enhancing tools for software developers and teams. JetBrains offers an extensive portfolio of integrated development environments (IDEs) for a variety of programming languages, including Java, Ruby, Python, PHP, Objective-C, and .NET. Some of their most popular IDEs include IntelliJ IDEA, ReSharper, PyCharm, and WebStorm. The company also develops tools for team collaboration, continuous integration, and issue tracking, such as TeamCity and YouTrack."
+    },
+    {
+      "label": "Jira",
+      "quadrant": 2,
+      "ring": 3,
+      "link": "",
+      "active": true,
+      "description": "Jira is a comprehensive project management and issue-tracking software developed by Atlassian. It is widely used by software development teams and other organizations to plan, track, and manage their work."
+    },
+    {
+      "label": "Junit",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://junit.org/junit5/",
+      "active": true,
+      "description": "JUnit is a popular open-source unit testing framework for the Java programming language. It allows developers to write and execute automated tests to ensure the reliability and correctness of their Java code. "
+    },
+    {
+      "label": "Mailgun",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "",
+      "active": true,
+      "description": "Mailgun is a powerful email API service designed for developers to send, receive, and track emails easily and efficiently. It offers a reliable and scalable platform. Mailgun's APIs work with various programming languages and frameworks, making it easy for developers to integrate email seamlessly into their systems."
+    },
+    {
+      "label": "NextJS",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://nextjs.org",
+      "active": true,
+      "description": "Next.js is a powerful React framework that simplifies the process of building fast, interactive, and SEO-friendly web applications. Next.js provides developers with a comprehensive set of tools and features to create production-ready, scalable web applications quickly and efficiently."
+    },
+    {
+      "label": "Omnext Mendix quality analysis",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "https://www.omnext.com/mendix-quality-analysis/",
+      "active": true,
+      "description": "Omnext is a software analysis platform that provides in-depth quality and security evaluations for Mendix applications. The Omnext platform allows Mendix developers and administrators to continuously monitor the technical quality of their applications and take proactive steps to prevent technical debt, security vulnerabilities, and other issues."
+    },
+    {
+      "label": "PgAdmin",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://www.pgadmin.org",
+      "active": true,
+      "description": "pgAdmin is the leading open-source graphical user interface (GUI) management tool for the PostgreSQL database. It provides a comprehensive set of features to simplify the administration and development of PostgreSQL databases. "
+    },
+    {
+      "label": "Playwright",
+      "quadrant": 2,
+      "ring": 1,
+      "link": "https://playwright.dev",
+      "active": true,
+      "description": "Playwright is a modern, open-source test automation framework developed by Microsoft that enables reliable end-to-end testing for web applications across multiple browsers and platforms."
+    },
+    {
+      "label": "Postman",
+      "quadrant": 2,
+      "ring": 3,
+      "link": "https://www.postman.com",
+      "active": true,
+      "description": "Postman is an API testing and development platform that simplifies the process of building, testing, and documenting APIs. It provides a user-friendly graphical interface for sending HTTP requests, viewing responses, and organizing API tests into collections.\nPostman allows developers to create, test, and document APIs more efficiently by offering features such as environment variables, scripting, and collaboration tools."
     },
     {
       "label": "Sketch",
@@ -354,36 +378,12 @@
       "description": "SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality. It performs automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities across 29 programming languages. SonarQube provides reports on various code quality metrics such as duplicated code, coding standards, unit tests, code coverage, code complexity, comments, and security recommendations. It integrates with various development tools and CI/CD pipelines to enable continuous code quality monitoring and improvement"
     },
     {
-      "label": "Spring Boot (Java)",
-      "quadrant": 3,
-      "ring": 0,
-      "link": "https://spring.io",
-      "active": true,
-      "description": "Spring Boot is an open-source Java framework that simplifies the development and deployment of Spring-based applications. It provides a pre-configured template that allows developers to quickly build and run stand-alone, production-ready Spring applications with minimal configuration"
-    },
-    {
       "label": "Stoplight",
       "quadrant": 2,
       "ring": 1,
       "link": "",
       "active": true,
       "description": "Stoplight is a collaborative API design platform that enables users to build high-quality APIs and create scalable API programs. Stoplight is a comprehensive API design platform that enables teams to build excellent APIs and create scalable API programs through its intuitive interface, design-first approach, and collaborative features. "
-    },
-    {
-      "label": "Terraform",
-      "quadrant": 3,
-      "ring": 0,
-      "link": "https://www.terraform.io",
-      "active": true,
-      "description": "Terraform is a powerful Infrastructure as Code (IaC) software tool offered by HashiCorp. It allows users to define and provision both on-premises and cloud resources in a declarative configuration language, enabling consistent, repeatable, and reliable infrastructure management."
-    },
-    {
-      "label": "Trello",
-      "quadrant": 0,
-      "ring": 0,
-      "link": "",
-      "active": true,
-      "description": "Trello is a popular collaboration tool that organizes projects into boards, lists, and cards. It provides a visual overview of what's being worked on, who's working on what, and where something is in a process. Trello boards can be used for a wide variety of purposes, from managing work projects to planning personal tasks and events"
     },
     {
       "label": "Visual Studio Code",
@@ -416,22 +416,6 @@
       "link": "https://webpack.js.org",
       "active": true,
       "description": "Webpack is a popular module bundler that takes your JavaScript files, along with other assets like CSS, images, and fonts, and bundles them into a single file for efficient delivery to the browser. Babel is a JavaScript compiler that allows you to use the latest features of the JavaScript language, even if they are not yet supported by all browsers. Babel takes your modern JavaScript code and \"transpiles\" it into a version that is compatible with older browsers.\nIn a typical web application, Webpack is used to bundle all the JavaScript files, while Babel is used to transpile the modern JavaScript code to ensure compatibility across different browsers. Webpack uses the babel-loader to handle the transpilation of JavaScript files before bundling them"
-    },
-    {
-      "label": "Wordpress",
-      "quadrant": 0,
-      "ring": 0,
-      "link": "https://wordpress.com/",
-      "active": true,
-      "description": "WordPress is a free and open-source content management system (CMS) that allows anyone to create and manage websites easily. Originally designed as a blogging platform, WordPress has evolved to support a wide range of website types, from blogs and portfolios to e-commerce stores and membership sites."
-    },
-    {
-      "label": "Zoom",
-      "quadrant": 0,
-      "ring": 3,
-      "link": "",
-      "active": true,
-      "description": "Zoom is a popular cloud-based video conferencing platform that allows users to meet and collaborate remotely via video, audio, and chat"
     }
   ]
 }

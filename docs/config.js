@@ -12,7 +12,7 @@ const QUADRANTS = [
     id: 2,
   },
   {
-    name: 'Internal',
+    name: 'Methodologies & Practices',
     id: 3,
   },
 ];
