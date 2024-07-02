@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Update date in data.json
         run: |
           current_date=$(date +'%Y.%-m.%-d')
