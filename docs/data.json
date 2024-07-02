@@ -10,12 +10,36 @@
       "description": "API-First Design is an approach to software development where the API is designed before the implementation. This approach ensures that the API meets the needs of developers and is consistent across different applications."
     },
     {
+      "label": "API-First Design",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://swagger.io/resources/articles/adopting-an-api-first-approach/",
+      "active": true,
+      "description": "API-First Design is an approach to software development where the API is designed before the implementation. This approach ensures that the API meets the needs of developers and is consistent across different applications."
+    },
+    {
       "label": "DevOps",
       "quadrant": 0,
       "ring": 0,
       "link": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-devops/",
       "active": true,
       "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) aiming to shorten the systems development life cycle and provide continuous delivery with high software quality."
+    },
+    {
+      "label": "DevOps",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-devops/",
+      "active": true,
+      "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) aiming to shorten the systems development life cycle and provide continuous delivery with high software quality."
+    },
+    {
+      "label": "Domain Driven Design",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
+      "active": true,
+      "description": "Domain Driven Design (DDD) is an approach to software development that centers the development on programming a domain model that has a rich understanding of the processes and rules of a domain."
     },
     {
       "label": "Domain Driven Design",
@@ -34,6 +58,22 @@
       "description": "Kanban is a visual system for managing work as it moves through a process, emphasizing continuous delivery while not overburdening the development team."
     },
     {
+      "label": "Kanban",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://kanban.university",
+      "active": true,
+      "description": "Kanban is a visual system for managing work as it moves through a process, emphasizing continuous delivery while not overburdening the development team."
+    },
+    {
+      "label": "Lean Software Development",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://www.lean.org/explore-lean/what-is-lean/",
+      "active": true,
+      "description": "Lean Software Development is an adaptation of lean manufacturing principles and practices to the software development domain. It aims to eliminate waste and optimize efficiency in the software development process."
+    },
+    {
       "label": "Lean Software Development",
       "quadrant": 0,
       "ring": 0,
@@ -48,6 +88,22 @@
       "link": "https://www.scrum.org",
       "active": true,
       "description": "Scrum is an agile framework for project management that emphasizes iterative progress, team collaboration, and flexible response to change."
+    },
+    {
+      "label": "Scrum",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://www.scrum.org",
+      "active": true,
+      "description": "Scrum is an agile framework for project management that emphasizes iterative progress, team collaboration, and flexible response to change."
+    },
+    {
+      "label": "Test Driven Design",
+      "quadrant": 0,
+      "ring": 0,
+      "link": "https://martinfowler.com/bliki/TestDrivenDevelopment.html",
+      "active": true,
+      "description": "Test Driven Design (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests."
     },
     {
       "label": "Test Driven Design",
@@ -322,6 +378,14 @@
       "description": "Mailgun is a powerful email API service designed for developers to send, receive, and track emails easily and efficiently. It offers a reliable and scalable platform. Mailgun's APIs work with various programming languages and frameworks, making it easy for developers to integrate email seamlessly into their systems."
     },
     {
+      "label": "Mendix Quality and Security Management (QSM)",
+      "quadrant": 2,
+      "ring": 0,
+      "link": "https://docs.mendix.com/appstore/partner-solutions/qsm/",
+      "active": true,
+      "description": "Mendix Quality and Security Management (QSM) is a cloud service developed by Mendix and the Software Improvement Group (SIG) that performs static analysis of Mendix application models according to the ISO 25010 standard for maintainability. It provides instant insight into the quality of application models, including quality ratings based on benchmarks of thousands of projects. QSM helps improve maintainability, reduce lifecycle costs, and offers continuous security insights to address risks immediately. It supports self-service onboarding, is available for Mendix 6.0 and above, and includes automated checks for Mendix Development Best Practices."
+    },
+    {
       "label": "NextJS",
       "quadrant": 2,
       "ring": 0,
@@ -332,7 +396,7 @@
     {
       "label": "Omnext Mendix quality analysis",
       "quadrant": 2,
-      "ring": 1,
+      "ring": 0,
       "link": "https://www.omnext.com/mendix-quality-analysis/",
       "active": true,
       "description": "Omnext is a software analysis platform that provides in-depth quality and security evaluations for Mendix applications. The Omnext platform allows Mendix developers and administrators to continuously monitor the technical quality of their applications and take proactive steps to prevent technical debt, security vulnerabilities, and other issues."
